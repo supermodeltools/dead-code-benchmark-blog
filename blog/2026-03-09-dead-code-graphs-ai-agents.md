@@ -196,7 +196,19 @@ Sometimes the Supermodel parser misses ground truth items entirely. The Logto be
 
 Root causes we've identified: `export default` not tracked, type re-exports (`export type { X } from`) missed, test file imports not scanned. These are being fixed systematically.
 
-### 3. Agent Non-Determinism (Partially Addressable)
+### 3. Agent Verification Can Hurt Performance
+
+This one surprised us. In our March 2026 benchmark run, we instructed the agent to verify each candidate by grepping for the symbol name across the codebase. The idea was sound: if a symbol appears in other files, it's probably alive.
+
+The result: **recall dropped from 95.5% to 40%** on our best-performing task (tyr_pr258). The agent's grep verification was killing real dead code.
+
+Why? The grep used word-boundary matching (`grep -w`). A function named `hasRole` would match the word `hasRole` appearing in a comment, a string literal, or a completely unrelated variable name in another file. The agent would see the match and mark the function as "alive" -- a false negative introduced by the verification step.
+
+The irony: the static analyzer had already performed proper call graph and dependency analysis to identify these candidates. The agent's grep check was a *less accurate* version of what the analyzer already did. By asking the agent to verify the analysis, we made it worse.
+
+The fix was simple: tell the agent to trust the analysis and pass through all candidates without grep verification. This restored recall to its previous levels. The lesson: **don't let a less precise tool override a more precise one.** Graph-based reachability analysis is strictly more accurate than grep-based name matching for determining whether code is alive.
+
+### 4. Agent Non-Determinism (Partially Addressable)
 
 Same task, same config, different results. One run finds 3 true positives; the rerun finds 0. The only fully deterministic path was pre-computed analysis on small codebases, where the agent reads a file and transcribes it.
 
@@ -273,6 +285,53 @@ Dead code detection is one application. But the underlying primitive -- a struct
 - **Security surface mapping**: "What code paths lead from user input to database queries?" (call graph + data flow)
 
 Each of these has the same structure: pre-compute the graph, rank candidates, let agents handle judgment. The graph is the primitive. The applications are built on top.
+
+---
+
+## The Benchmarking Journey: What We Got Wrong Along the Way
+
+Building the dead code tool was one thing. Benchmarking it honestly was harder. Here's what we learned the hard way.
+
+### Measuring the wrong thing
+
+Our initial benchmark prompt told the agent to read the analysis file, then "verify" each candidate by grepping the codebase to see if the symbol appeared in other files. This seemed rigorous -- the agent would filter false positives before reporting.
+
+It backfired. On our best-performing task (tyr_pr258), recall dropped from 95.5% to 40%. The agent's grep verification was *less accurate* than the graph analysis it was checking. A function named `hasRole` would match the word "hasRole" in a comment, a string literal, or an unrelated variable -- and the agent would incorrectly mark it as alive.
+
+The lesson: **don't verify a precise tool with a less precise tool.** Graph-based reachability is strictly more accurate than text search for determining if code is reachable. Once we removed the grep verification and told the agent to trust the analysis, recall returned to expected levels.
+
+### Two layers of invisible caching
+
+After implementing parser improvements (barrel re-export filtering, 7 new pipeline phases, class rescue patterns), we ran the benchmark expecting dramatic improvement. The numbers were identical to the previous run.
+
+It took investigation to discover why: the benchmark had two layers of result caching. A local file cache keyed on the zip hash short-circuited the API call entirely. Even when we busted through that, the API's server-side idempotency cache returned the old parser's results because the input hadn't changed (same repo, same commit, same zip).
+
+We had to clear the local cache AND change the idempotency key to actually measure the improved parser. Without this, we would have published results that showed "no improvement" when the improvements were real but unmeasured.
+
+### What honest benchmarking looks like
+
+These mistakes taught us that benchmark infrastructure has as many failure modes as the system being benchmarked. Our checklist now includes:
+
+- **Cache invalidation**: Clear all analysis caches when the parser changes
+- **Prompt isolation**: The benchmark prompt must not introduce behaviors (like grep verification) that interact with what we're measuring
+- **Agent behavior logging**: Always inspect the agent's transcript, not just the final numbers
+- **A/B discipline**: Change one variable at a time (parser version, prompt, agent model) or you can't attribute results
+
+All of our benchmark data, including the runs where we got it wrong, is available in our [benchmark repository](https://github.com/supermodeltools/dead-code-benchmark-blog). Transparency about methodology matters more than impressive numbers.
+
+### The payoff: parser improvements, measured correctly
+
+Once we fixed the caching and prompt issues, we could finally measure the effect of our parser improvements (barrel re-export filtering, cross-package import resolution, class rescue patterns, and more). The results:
+
+| Repository | Before (Feb 20) | After (Mar 9) | Change |
+|-----------|-----------------|---------------|--------|
+| jsLPSolver | 50% recall, 37 FP | **100% recall**, 21 FP | **Recall doubled**, FPs down 43% |
+| Mimir | 78% recall, 1,124 FP | **100% recall**, 956 FP | **+22pp recall**, FPs down 15% |
+| Latitude | 100% recall, 1,500 FP | **100% recall**, 729 FP | Same recall, **FPs down 51%** |
+| Directus | 100% recall, 2,450 FP | 93% recall, 885 FP | Slight recall dip, **FPs down 64%** |
+| tyr | 96% recall, 537 FP | **90% recall**, 403 FP | Slight recall dip, **FPs down 25%** |
+
+Average recall went from 85% to **97%**. Total false positives across all five tasks dropped from 5,648 to 2,994 -- a **47% reduction**. The jsLPSolver result is especially notable: this was previously the only real-world task where the baseline (grep-only) agent outperformed the graph agent. After the parser improvements, the graph agent now finds all 6 ground truth items with only 21 false positives -- a 22% precision rate, our best on any real-world task.
 
 ---
 
