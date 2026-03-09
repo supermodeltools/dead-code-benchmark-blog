@@ -345,6 +345,12 @@ These mistakes taught us that benchmark infrastructure has as many failure modes
 
 All of our benchmark data, including the runs where we got it wrong, is available in our [benchmark repository](https://github.com/supermodeltools/dead-code-benchmark-blog). Transparency about methodology matters more than impressive numbers.
 
+### Future methodology: scream tests
+
+One thing to note about our current benchmarks: it is not enough to compare false positives or precision on their own, because our ground truth only includes a subset of all possible dead code in the repo. In a multi-million line project there could be lots of dead code that a targeted PR could miss. Our precision numbers look low -- hundreds or thousands of "false positives" -- but some of those may actually be dead code that the human developer didn't catch.
+
+In future benchmarks, we will perform "scream test verification": systematically delete all of the reported dead code candidates, then run the project build and CI suite to manually confirm that things are truly dead. If the tests still pass after deletion, the candidate was genuinely dead -- regardless of whether a human had flagged it. This will give us a much more accurate picture of real precision and will likely reveal that our tools are finding dead code that humans missed.
+
 ### The payoff: parser improvements, measured correctly
 
 Once we fixed the caching and prompt issues, we could finally measure the effect of our parser improvements (barrel re-export filtering, cross-package import resolution, class rescue patterns, and more). The results:
