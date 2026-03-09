@@ -170,7 +170,20 @@ In our most controlled comparison (Feb 20 run, 10 real-world tasks, identical co
 
 **The baseline scored 0% recall on every single task.** The grep-based approach -- even with 30 iterations and unlimited tool calls -- couldn't find any confirmed dead code across these codebases. The graph agent, by contrast, achieved 75%+ recall on 6 of 10 tasks.
 
-But here's what we need to be honest about: **precision is still the challenge.** The graph agent's high recall came with high false positive counts. When the agent found all 15 Directus items, it also reported 2,450 false positives. On Maskbook, 14 true positives came alongside 5,880 false positives. The agent was reading the analysis file and transcribing candidates rather than filtering them -- an "analysis dump" pattern we're actively working to solve.
+After parser improvements in March 2026, these numbers improved further. On the five tasks we re-benchmarked with the improved parser:
+
+| Real-World Task | Feb 20 Recall | Mar 9 Recall | Feb 20 FPs | Mar 9 FPs |
+|-----------------|--------------|-------------|------------|-----------|
+| jsLPSolver | 50% | **100%** | 37 | 21 |
+| Mimir | 78% | **100%** | 1,124 | 956 |
+| Latitude LLM | 100% | **100%** | 1,500 | 729 |
+| Directus | 100% | 93% | 2,450 | 885 |
+| tyr_pr258 | 96% | 90% | 537 | 403 |
+| **Average** | **85%** | **97%** | **5,648 total** | **2,994 total** |
+
+Average recall rose from 85% to 97%. Total false positives dropped 47%. The jsLPSolver result is especially meaningful: this was previously the only task where the baseline agent outperformed the graph agent. After the parser improvements, the graph agent finds all 6 ground truth items.
+
+**Precision is still the frontier.** Even with the improvements, the graph agent reports hundreds of false positives on larger codebases. The precision problem is solvable through better framework-aware filtering, learning from false positive patterns, and smarter agent prompting. This is active work.
 
 Across all head-to-head matchups (16 runs with both agents):
 
@@ -218,15 +231,16 @@ This is an inherent property of LLM-based agents. The mitigation is to reduce th
 
 ## The Scaling Insight
 
-This is the finding we keep coming back to:
+This is the finding we keep coming back to. The table below shows our latest results (March 2026, after parser improvements):
 
-| Codebase | Files | Baseline Recall | Graph Recall | Baseline Cost | Graph Cost |
-|----------|-------|-----------------|--------------|---------------|------------|
+| Codebase | Files | Baseline Recall | Graph Recall (Mar 9) | Baseline Cost | Graph Cost |
+|----------|-------|-----------------|---------------------|---------------|------------|
 | Synthetic Express app | 35 | 39% | 99% | $0.79 | $0.40 |
 | antiwork/Helper | 576 | 17% | **92%** | $2.64-8.61 | $0.10-0.11 |
-| Mimir (Statistics Norway) | 351 | 0% | **78%** | $0.62 | $0.22 |
-| Directus | ~2,000 | 0% | **100%** | $1.03 | $0.16 |
-| Maskbook (Web3) | 2,899 | 0% | **64%** | $0.47 | $0.21 |
+| jsLPSolver | ~50 | 0% | **100%** | $0.51 | $0.11 |
+| Mimir (Statistics Norway) | 351 | 0% | **100%** | $0.62 | $0.23 |
+| Directus | ~2,000 | 0% | **93%** | $1.03 | $0.25 |
+| Latitude LLM | ~1,400 | 0% | **100%** | $0.70 | $0.22 |
 
 As codebases grow:
 - **Baseline recall collapses to zero** -- the search space overwhelms the agent completely
@@ -362,8 +376,8 @@ The graph endpoints (call graph, dependency graph, domain graph, parse graph) ar
 - **Benchmark framework**: [mcpbr](https://github.com/greynewell/mcpbr) v0.13.4
 - **Model**: Claude Sonnet 4 (`claude-sonnet-4-20250514`)
 - **Agent harness**: Claude Code
-- **Total benchmark runs**: 40+
-- **Total cost**: ~$75 across all runs
+- **Total benchmark runs**: 50+ (Feb 6 - Mar 9, 2026)
+- **Total cost**: ~$85 across all runs
 - **Repositories tested**: 12 open-source projects (29K-138K GitHub stars)
 - **Ground truth sources**: Synthetic corpus (hand-curated) + merged PRs with passing CI
 - **All runs logged** with timestamps, configs, full agent transcripts, and structured metrics
