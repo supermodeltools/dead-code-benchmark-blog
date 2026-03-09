@@ -167,35 +167,38 @@ We then ran the graph agent against real PRs from 12 open-source repositories. T
 
 In our most controlled comparison (Feb 20 run, 10 real-world tasks, identical conditions), the results were stark:
 
-| Real-World Task | Graph Recall | Baseline Recall |
-|-----------------|-------------|-----------------|
-| Directus (29K stars) | **100%** (15/15) | 0% |
-| Podman Desktop | **100%** (2/2) | 0% |
-| Latitude LLM | **100%** (5/5) | 0% |
-| tyr_pr258 | **95.5%** (21/22) | 0% |
-| Mimir (Statistics Norway) | **77.8%** (7/9) | 0% |
-| OpenTelemetry JS | **75.0%** (3/4) | 0% |
-| Maskbook (Web3) | **63.6%** (14/22) | 0% |
-| jsLPSolver | 50.0% (5/10) | 0% |
-| Gemini CLI | 33.3% (2/6) | 0% |
-| Logto | 0% (0/8) | 0% |
+| Real-World Task | Graph Recall | Graph Precision | Graph F1 | Baseline Recall |
+|-----------------|-------------|-----------------|----------|-----------------|
+| Directus (29K stars) | **100%** (15/15) | 0.6% | 1.2% | 0% |
+| Podman Desktop | **100%** (2/2) | 0.3% | 0.5% | 0% |
+| Latitude LLM | **100%** (5/5) | 0.3% | 0.7% | 0% |
+| tyr_pr258 | **95.5%** (21/22) | 3.8% | 7.2% | 0% |
+| Mimir (Statistics Norway) | **77.8%** (7/9) | 0.6% | 1.2% | 0% |
+| OpenTelemetry JS | **75.0%** (3/4) | 1.3% | 2.6% | 0% |
+| Maskbook (Web3) | **63.6%** (14/22) | 0.2% | 0.5% | 0% |
+| jsLPSolver | 50.0% (5/10) | 11.9% | 19.2% | 0% |
+| Gemini CLI | 33.3% (2/6) | 0.1% | 0.1% | 0% |
+| Logto | 0% (0/8) | 0% | 0% | 0% |
 
-**The baseline scored 0% recall on every single task.** The grep-based approach -- even with 30 iterations and unlimited tool calls -- couldn't find any confirmed dead code across these codebases. The graph agent, by contrast, achieved 75%+ recall on 6 of 10 tasks.
+**The baseline scored 0% recall, 0% precision, and 0% F1 on every single task.** The grep-based approach -- even with 30 iterations and unlimited tool calls -- couldn't find any confirmed dead code across these codebases. The graph agent, by contrast, achieved 75%+ recall on 6 of 10 tasks.
 
 After parser improvements in March 2026, these numbers improved further. On the five tasks we re-benchmarked with the improved parser:
 
-| Real-World Task | Feb 20 Recall | Mar 9 Recall | Feb 20 FPs | Mar 9 FPs |
-|-----------------|--------------|-------------|------------|-----------|
-| jsLPSolver | 50% | **100%** | 37 | 21 |
-| Mimir | 78% | **100%** | 1,124 | 956 |
-| Latitude LLM | 100% | **100%** | 1,500 | 729 |
-| Directus | 100% | 93% | 2,450 | 885 |
-| tyr_pr258 | 96% | 90% | 537 | 403 |
-| **Average** | **85%** | **97%** | **5,648 total** | **2,994 total** |
+| Real-World Task | Feb 20 | | | Mar 9 | | | FP Change |
+|-----------------|--------|---------|--------|--------|---------|--------|-----------|
+| | Recall | Precision | F1 | Recall | Precision | F1 | |
+| jsLPSolver | 50% | 11.9% | 19.2% | **100%** | **22.2%** | **36.4%** | -43% |
+| Mimir | 78% | 0.6% | 1.2% | **100%** | 0.8% | 1.6% | -15% |
+| Latitude LLM | 100% | 0.3% | 0.7% | **100%** | 0.7% | 1.4% | -51% |
+| Directus | 100% | 0.6% | 1.2% | 93% | 1.4% | 2.9% | -64% |
+| tyr_pr258 | 96% | 3.8% | 7.2% | 90% | 4.3% | 8.2% | -25% |
+| **Average** | **85%** | **3.4%** | **5.9%** | **97%** | **5.9%** | **10.1%** | **-47%** |
 
-Average recall rose from 85% to 97%. Total false positives dropped 47%. The jsLPSolver result is especially meaningful: this was previously the only task where the baseline agent outperformed the graph agent. After the parser improvements, the graph agent finds all 6 ground truth items.
+Average recall rose from 85% to 97%. Average precision improved from 3.4% to 5.9%. Average F1 nearly doubled from 5.9% to 10.1%. Total false positives dropped 47%. Every single task improved on precision and F1.
 
-**Precision is still the frontier.** Even with the improvements, the graph agent reports hundreds of false positives on larger codebases. The precision problem is solvable through better framework-aware filtering, learning from false positive patterns, and smarter agent prompting. This is active work.
+The jsLPSolver result is especially meaningful: this was previously the only task where the baseline agent outperformed the graph agent. After the parser improvements, the graph agent finds all 6 ground truth items with 22% precision -- our best on any real-world task.
+
+**Precision is the frontier.** Our recall is strong -- 97% average means we're finding almost all confirmed dead code. But precision numbers in the low single digits on larger codebases mean we're also reporting hundreds of false positives. However, it's worth noting that our ground truth only captures dead code that a human developer explicitly removed in a PR. In a multi-million line codebase, there is almost certainly additional dead code that the PR author didn't catch. Some of our "false positives" may be genuinely dead code that hasn't been removed yet. Our planned scream test methodology (systematically deleting candidates and running CI) will give us a clearer picture of true precision.
 
 Across all head-to-head matchups (16 runs with both agents):
 

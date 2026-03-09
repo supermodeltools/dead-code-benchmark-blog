@@ -1,0 +1,1379 @@
+{
+  "instance_id": "directus_pr26311",
+  "run_type": "mcp",
+  "events": [
+    {
+      "type": "system",
+      "subtype": "hook_started",
+      "hook_id": "5930ca4e-d894-4065-8310-ff8014992e5c",
+      "hook_name": "SessionStart:startup",
+      "hook_event": "SessionStart",
+      "uuid": "c70b116d-c11d-462a-901f-34143c96d049",
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_started",
+      "hook_id": "b7063e29-fad2-4683-8d7e-e5637e45718a",
+      "hook_name": "SessionStart:startup",
+      "hook_event": "SessionStart",
+      "uuid": "43138218-63b6-4f18-a0f0-a15c13db4b7a",
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_started",
+      "hook_id": "d99b3f52-5e7e-43b8-8a01-56c7332f25ba",
+      "hook_name": "SessionStart:startup",
+      "hook_event": "SessionStart",
+      "uuid": "3cf04a91-895d-4ebe-aaad-3e04a808b464",
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_response",
+      "hook_id": "b7063e29-fad2-4683-8d7e-e5637e45718a",
+      "hook_name": "SessionStart:startup",
+      "hook_event": "SessionStart",
+      "output": "",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "outcome": "success",
+      "uuid": "5172b03c-01a1-438f-b6dc-48cdcd3ecd22",
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_response",
+      "hook_id": "d99b3f52-5e7e-43b8-8a01-56c7332f25ba",
+      "hook_name": "SessionStart:startup",
+      "hook_event": "SessionStart",
+      "output": "",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "outcome": "success",
+      "uuid": "1b3875bd-204c-4738-9400-81708df5d01a",
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_response",
+      "hook_id": "5930ca4e-d894-4065-8310-ff8014992e5c",
+      "hook_name": "SessionStart:startup",
+      "hook_event": "SessionStart",
+      "output": "",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "outcome": "success",
+      "uuid": "26ae08a2-8230-4c99-b4f4-38e7b6199b04",
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561"
+    },
+    {
+      "type": "system",
+      "subtype": "init",
+      "cwd": "/private/var/folders/90/6pztvw5s1h12y4kmzbphq3qw0000gn/T/mcpbr_directus_pr26311_lt4qud_x",
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "tools": [
+        "Task",
+        "TaskOutput",
+        "Bash",
+        "Glob",
+        "Grep",
+        "ExitPlanMode",
+        "Read",
+        "Edit",
+        "Write",
+        "NotebookEdit",
+        "WebFetch",
+        "TodoWrite",
+        "WebSearch",
+        "TaskStop",
+        "AskUserQuestion",
+        "Skill",
+        "EnterPlanMode",
+        "EnterWorktree",
+        "CronCreate",
+        "CronDelete",
+        "CronList",
+        "ToolSearch",
+        "mcp__filesystem__read_file",
+        "mcp__filesystem__read_text_file",
+        "mcp__filesystem__read_media_file",
+        "mcp__filesystem__read_multiple_files",
+        "mcp__filesystem__write_file",
+        "mcp__filesystem__edit_file",
+        "mcp__filesystem__create_directory",
+        "mcp__filesystem__list_directory",
+        "mcp__filesystem__list_directory_with_sizes",
+        "mcp__filesystem__directory_tree",
+        "mcp__filesystem__move_file",
+        "mcp__filesystem__search_files",
+        "mcp__filesystem__get_file_info",
+        "mcp__filesystem__list_allowed_directories"
+      ],
+      "mcp_servers": [
+        {
+          "name": "plugin:github:github",
+          "status": "failed"
+        },
+        {
+          "name": "filesystem",
+          "status": "connected"
+        },
+        {
+          "name": "claude.ai Gmail",
+          "status": "needs-auth"
+        },
+        {
+          "name": "claude.ai Google Calendar",
+          "status": "needs-auth"
+        }
+      ],
+      "model": "claude-sonnet-4-20250514",
+      "permissionMode": "bypassPermissions",
+      "slash_commands": [
+        "keybindings-help",
+        "debug",
+        "simplify",
+        "batch",
+        "loop",
+        "claude-api",
+        "ghost",
+        "ralph-loop:cancel-ralph",
+        "ralph-loop:help",
+        "ralph-loop:ralph-loop",
+        "compact",
+        "context",
+        "cost",
+        "heapdump",
+        "init",
+        "pr-comments",
+        "release-notes",
+        "review",
+        "security-review",
+        "insights"
+      ],
+      "apiKeySource": "ANTHROPIC_API_KEY",
+      "claude_code_version": "2.1.71",
+      "output_style": "default",
+      "agents": [
+        "general-purpose",
+        "statusline-setup",
+        "Explore",
+        "Plan",
+        "claude-code-guide"
+      ],
+      "skills": [
+        "keybindings-help",
+        "debug",
+        "simplify",
+        "batch",
+        "loop",
+        "claude-api"
+      ],
+      "plugins": [
+        {
+          "name": "github",
+          "path": "/Users/jag/.claude/plugins/cache/claude-plugins-official/github/205b6e0b3036"
+        },
+        {
+          "name": "ralph-loop",
+          "path": "/Users/jag/.claude/plugins/cache/claude-plugins-official/ralph-loop/205b6e0b3036"
+        },
+        {
+          "name": "uncompact",
+          "path": "/Users/jag/.claude/plugins/cache/supermodeltools-Uncompact/uncompact/1.0.0"
+        }
+      ],
+      "uuid": "27653d0a-479c-4a4c-823f-4ca836b402ad",
+      "fast_mode_state": "off"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01RGKRh1XxBXvySnZSwLMgLK",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "I need to analyze a TypeScript codebase for dead code candidates. Let me break this down:\n\n1. First, I need to read the `supermodel_dead_code_analysis.json` file\n2. Check if it's a manifest with part files or contains the data directly\n3. Extract ALL candidates and format them into REPORT.json with the specified structure\n4. The user emphasizes NOT to second-guess the static analyzer with grep searches\n\nLet me start by reading the analysis file. I should use the MCP filesystem tools since they're mentioned as being available for codebase analysis.",
+            "signature": "EtEFCkYICxgCKkAHl42QNxCEXSsI8RyMxo4sxs4I1lrv0RUtHEBY3s6f8Q0+D0VlU8Hz0fuPV1t3+/8zoKGe2gXwVXwmRs43faNwEgxM9RBE96zdNp0Uc5UaDMV0k7xHgFoO8H3mJiIwK+ww5zkZg6TNG/PBHvIMg5uHOiI7tMG4734olZUoZJ/KmjSXbEKRI2l107xHlRuDKrgETJFEluR90EZ3IyJGHdtowwdLN13w4hryqGCUoZTkPzP3T40LYs987kVZX8hQdztuxM9hxjJc9sIaRWr8HqBaXDkSi3BQ2p/9zuZ3PmctDweXgJO1WgTBIPn1TDcxMCj+7ddPlfqQ/xUBY1chJ7PtKwNQK75LlDTOWXUG7TsI7kmH8du6v/yrQY/3MMuEIGUgNsA6dp8j9OMRJaC9XZLnBpU8snMOI+kvu2umYWglQB5sxKhRqRmTtQi9AtXxDLJZ7N/vniOQYN7La4zUOi0Hs/zI6s4Skw7R8hPJoe5F3HaZBNFGri+hOZEeEiKP76ylYPJpeRzE+QDbKeawSfco8AwCoG9Sfgpn1Yque1NEgMr1gvSUr+wiY4pgsEzKyAE7sAzgVYJC4yy6upcD46n8xRXrxjZA4DBVDpE+W4WGx/sBZ8FV8cb+kbgFKLFxAhXbBObC82J3OCe3SWKiSpyjUTleeA8BJnkSIjn+41ure86ieUZ7HKeIVb+ADaBTdChwXMN5n7H9xd4DEdOmqrUVlVQGnnuHFcVgMcQGS/6ecPbdU2yJw+i9bD8HhG0iteCWI1O+R7eWcaJgUv9+qc+3hVMr19PZcBDOyVaDjqfJIp/4cdMDKJ8VveYc0K3Y5BalZvs7MACoHstvpfU1YafuQDsAXvrvv/ruDpuqbAhoAWJft3ASmHauv8yAQHmno+sQN9HiOujDRkMcCOS8MLBm+Tjpk0Wax/kqztpblGe7lL0qmLDZbPO1lhgB"
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 6656,
+          "cache_read_input_tokens": 9314,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 6656,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "17dcba5c-a908-4898-a117-79aa1432d4d3"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01RGKRh1XxBXvySnZSwLMgLK",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "I'll help you extract dead code candidates from the static analysis. Let me start by examining the analysis file."
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 6656,
+          "cache_read_input_tokens": 9314,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 6656,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "e91736d9-ffa4-4a57-a77f-cb525a430a07"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01RGKRh1XxBXvySnZSwLMgLK",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01Hz9QGaXcdYd4jiGj4JDxD5",
+            "name": "ToolSearch",
+            "input": {
+              "query": "select:mcp__filesystem__read_text_file",
+              "max_results": 1
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 6656,
+          "cache_read_input_tokens": 9314,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 6656,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "dd5ba181-e838-4265-8a31-b97de6cb9d3a"
+    },
+    {
+      "type": "user",
+      "message": {
+        "role": "user",
+        "content": [
+          {
+            "type": "tool_result",
+            "tool_use_id": "toolu_01Hz9QGaXcdYd4jiGj4JDxD5",
+            "content": [
+              {
+                "type": "tool_reference",
+                "tool_name": "mcp__filesystem__read_text_file"
+              }
+            ]
+          }
+        ]
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "d802ba8b-b421-4087-a018-a1a42f07fe56",
+      "tool_use_result": {
+        "matches": [
+          "mcp__filesystem__read_text_file"
+        ],
+        "query": "select:mcp__filesystem__read_text_file",
+        "total_deferred_tools": 27
+      }
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01UHZi9Fk379JaqgkZz3giH3",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "Now I need to read the supermodel_dead_code_analysis.json file. I'll use the MCP filesystem tool that was just loaded.",
+            "signature": "Ep8CCkYICxgCKkBN+ea/UvhYuwhw/vgkPJxvkhbwd9039rjJ7I3AttUHqgTYf9xgAD3CgbdFwUlddswOcJxf0DgQbJ5KRKxdIjs8EgypHO+CYpaByiQL8nMaDH9629ZvvREG7h95gSIwYMeSFmXAsNDDyoMuM7ITks6jCa2ti+DsYbZM+e/HgRwY5JFvuJTG4jnqAu2yoysrKoYBxYj/Jdjv2QOaZegvZto4CAsR/9RlRc8wipX9Z1t7/K97A15ZuEXipKcUKPEeVuVmu7bqTjGbgPwu8/1nc7Kpnv0kX5lMuVtOffN8o8UUwg0tvWQlAFFl6T4sBWlQN9DsKlI67/net4EbOCNY916oGnlMqAXrG2jJ4IZKMw/SrQDLSLz0/EwYAQ=="
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 505,
+          "cache_read_input_tokens": 15970,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 505,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "b45a6280-21de-4d44-a122-2a916d996e4e"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01UHZi9Fk379JaqgkZz3giH3",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_017GJ3xo1gFdH9KSgeAZyq3v",
+            "name": "mcp__filesystem__read_text_file",
+            "input": {
+              "path": "supermodel_dead_code_analysis.json"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 505,
+          "cache_read_input_tokens": 15970,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 505,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "9b363867-73c0-43d2-b5df-e76b1933d65d"
+    },
+    {
+      "type": "user",
+      "message": {
+        "role": "user",
+        "content": [
+          {
+            "tool_use_id": "toolu_017GJ3xo1gFdH9KSgeAZyq3v",
+            "type": "tool_result",
+            "content": "{\"content\":\"{\\\"total_candidates\\\":898,\\\"num_parts\\\":2,\\\"candidates_per_part\\\":800,\\\"part_files\\\":[\\\"supermodel_dead_code_analysis_part1.json\\\",\\\"supermodel_dead_code_analysis_part2.json\\\"],\\\"note\\\":\\\"Analysis split into 2 files of 800 candidates each. Read ALL part files and include ALL candidates.\\\"}\"}"
+          }
+        ]
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "0545ae5f-9a3e-4d85-9995-3dcf261339dd",
+      "tool_use_result": {
+        "content": "{\"content\":\"{\\\"total_candidates\\\":898,\\\"num_parts\\\":2,\\\"candidates_per_part\\\":800,\\\"part_files\\\":[\\\"supermodel_dead_code_analysis_part1.json\\\",\\\"supermodel_dead_code_analysis_part2.json\\\"],\\\"note\\\":\\\"Analysis split into 2 files of 800 candidates each. Read ALL part files and include ALL candidates.\\\"}\"}",
+        "structuredContent": {
+          "content": "{\"total_candidates\":898,\"num_parts\":2,\"candidates_per_part\":800,\"part_files\":[\"supermodel_dead_code_analysis_part1.json\",\"supermodel_dead_code_analysis_part2.json\"],\"note\":\"Analysis split into 2 files of 800 candidates each. Read ALL part files and include ALL candidates.\"}"
+        }
+      }
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_017dhtEe3tC65V1v8jvSozCZ",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "Perfect! This is a manifest file with part files. I need to read both part files:\n- supermodel_dead_code_analysis_part1.json\n- supermodel_dead_code_analysis_part2.json\n\nThen extract all candidates from both parts and combine them into REPORT.json.",
+            "signature": "Ep8DCkYICxgCKkCo7ReUCv86hzsSO8le9bZXWt33vNo2R2oqFMkFgWA41qkeA7/NE8x103JRU5nZP28WSncojp3GNzXpFxfsmItBEgy4qd1NsNfoZ1OmA+kaDDcYMo07PD9GsHfNgCIwflNfJywdZ6UsV33ZIuXo1vB7iHeTB1c4QRBXITHGNlISL/LhtlGtlYWKvMprpNZLKoYC0m4kOuU4rL8vRBMBan+m0BaYAx/l8Q7L+gP3vN/ziRriG4YnktlLWo8L7azqMJ/g1CnbN3zLCI2JZhoXaNHw7KKfAuTMBZ5jSg7P/oE+VY1A0kUIU7UNdCt2SLD36gJJw4/irMBRgoFB/DKTlInQsu5k9PGBP/HAsCqTokyQXk1hroZfl5cnYJSXNUkObAOoUI00tfPGIQzroH/DAVzCQIXy5coWnRd+0q5+lvsS67GfTwuE3Af6c/mDhqCTFCXBQMhaQn5xTjMH9xLoWkxmt8/sbWp646yeWeq0yL0D7DL3nqcMSKbL6EhuZkMd1zgq06SbG3QHtjJOGJlGxWEef8uWQPBFZBgB"
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 223,
+          "cache_read_input_tokens": 16475,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 223,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 3,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "c208c640-9eab-4ad5-96a6-9ae314471045"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_017dhtEe3tC65V1v8jvSozCZ",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "I see this is a manifest with 2 part files containing 898 total candidates. Let me read both part files."
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 223,
+          "cache_read_input_tokens": 16475,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 223,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 3,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "65a877fd-4742-414a-82a5-3b2ba2c7c0c2"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_017dhtEe3tC65V1v8jvSozCZ",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01SAdzJDEzYJMoNM7wEjYYev",
+            "name": "mcp__filesystem__read_text_file",
+            "input": {
+              "path": "supermodel_dead_code_analysis_part1.json"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 223,
+          "cache_read_input_tokens": 16475,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 223,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 3,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "81d4a915-ff54-4866-84f0-ff5311751a16"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_017dhtEe3tC65V1v8jvSozCZ",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01Q6iyiWutJUeBcEDrWN6k7Y",
+            "name": "mcp__filesystem__read_text_file",
+            "input": {
+              "path": "supermodel_dead_code_analysis_part2.json"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 223,
+          "cache_read_input_tokens": 16475,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 223,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 3,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "b748346b-51e9-41d0-a231-71de8eaff4fd"
+    },
+    {
+      "type": "user",
+      "message": {
+        "role": "user",
+        "content": [
+          {
+            "tool_use_id": "toolu_01Q6iyiWutJUeBcEDrWN6k7Y",
+            "type": "tool_result",
+            "content": "{\"content\":\"{\\\"deadCodeCandidates\\\":[{\\\"file\\\":\\\"sdk/src/rest/commands/server/openapi.ts\\\",\\\"name\\\":\\\"OpenApiSpecOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/collections.ts\\\",\\\"name\\\":\\\"UpdateCollectionOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/comments.ts\\\",\\\"name\\\":\\\"UpdateCommentOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/dashboards.ts\\\",\\\"name\\\":\\\"UpdateDashboardOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/fields.ts\\\",\\\"name\\\":\\\"UpdateFieldOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/files.ts\\\",\\\"name\\\":\\\"UpdateFileOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/flows.ts\\\",\\\"name\\\":\\\"UpdateFlowOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/folders.ts\\\",\\\"name\\\":\\\"UpdateFolderOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/items.ts\\\",\\\"name\\\":\\\"UpdateItemOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/notifications.ts\\\",\\\"name\\\":\\\"UpdateNotificationOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/operations.ts\\\",\\\"name\\\":\\\"UpdateOperationOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/panels.ts\\\",\\\"name\\\":\\\"UpdatePanelOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/permissions.ts\\\",\\\"name\\\":\\\"UpdatePermissionOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/policies.ts\\\",\\\"name\\\":\\\"UpdatePolicyOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/presets.ts\\\",\\\"name\\\":\\\"UpdatePresetOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/relations.ts\\\",\\\"name\\\":\\\"UpdateRelationOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/roles.ts\\\",\\\"name\\\":\\\"UpdateRoleOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/settings.ts\\\",\\\"name\\\":\\\"UpdateSettingOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/shares.ts\\\",\\\"name\\\":\\\"UpdateShareOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/singleton.ts\\\",\\\"name\\\":\\\"UpdateSingletonOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/translations.ts\\\",\\\"name\\\":\\\"UpdateTranslationOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/users.ts\\\",\\\"name\\\":\\\"UpdateUserOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/versions.ts\\\",\\\"name\\\":\\\"UpdateContentVersionOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/webhooks.ts\\\",\\\"name\\\":\\\"UpdateWebhookOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/utils/export.ts\\\",\\\"name\\\":\\\"FileFormat\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/types.ts\\\",\\\"name\\\":\\\"RestCommand\\\",\\\"type\\\":\\\"interface\\\"},{\\\"file\\\":\\\"sdk/src/rest/types.ts\\\",\\\"name\\\":\\\"RestConfig\\\",\\\"type\\\":\\\"interface\\\"},{\\\"file\\\":\\\"sdk/src/schema/collection.ts\\\",\\\"name\\\":\\\"CollectionMetaTranslationType\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/comment.ts\\\",\\\"name\\\":\\\"DirectusComment\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/core.ts\\\",\\\"name\\\":\\\"CoreSchema\\\",\\\"type\\\":\\\"interface\\\"},{\\\"file\\\":\\\"sdk/src/schema/dashboard.ts\\\",\\\"name\\\":\\\"DirectusDashboard\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/extension.ts\\\",\\\"name\\\":\\\"DirectusExtension\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/extension.ts\\\",\\\"name\\\":\\\"ExtensionSchema\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/extension.ts\\\",\\\"name\\\":\\\"ExtensionTypes\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/field.ts\\\",\\\"name\\\":\\\"DirectusField\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/field.ts\\\",\\\"name\\\":\\\"FieldMetaConditionType\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/field.ts\\\",\\\"name\\\":\\\"FieldMetaConditionOptionType\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/field.ts\\\",\\\"name\\\":\\\"FieldMetaTranslationType\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/notification.ts\\\",\\\"name\\\":\\\"DirectusNotification\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/panel.ts\\\",\\\"name\\\":\\\"DirectusPanel\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/preset.ts\\\",\\\"name\\\":\\\"DirectusPreset\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/relation.ts\\\",\\\"name\\\":\\\"DirectusRelation\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/settings.ts\\\",\\\"name\\\":\\\"DirectusSettings\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/share.ts\\\",\\\"name\\\":\\\"DirectusShare\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/translation.ts\\\",\\\"name\\\":\\\"DirectusTranslation\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/webhook.ts\\\",\\\"name\\\":\\\"DirectusWebhook\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/aggregate.ts\\\",\\\"name\\\":\\\"GroupingFunctions\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/aggregate.ts\\\",\\\"name\\\":\\\"AggregateRecord\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/aggregate.ts\\\",\\\"name\\\":\\\"AggregationOptions\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/aggregate.ts\\\",\\\"name\\\":\\\"AggregationOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/assets.ts\\\",\\\"name\\\":\\\"AssetsQuery\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/assets.ts\\\",\\\"name\\\":\\\"AssetResponse\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/client.ts\\\",\\\"name\\\":\\\"ClientGlobals\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/client.ts\\\",\\\"name\\\":\\\"ClientOptions\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/error.ts\\\",\\\"name\\\":\\\"DirectusApiError\\\",\\\"type\\\":\\\"interface\\\"},{\\\"file\\\":\\\"sdk/src/types/fields.ts\\\",\\\"name\\\":\\\"WrapQueryFields\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/fields.ts\\\",\\\"name\\\":\\\"QueryFieldsRelational\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/fields.ts\\\",\\\"name\\\":\\\"ManyToAnyFields\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/fields.ts\\\",\\\"name\\\":\\\"PickFlatFields\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/filters.ts\\\",\\\"name\\\":\\\"NestedQueryFilter\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/filters.ts\\\",\\\"name\\\":\\\"NestedRelationalFilter\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/filters.ts\\\",\\\"name\\\":\\\"FilterOperators\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/filters.ts\\\",\\\"name\\\":\\\"RelationalFilterOperators\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/filters.ts\\\",\\\"name\\\":\\\"WrapRelationalFilters\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/filters.ts\\\",\\\"name\\\":\\\"LogicalFilterOperators\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/filters.ts\\\",\\\"name\\\":\\\"WrapLogicalFilters\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/functions.ts\\\",\\\"name\\\":\\\"QueryFunctions\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/functions.ts\\\",\\\"name\\\":\\\"PermuteFields\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/functions.ts\\\",\\\"name\\\":\\\"TypeFunctionFields\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/globals.ts\\\",\\\"name\\\":\\\"WebSocketInterface\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/globals.ts\\\",\\\"name\\\":\\\"LogLevels\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/output.ts\\\",\\\"name\\\":\\\"ApplyQueryFields\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/output.ts\\\",\\\"name\\\":\\\"ApplyManyToAnyFields\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/output.ts\\\",\\\"name\\\":\\\"ApplyNestedQueryFields\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/output.ts\\\",\\\"name\\\":\\\"RelationNullable\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/output.ts\\\",\\\"name\\\":\\\"MapFlatFields\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/query.ts\\\",\\\"name\\\":\\\"QueryItem\\\",\\\"type\\\":\\\"interface\\\"},{\\\"file\\\":\\\"sdk/src/types/query.ts\\\",\\\"name\\\":\\\"FieldQuery\\\",\\\"type\\\":\\\"interface\\\"},{\\\"file\\\":\\\"sdk/src/types/query.ts\\\",\\\"name\\\":\\\"ExtractRelation\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/query.ts\\\",\\\"name\\\":\\\"MergeRelationalFields\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/query.ts\\\",\\\"name\\\":\\\"MergeFields\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/query.ts\\\",\\\"name\\\":\\\"QuerySort\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/query.ts\\\",\\\"name\\\":\\\"QueryAlias\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/request.ts\\\",\\\"name\\\":\\\"HttpMethod\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/schema.ts\\\",\\\"name\\\":\\\"SingletonCollections\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/schema.ts\\\",\\\"name\\\":\\\"RegularCollections\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/schema.ts\\\",\\\"name\\\":\\\"PrimitiveFields\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/schema.ts\\\",\\\"name\\\":\\\"MergeCoreCollection\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/schema.ts\\\",\\\"name\\\":\\\"CompleteSchema\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/schema.ts\\\",\\\"name\\\":\\\"AllCollections\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/schema.ts\\\",\\\"name\\\":\\\"GetCollection\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/schema.ts\\\",\\\"name\\\":\\\"GetCollectionName\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/utils.ts\\\",\\\"name\\\":\\\"NeverToUnknown\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/utils.ts\\\",\\\"name\\\":\\\"IsAny\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/utils.ts\\\",\\\"name\\\":\\\"ToTuple\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/utils.ts\\\",\\\"name\\\":\\\"TupleToUnion\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/utils.ts\\\",\\\"name\\\":\\\"NestedPartial\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"api/src/test-utils/knex.ts\\\",\\\"name\\\":\\\"mockCreateTable\\\",\\\"type\\\":\\\"function\\\"}]}\"}"
+          }
+        ]
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "fa0be083-bfbc-47b7-b894-35cb5c267f97",
+      "tool_use_result": {
+        "content": "{\"content\":\"{\\\"deadCodeCandidates\\\":[{\\\"file\\\":\\\"sdk/src/rest/commands/server/openapi.ts\\\",\\\"name\\\":\\\"OpenApiSpecOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/collections.ts\\\",\\\"name\\\":\\\"UpdateCollectionOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/comments.ts\\\",\\\"name\\\":\\\"UpdateCommentOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/dashboards.ts\\\",\\\"name\\\":\\\"UpdateDashboardOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/fields.ts\\\",\\\"name\\\":\\\"UpdateFieldOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/files.ts\\\",\\\"name\\\":\\\"UpdateFileOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/flows.ts\\\",\\\"name\\\":\\\"UpdateFlowOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/folders.ts\\\",\\\"name\\\":\\\"UpdateFolderOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/items.ts\\\",\\\"name\\\":\\\"UpdateItemOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/notifications.ts\\\",\\\"name\\\":\\\"UpdateNotificationOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/operations.ts\\\",\\\"name\\\":\\\"UpdateOperationOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/panels.ts\\\",\\\"name\\\":\\\"UpdatePanelOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/permissions.ts\\\",\\\"name\\\":\\\"UpdatePermissionOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/policies.ts\\\",\\\"name\\\":\\\"UpdatePolicyOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/presets.ts\\\",\\\"name\\\":\\\"UpdatePresetOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/relations.ts\\\",\\\"name\\\":\\\"UpdateRelationOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/roles.ts\\\",\\\"name\\\":\\\"UpdateRoleOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/settings.ts\\\",\\\"name\\\":\\\"UpdateSettingOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/shares.ts\\\",\\\"name\\\":\\\"UpdateShareOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/singleton.ts\\\",\\\"name\\\":\\\"UpdateSingletonOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/translations.ts\\\",\\\"name\\\":\\\"UpdateTranslationOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/users.ts\\\",\\\"name\\\":\\\"UpdateUserOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/versions.ts\\\",\\\"name\\\":\\\"UpdateContentVersionOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/update/webhooks.ts\\\",\\\"name\\\":\\\"UpdateWebhookOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/commands/utils/export.ts\\\",\\\"name\\\":\\\"FileFormat\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/rest/types.ts\\\",\\\"name\\\":\\\"RestCommand\\\",\\\"type\\\":\\\"interface\\\"},{\\\"file\\\":\\\"sdk/src/rest/types.ts\\\",\\\"name\\\":\\\"RestConfig\\\",\\\"type\\\":\\\"interface\\\"},{\\\"file\\\":\\\"sdk/src/schema/collection.ts\\\",\\\"name\\\":\\\"CollectionMetaTranslationType\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/comment.ts\\\",\\\"name\\\":\\\"DirectusComment\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/core.ts\\\",\\\"name\\\":\\\"CoreSchema\\\",\\\"type\\\":\\\"interface\\\"},{\\\"file\\\":\\\"sdk/src/schema/dashboard.ts\\\",\\\"name\\\":\\\"DirectusDashboard\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/extension.ts\\\",\\\"name\\\":\\\"DirectusExtension\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/extension.ts\\\",\\\"name\\\":\\\"ExtensionSchema\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/extension.ts\\\",\\\"name\\\":\\\"ExtensionTypes\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/field.ts\\\",\\\"name\\\":\\\"DirectusField\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/field.ts\\\",\\\"name\\\":\\\"FieldMetaConditionType\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/field.ts\\\",\\\"name\\\":\\\"FieldMetaConditionOptionType\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/field.ts\\\",\\\"name\\\":\\\"FieldMetaTranslationType\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/notification.ts\\\",\\\"name\\\":\\\"DirectusNotification\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/panel.ts\\\",\\\"name\\\":\\\"DirectusPanel\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/preset.ts\\\",\\\"name\\\":\\\"DirectusPreset\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/relation.ts\\\",\\\"name\\\":\\\"DirectusRelation\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/settings.ts\\\",\\\"name\\\":\\\"DirectusSettings\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/share.ts\\\",\\\"name\\\":\\\"DirectusShare\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/translation.ts\\\",\\\"name\\\":\\\"DirectusTranslation\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/schema/webhook.ts\\\",\\\"name\\\":\\\"DirectusWebhook\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/aggregate.ts\\\",\\\"name\\\":\\\"GroupingFunctions\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/aggregate.ts\\\",\\\"name\\\":\\\"AggregateRecord\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/aggregate.ts\\\",\\\"name\\\":\\\"AggregationOptions\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/aggregate.ts\\\",\\\"name\\\":\\\"AggregationOutput\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/assets.ts\\\",\\\"name\\\":\\\"AssetsQuery\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/assets.ts\\\",\\\"name\\\":\\\"AssetResponse\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/client.ts\\\",\\\"name\\\":\\\"ClientGlobals\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/client.ts\\\",\\\"name\\\":\\\"ClientOptions\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/error.ts\\\",\\\"name\\\":\\\"DirectusApiError\\\",\\\"type\\\":\\\"interface\\\"},{\\\"file\\\":\\\"sdk/src/types/fields.ts\\\",\\\"name\\\":\\\"WrapQueryFields\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/fields.ts\\\",\\\"name\\\":\\\"QueryFieldsRelational\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/fields.ts\\\",\\\"name\\\":\\\"ManyToAnyFields\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/fields.ts\\\",\\\"name\\\":\\\"PickFlatFields\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/filters.ts\\\",\\\"name\\\":\\\"NestedQueryFilter\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/filters.ts\\\",\\\"name\\\":\\\"NestedRelationalFilter\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/filters.ts\\\",\\\"name\\\":\\\"FilterOperators\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/filters.ts\\\",\\\"name\\\":\\\"RelationalFilterOperators\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/filters.ts\\\",\\\"name\\\":\\\"WrapRelationalFilters\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/filters.ts\\\",\\\"name\\\":\\\"LogicalFilterOperators\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/filters.ts\\\",\\\"name\\\":\\\"WrapLogicalFilters\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/functions.ts\\\",\\\"name\\\":\\\"QueryFunctions\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/functions.ts\\\",\\\"name\\\":\\\"PermuteFields\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/functions.ts\\\",\\\"name\\\":\\\"TypeFunctionFields\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/globals.ts\\\",\\\"name\\\":\\\"WebSocketInterface\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/globals.ts\\\",\\\"name\\\":\\\"LogLevels\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/output.ts\\\",\\\"name\\\":\\\"ApplyQueryFields\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/output.ts\\\",\\\"name\\\":\\\"ApplyManyToAnyFields\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/output.ts\\\",\\\"name\\\":\\\"ApplyNestedQueryFields\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/output.ts\\\",\\\"name\\\":\\\"RelationNullable\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/output.ts\\\",\\\"name\\\":\\\"MapFlatFields\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/query.ts\\\",\\\"name\\\":\\\"QueryItem\\\",\\\"type\\\":\\\"interface\\\"},{\\\"file\\\":\\\"sdk/src/types/query.ts\\\",\\\"name\\\":\\\"FieldQuery\\\",\\\"type\\\":\\\"interface\\\"},{\\\"file\\\":\\\"sdk/src/types/query.ts\\\",\\\"name\\\":\\\"ExtractRelation\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/query.ts\\\",\\\"name\\\":\\\"MergeRelationalFields\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/query.ts\\\",\\\"name\\\":\\\"MergeFields\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/query.ts\\\",\\\"name\\\":\\\"QuerySort\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/query.ts\\\",\\\"name\\\":\\\"QueryAlias\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/request.ts\\\",\\\"name\\\":\\\"HttpMethod\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/schema.ts\\\",\\\"name\\\":\\\"SingletonCollections\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/schema.ts\\\",\\\"name\\\":\\\"RegularCollections\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/schema.ts\\\",\\\"name\\\":\\\"PrimitiveFields\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/schema.ts\\\",\\\"name\\\":\\\"MergeCoreCollection\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/schema.ts\\\",\\\"name\\\":\\\"CompleteSchema\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/schema.ts\\\",\\\"name\\\":\\\"AllCollections\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/schema.ts\\\",\\\"name\\\":\\\"GetCollection\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/schema.ts\\\",\\\"name\\\":\\\"GetCollectionName\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/utils.ts\\\",\\\"name\\\":\\\"NeverToUnknown\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/utils.ts\\\",\\\"name\\\":\\\"IsAny\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/utils.ts\\\",\\\"name\\\":\\\"ToTuple\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/utils.ts\\\",\\\"name\\\":\\\"TupleToUnion\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"sdk/src/types/utils.ts\\\",\\\"name\\\":\\\"NestedPartial\\\",\\\"type\\\":\\\"type\\\"},{\\\"file\\\":\\\"api/src/test-utils/knex.ts\\\",\\\"name\\\":\\\"mockCreateTable\\\",\\\"type\\\":\\\"function\\\"}]}\"}",
+        "structuredContent": {
+          "content": "{\"deadCodeCandidates\":[{\"file\":\"sdk/src/rest/commands/server/openapi.ts\",\"name\":\"OpenApiSpecOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/update/collections.ts\",\"name\":\"UpdateCollectionOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/update/comments.ts\",\"name\":\"UpdateCommentOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/update/dashboards.ts\",\"name\":\"UpdateDashboardOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/update/fields.ts\",\"name\":\"UpdateFieldOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/update/files.ts\",\"name\":\"UpdateFileOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/update/flows.ts\",\"name\":\"UpdateFlowOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/update/folders.ts\",\"name\":\"UpdateFolderOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/update/items.ts\",\"name\":\"UpdateItemOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/update/notifications.ts\",\"name\":\"UpdateNotificationOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/update/operations.ts\",\"name\":\"UpdateOperationOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/update/panels.ts\",\"name\":\"UpdatePanelOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/update/permissions.ts\",\"name\":\"UpdatePermissionOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/update/policies.ts\",\"name\":\"UpdatePolicyOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/update/presets.ts\",\"name\":\"UpdatePresetOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/update/relations.ts\",\"name\":\"UpdateRelationOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/update/roles.ts\",\"name\":\"UpdateRoleOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/update/settings.ts\",\"name\":\"UpdateSettingOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/update/shares.ts\",\"name\":\"UpdateShareOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/update/singleton.ts\",\"name\":\"UpdateSingletonOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/update/translations.ts\",\"name\":\"UpdateTranslationOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/update/users.ts\",\"name\":\"UpdateUserOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/update/versions.ts\",\"name\":\"UpdateContentVersionOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/update/webhooks.ts\",\"name\":\"UpdateWebhookOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/utils/export.ts\",\"name\":\"FileFormat\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/types.ts\",\"name\":\"RestCommand\",\"type\":\"interface\"},{\"file\":\"sdk/src/rest/types.ts\",\"name\":\"RestConfig\",\"type\":\"interface\"},{\"file\":\"sdk/src/schema/collection.ts\",\"name\":\"CollectionMetaTranslationType\",\"type\":\"type\"},{\"file\":\"sdk/src/schema/comment.ts\",\"name\":\"DirectusComment\",\"type\":\"type\"},{\"file\":\"sdk/src/schema/core.ts\",\"name\":\"CoreSchema\",\"type\":\"interface\"},{\"file\":\"sdk/src/schema/dashboard.ts\",\"name\":\"DirectusDashboard\",\"type\":\"type\"},{\"file\":\"sdk/src/schema/extension.ts\",\"name\":\"DirectusExtension\",\"type\":\"type\"},{\"file\":\"sdk/src/schema/extension.ts\",\"name\":\"ExtensionSchema\",\"type\":\"type\"},{\"file\":\"sdk/src/schema/extension.ts\",\"name\":\"ExtensionTypes\",\"type\":\"type\"},{\"file\":\"sdk/src/schema/field.ts\",\"name\":\"DirectusField\",\"type\":\"type\"},{\"file\":\"sdk/src/schema/field.ts\",\"name\":\"FieldMetaConditionType\",\"type\":\"type\"},{\"file\":\"sdk/src/schema/field.ts\",\"name\":\"FieldMetaConditionOptionType\",\"type\":\"type\"},{\"file\":\"sdk/src/schema/field.ts\",\"name\":\"FieldMetaTranslationType\",\"type\":\"type\"},{\"file\":\"sdk/src/schema/notification.ts\",\"name\":\"DirectusNotification\",\"type\":\"type\"},{\"file\":\"sdk/src/schema/panel.ts\",\"name\":\"DirectusPanel\",\"type\":\"type\"},{\"file\":\"sdk/src/schema/preset.ts\",\"name\":\"DirectusPreset\",\"type\":\"type\"},{\"file\":\"sdk/src/schema/relation.ts\",\"name\":\"DirectusRelation\",\"type\":\"type\"},{\"file\":\"sdk/src/schema/settings.ts\",\"name\":\"DirectusSettings\",\"type\":\"type\"},{\"file\":\"sdk/src/schema/share.ts\",\"name\":\"DirectusShare\",\"type\":\"type\"},{\"file\":\"sdk/src/schema/translation.ts\",\"name\":\"DirectusTranslation\",\"type\":\"type\"},{\"file\":\"sdk/src/schema/webhook.ts\",\"name\":\"DirectusWebhook\",\"type\":\"type\"},{\"file\":\"sdk/src/types/aggregate.ts\",\"name\":\"GroupingFunctions\",\"type\":\"type\"},{\"file\":\"sdk/src/types/aggregate.ts\",\"name\":\"AggregateRecord\",\"type\":\"type\"},{\"file\":\"sdk/src/types/aggregate.ts\",\"name\":\"AggregationOptions\",\"type\":\"type\"},{\"file\":\"sdk/src/types/aggregate.ts\",\"name\":\"AggregationOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/types/assets.ts\",\"name\":\"AssetsQuery\",\"type\":\"type\"},{\"file\":\"sdk/src/types/assets.ts\",\"name\":\"AssetResponse\",\"type\":\"type\"},{\"file\":\"sdk/src/types/client.ts\",\"name\":\"ClientGlobals\",\"type\":\"type\"},{\"file\":\"sdk/src/types/client.ts\",\"name\":\"ClientOptions\",\"type\":\"type\"},{\"file\":\"sdk/src/types/error.ts\",\"name\":\"DirectusApiError\",\"type\":\"interface\"},{\"file\":\"sdk/src/types/fields.ts\",\"name\":\"WrapQueryFields\",\"type\":\"type\"},{\"file\":\"sdk/src/types/fields.ts\",\"name\":\"QueryFieldsRelational\",\"type\":\"type\"},{\"file\":\"sdk/src/types/fields.ts\",\"name\":\"ManyToAnyFields\",\"type\":\"type\"},{\"file\":\"sdk/src/types/fields.ts\",\"name\":\"PickFlatFields\",\"type\":\"type\"},{\"file\":\"sdk/src/types/filters.ts\",\"name\":\"NestedQueryFilter\",\"type\":\"type\"},{\"file\":\"sdk/src/types/filters.ts\",\"name\":\"NestedRelationalFilter\",\"type\":\"type\"},{\"file\":\"sdk/src/types/filters.ts\",\"name\":\"FilterOperators\",\"type\":\"type\"},{\"file\":\"sdk/src/types/filters.ts\",\"name\":\"RelationalFilterOperators\",\"type\":\"type\"},{\"file\":\"sdk/src/types/filters.ts\",\"name\":\"WrapRelationalFilters\",\"type\":\"type\"},{\"file\":\"sdk/src/types/filters.ts\",\"name\":\"LogicalFilterOperators\",\"type\":\"type\"},{\"file\":\"sdk/src/types/filters.ts\",\"name\":\"WrapLogicalFilters\",\"type\":\"type\"},{\"file\":\"sdk/src/types/functions.ts\",\"name\":\"QueryFunctions\",\"type\":\"type\"},{\"file\":\"sdk/src/types/functions.ts\",\"name\":\"PermuteFields\",\"type\":\"type\"},{\"file\":\"sdk/src/types/functions.ts\",\"name\":\"TypeFunctionFields\",\"type\":\"type\"},{\"file\":\"sdk/src/types/globals.ts\",\"name\":\"WebSocketInterface\",\"type\":\"type\"},{\"file\":\"sdk/src/types/globals.ts\",\"name\":\"LogLevels\",\"type\":\"type\"},{\"file\":\"sdk/src/types/output.ts\",\"name\":\"ApplyQueryFields\",\"type\":\"type\"},{\"file\":\"sdk/src/types/output.ts\",\"name\":\"ApplyManyToAnyFields\",\"type\":\"type\"},{\"file\":\"sdk/src/types/output.ts\",\"name\":\"ApplyNestedQueryFields\",\"type\":\"type\"},{\"file\":\"sdk/src/types/output.ts\",\"name\":\"RelationNullable\",\"type\":\"type\"},{\"file\":\"sdk/src/types/output.ts\",\"name\":\"MapFlatFields\",\"type\":\"type\"},{\"file\":\"sdk/src/types/query.ts\",\"name\":\"QueryItem\",\"type\":\"interface\"},{\"file\":\"sdk/src/types/query.ts\",\"name\":\"FieldQuery\",\"type\":\"interface\"},{\"file\":\"sdk/src/types/query.ts\",\"name\":\"ExtractRelation\",\"type\":\"type\"},{\"file\":\"sdk/src/types/query.ts\",\"name\":\"MergeRelationalFields\",\"type\":\"type\"},{\"file\":\"sdk/src/types/query.ts\",\"name\":\"MergeFields\",\"type\":\"type\"},{\"file\":\"sdk/src/types/query.ts\",\"name\":\"QuerySort\",\"type\":\"type\"},{\"file\":\"sdk/src/types/query.ts\",\"name\":\"QueryAlias\",\"type\":\"type\"},{\"file\":\"sdk/src/types/request.ts\",\"name\":\"HttpMethod\",\"type\":\"type\"},{\"file\":\"sdk/src/types/schema.ts\",\"name\":\"SingletonCollections\",\"type\":\"type\"},{\"file\":\"sdk/src/types/schema.ts\",\"name\":\"RegularCollections\",\"type\":\"type\"},{\"file\":\"sdk/src/types/schema.ts\",\"name\":\"PrimitiveFields\",\"type\":\"type\"},{\"file\":\"sdk/src/types/schema.ts\",\"name\":\"MergeCoreCollection\",\"type\":\"type\"},{\"file\":\"sdk/src/types/schema.ts\",\"name\":\"CompleteSchema\",\"type\":\"type\"},{\"file\":\"sdk/src/types/schema.ts\",\"name\":\"AllCollections\",\"type\":\"type\"},{\"file\":\"sdk/src/types/schema.ts\",\"name\":\"GetCollection\",\"type\":\"type\"},{\"file\":\"sdk/src/types/schema.ts\",\"name\":\"GetCollectionName\",\"type\":\"type\"},{\"file\":\"sdk/src/types/utils.ts\",\"name\":\"NeverToUnknown\",\"type\":\"type\"},{\"file\":\"sdk/src/types/utils.ts\",\"name\":\"IsAny\",\"type\":\"type\"},{\"file\":\"sdk/src/types/utils.ts\",\"name\":\"ToTuple\",\"type\":\"type\"},{\"file\":\"sdk/src/types/utils.ts\",\"name\":\"TupleToUnion\",\"type\":\"type\"},{\"file\":\"sdk/src/types/utils.ts\",\"name\":\"NestedPartial\",\"type\":\"type\"},{\"file\":\"api/src/test-utils/knex.ts\",\"name\":\"mockCreateTable\",\"type\":\"function\"}]}"
+        }
+      }
+    },
+    {
+      "type": "user",
+      "message": {
+        "role": "user",
+        "content": [
+          {
+            "tool_use_id": "toolu_01SAdzJDEzYJMoNM7wEjYYev",
+            "type": "tool_result",
+            "content": "Error: result (86,190 characters) exceeds maximum allowed tokens. Output has been saved to /Users/jag/.claude/projects/-private-var-folders-90-6pztvw5s1h12y4kmzbphq3qw0000gn-T-mcpbr-directus-pr26311-lt4qud-x/df36c422-e481-4b4b-919f-e43b02b8e561/tool-results/mcp-filesystem-read_text_file-1773087635204.txt.\nFormat: JSON with schema: {content: string}\nUse offset and limit parameters to read specific portions of the file, search within it for specific content, and jq to make structured queries.\nREQUIREMENTS FOR SUMMARIZATION/ANALYSIS/REVIEW:\n- You MUST read the content from the file at /Users/jag/.claude/projects/-private-var-folders-90-6pztvw5s1h12y4kmzbphq3qw0000gn-T-mcpbr-directus-pr26311-lt4qud-x/df36c422-e481-4b4b-919f-e43b02b8e561/tool-results/mcp-filesystem-read_text_file-1773087635204.txt in sequential chunks until 100% of the content has been read.\n- If you receive truncation warnings when reading the file, reduce the chunk size until you have read 100% of the content without truncation.\n- Before producing ANY summary or analysis, you MUST explicitly describe what portion of the content you have read. ***If you did not read the entire content, you MUST explicitly state this.***\n"
+          }
+        ]
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "383b4402-2e77-4e55-875e-f7342895a43a",
+      "tool_use_result": {
+        "content": "Error: result (86,190 characters) exceeds maximum allowed tokens. Output has been saved to /Users/jag/.claude/projects/-private-var-folders-90-6pztvw5s1h12y4kmzbphq3qw0000gn-T-mcpbr-directus-pr26311-lt4qud-x/df36c422-e481-4b4b-919f-e43b02b8e561/tool-results/mcp-filesystem-read_text_file-1773087635204.txt.\nFormat: JSON with schema: {content: string}\nUse offset and limit parameters to read specific portions of the file, search within it for specific content, and jq to make structured queries.\nREQUIREMENTS FOR SUMMARIZATION/ANALYSIS/REVIEW:\n- You MUST read the content from the file at /Users/jag/.claude/projects/-private-var-folders-90-6pztvw5s1h12y4kmzbphq3qw0000gn-T-mcpbr-directus-pr26311-lt4qud-x/df36c422-e481-4b4b-919f-e43b02b8e561/tool-results/mcp-filesystem-read_text_file-1773087635204.txt in sequential chunks until 100% of the content has been read.\n- If you receive truncation warnings when reading the file, reduce the chunk size until you have read 100% of the content without truncation.\n- Before producing ANY summary or analysis, you MUST explicitly describe what portion of the content you have read. ***If you did not read the entire content, you MUST explicitly state this.***\n",
+        "structuredContent": {
+          "content": "{\"deadCodeCandidates\":[{\"file\":\"api/src/__utils__/items-utils.ts\",\"name\":\"sqlFieldFormatter\",\"type\":\"function\"},{\"file\":\"api/src/__utils__/items-utils.ts\",\"name\":\"sqlFieldList\",\"type\":\"function\"},{\"file\":\"api/src/auth/drivers/ldap.ts\",\"name\":\"createLDAPAuthRouter\",\"type\":\"function\"},{\"file\":\"api/src/auth/drivers/local.ts\",\"name\":\"createLocalAuthRouter\",\"type\":\"function\"},{\"file\":\"api/src/auth/drivers/oauth2.ts\",\"name\":\"createOAuth2AuthRouter\",\"type\":\"function\"},{\"file\":\"api/src/auth/drivers/openid.ts\",\"name\":\"createOpenIDAuthRouter\",\"type\":\"function\"},{\"file\":\"api/src/auth/drivers/saml.ts\",\"name\":\"createSAMLAuthRouter\",\"type\":\"function\"},{\"file\":\"api/src/cache.ts\",\"name\":\"setSystemCache\",\"type\":\"function\"},{\"file\":\"api/src/cache.ts\",\"name\":\"getSystemCache\",\"type\":\"function\"},{\"file\":\"api/src/cli/commands/database/install.ts\",\"name\":\"start\",\"type\":\"function\"},{\"file\":\"api/src/cli/commands/database/migrate.ts\",\"name\":\"migrate\",\"type\":\"function\"},{\"file\":\"api/src/cli/commands/init/questions.ts\",\"name\":\"filename\",\"type\":\"function\"},{\"file\":\"api/src/cli/commands/init/questions.ts\",\"name\":\"host\",\"type\":\"function\"},{\"file\":\"api/src/cli/commands/init/questions.ts\",\"name\":\"port\",\"type\":\"function\"},{\"file\":\"api/src/cli/commands/init/questions.ts\",\"name\":\"database\",\"type\":\"function\"},{\"file\":\"api/src/cli/commands/init/questions.ts\",\"name\":\"user\",\"type\":\"function\"},{\"file\":\"api/src/cli/commands/init/questions.ts\",\"name\":\"password\",\"type\":\"function\"},{\"file\":\"api/src/cli/commands/init/questions.ts\",\"name\":\"encrypt\",\"type\":\"function\"},{\"file\":\"api/src/cli/commands/init/questions.ts\",\"name\":\"ssl\",\"type\":\"function\"},{\"file\":\"api/src/cli/commands/security/key.ts\",\"name\":\"generateKey\",\"type\":\"function\"},{\"file\":\"api/src/cli/commands/security/secret.ts\",\"name\":\"generateSecret\",\"type\":\"function\"},{\"file\":\"api/src/controllers/access.ts\",\"name\":\"readHandler\",\"type\":\"function\"},{\"file\":\"api/src/controllers/activity.ts\",\"name\":\"readHandler\",\"type\":\"function\"},{\"file\":\"api/src/controllers/auth.ts\",\"name\":\"getCurrentMode\",\"type\":\"function\"},{\"file\":\"api/src/controllers/auth.ts\",\"name\":\"getCurrentRefreshToken\",\"type\":\"function\"},{\"file\":\"api/src/controllers/collections.ts\",\"name\":\"readHandler\",\"type\":\"function\"},{\"file\":\"api/src/controllers/comments.ts\",\"name\":\"readHandler\",\"type\":\"function\"},{\"file\":\"api/src/controllers/dashboards.ts\",\"name\":\"readHandler\",\"type\":\"function\"},{\"file\":\"api/src/controllers/flows.ts\",\"name\":\"webhookFlowHandler\",\"type\":\"function\"},{\"file\":\"api/src/controllers/flows.ts\",\"name\":\"readHandler\",\"type\":\"function\"},{\"file\":\"api/src/controllers/folders.ts\",\"name\":\"readHandler\",\"type\":\"function\"},{\"file\":\"api/src/controllers/items.ts\",\"name\":\"readHandler\",\"type\":\"function\"},{\"file\":\"api/src/controllers/mcp.ts\",\"name\":\"mcpHandler\",\"type\":\"function\"},{\"file\":\"api/src/controllers/not-found.ts\",\"name\":\"notFound\",\"type\":\"function\"},{\"file\":\"api/src/controllers/notifications.ts\",\"name\":\"readHandler\",\"type\":\"function\"},{\"file\":\"api/src/controllers/operations.ts\",\"name\":\"readHandler\",\"type\":\"function\"},{\"file\":\"api/src/controllers/panels.ts\",\"name\":\"readHandler\",\"type\":\"function\"},{\"file\":\"api/src/controllers/permissions.ts\",\"name\":\"readHandler\",\"type\":\"function\"},{\"file\":\"api/src/controllers/policies.ts\",\"name\":\"readHandler\",\"type\":\"function\"},{\"file\":\"api/src/controllers/presets.ts\",\"name\":\"readHandler\",\"type\":\"function\"},{\"file\":\"api/src/controllers/revisions.ts\",\"name\":\"readHandler\",\"type\":\"function\"},{\"file\":\"api/src/controllers/roles.ts\",\"name\":\"readHandler\",\"type\":\"function\"},{\"file\":\"api/src/controllers/schema.ts\",\"name\":\"schemaMultipartHandler\",\"type\":\"function\"},{\"file\":\"api/src/controllers/shares.ts\",\"name\":\"readHandler\",\"type\":\"function\"},{\"file\":\"api/src/controllers/translations.ts\",\"name\":\"readHandler\",\"type\":\"function\"},{\"file\":\"api/src/controllers/users.ts\",\"name\":\"readHandler\",\"type\":\"function\"},{\"file\":\"api/src/controllers/versions.ts\",\"name\":\"readHandler\",\"type\":\"function\"},{\"file\":\"api/src/controllers/webhooks.ts\",\"name\":\"readHandler\",\"type\":\"function\"},{\"file\":\"api/src/emitter.ts\",\"name\":\"useEmitter\",\"type\":\"function\"},{\"file\":\"api/src/extensions/lib/sandbox/register/action.ts\",\"name\":\"registerActionGenerator\",\"type\":\"function\"},{\"file\":\"api/src/extensions/lib/sandbox/register/call-reference.ts\",\"name\":\"callReference\",\"type\":\"function\"},{\"file\":\"api/src/extensions/lib/sandbox/register/filter.ts\",\"name\":\"registerFilterGenerator\",\"type\":\"function\"},{\"file\":\"api/src/extensions/lib/sandbox/register/operation.ts\",\"name\":\"registerOperationGenerator\",\"type\":\"function\"},{\"file\":\"api/src/extensions/lib/sandbox/register/route.ts\",\"name\":\"registerRouteGenerator\",\"type\":\"function\"},{\"file\":\"api/src/extensions/lib/sandbox/sdk/generators/log.ts\",\"name\":\"logGenerator\",\"type\":\"function\"},{\"file\":\"api/src/extensions/lib/sandbox/sdk/generators/request.ts\",\"name\":\"requestGenerator\",\"type\":\"function\"},{\"file\":\"api/src/extensions/lib/sandbox/sdk/generators/sleep.ts\",\"name\":\"sleepGenerator\",\"type\":\"function\"},{\"file\":\"api/src/middleware/cache.ts\",\"name\":\"checkCacheMiddleware\",\"type\":\"function\"},{\"file\":\"api/src/middleware/collection-exists.ts\",\"name\":\"collectionExists\",\"type\":\"function\"},{\"file\":\"api/src/middleware/cors.ts\",\"name\":\"corsMiddleware\",\"type\":\"function\"},{\"file\":\"api/src/middleware/rate-limiter-global.ts\",\"name\":\"checkRateLimit\",\"type\":\"function\"},{\"file\":\"api/src/middleware/rate-limiter-global.ts\",\"name\":\"validateConfiguration\",\"type\":\"function\"},{\"file\":\"api/src/middleware/rate-limiter-ip.ts\",\"name\":\"checkRateLimit\",\"type\":\"function\"},{\"file\":\"api/src/middleware/rate-limiter-registration.ts\",\"name\":\"checkRateLimit\",\"type\":\"function\"},{\"file\":\"api/src/middleware/sanitize-query.ts\",\"name\":\"sanitizeQueryMiddleware\",\"type\":\"function\"},{\"file\":\"api/src/middleware/use-collection.ts\",\"name\":\"useCollection\",\"type\":\"function\"},{\"file\":\"api/src/permissions/modules/fetch-global-access/fetch-global-access.ts\",\"name\":\"_fetchGlobalAccess\",\"type\":\"function\"},{\"file\":\"api/src/permissions/modules/fetch-policies-ip-access/fetch-policies-ip-access.ts\",\"name\":\"_fetchPoliciesIpAccess\",\"type\":\"function\"},{\"file\":\"api/src/permissions/utils/fetch-raw-permissions.ts\",\"name\":\"_fetchRawPermissions\",\"type\":\"function\"},{\"file\":\"api/src/permissions/utils/fetch-share-info.ts\",\"name\":\"_fetchShareInfo\",\"type\":\"function\"},{\"file\":\"api/src/schedules/metrics.ts\",\"name\":\"schedule\",\"type\":\"function\"},{\"file\":\"api/src/schedules/project.ts\",\"name\":\"schedule\",\"type\":\"function\"},{\"file\":\"api/src/schedules/retention.ts\",\"name\":\"schedule\",\"type\":\"function\"},{\"file\":\"api/src/schedules/telemetry.ts\",\"name\":\"schedule\",\"type\":\"function\"},{\"file\":\"api/src/schedules/tus.ts\",\"name\":\"schedule\",\"type\":\"function\"},{\"file\":\"api/src/utils/fetch-user-count/fetch-active-users.ts\",\"name\":\"fetchActiveUsers\",\"type\":\"function\"},{\"file\":\"api/src/utils/require-yaml.ts\",\"name\":\"requireYAML\",\"type\":\"function\"},{\"file\":\"app/src/__histoire__/register.ts\",\"name\":\"register\",\"type\":\"function\"},{\"file\":\"app/src/__histoire__/setup.ts\",\"name\":\"setupVue3\",\"type\":\"function\"},{\"file\":\"app/src/api.ts\",\"name\":\"onError\",\"type\":\"function\"},{\"file\":\"app/src/api.ts\",\"name\":\"resumeQueue\",\"type\":\"function\"},{\"file\":\"app/src/auth.ts\",\"name\":\"login\",\"type\":\"function\"},{\"file\":\"app/src/auth.ts\",\"name\":\"refresh\",\"type\":\"function\"},{\"file\":\"app/src/auth.ts\",\"name\":\"logout\",\"type\":\"function\"},{\"file\":\"app/src/components/v-checkbox-tree/use-visible-children.ts\",\"name\":\"useVisibleChildren\",\"type\":\"function\"},{\"file\":\"app/src/components/v-form/composables/use-ai-tools.ts\",\"name\":\"useAiTools\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-auto-fit-text.ts\",\"name\":\"useAutoFontFit\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-dialog-route.ts\",\"name\":\"useDialogRoute\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-dialog-route.ts\",\"name\":\"useDialogRouteLeave\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-edits-guard.ts\",\"name\":\"useEditsGuard\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-fake-version-field.ts\",\"name\":\"useFakeVersionField\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-flows.ts\",\"name\":\"useInjectRunManualFlow\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-focus-trap-manager.ts\",\"name\":\"useFocusTrapManager\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-focus-trap-manager.ts\",\"name\":\"useInjectFocusTrapManager\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-navigation-guard.ts\",\"name\":\"useNavigationGuard\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-nested-validation.ts\",\"name\":\"useInjectNestedValidation\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-preset.ts\",\"name\":\"usePreset\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-relation-m2a.ts\",\"name\":\"useRelationM2A\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-relation-m2m.ts\",\"name\":\"useRelationM2M\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-relation-m2o.ts\",\"name\":\"useRelationM2O\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-relation-o2m.ts\",\"name\":\"useRelationO2M\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-relation-single.ts\",\"name\":\"useRelationSingle\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-reload-guard.ts\",\"name\":\"useReloadGuard\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-revision.ts\",\"name\":\"useRevision\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-revisions.ts\",\"name\":\"useRevisions\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-system.ts\",\"name\":\"useSystem\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-template-data.ts\",\"name\":\"useTemplateData\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-tfa-setup.ts\",\"name\":\"useTFASetup\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-theme-configuration.ts\",\"name\":\"useThemeConfiguration\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-validation-error-details.ts\",\"name\":\"useValidationErrorDetails\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-versions.ts\",\"name\":\"useVersions\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-window-size.ts\",\"name\":\"useWindowSize\",\"type\":\"function\"},{\"file\":\"app/src/directives/context-menu.ts\",\"name\":\"mounted\",\"type\":\"function\"},{\"file\":\"app/src/directives/context-menu.ts\",\"name\":\"unmounted\",\"type\":\"function\"},{\"file\":\"app/src/directives/focus.ts\",\"name\":\"Focus.mounted\",\"type\":\"function\"},{\"file\":\"app/src/directives/input-auto-width.ts\",\"name\":\"InputAutoWidth.mounted\",\"type\":\"function\"},{\"file\":\"app/src/directives/input-auto-width.ts\",\"name\":\"InputAutoWidth.updated\",\"type\":\"function\"},{\"file\":\"app/src/directives/input-auto-width.ts\",\"name\":\"InputAutoWidth.unmounted\",\"type\":\"function\"},{\"file\":\"app/src/directives/markdown.ts\",\"name\":\"markdown\",\"type\":\"function\"},{\"file\":\"app/src/directives/tooltip.ts\",\"name\":\"onLeaveTooltip\",\"type\":\"function\"},{\"file\":\"app/src/directives/tooltip.ts\",\"name\":\"animateOut\",\"type\":\"function\"},{\"file\":\"app/src/directives/tooltip.ts\",\"name\":\"Tooltip.updated\",\"type\":\"function\"},{\"file\":\"app/src/hydrate.ts\",\"name\":\"dehydrate\",\"type\":\"function\"},{\"file\":\"app/src/idle.ts\",\"name\":\"startIdleTracking\",\"type\":\"function\"},{\"file\":\"app/src/idle.ts\",\"name\":\"stopIdleTracking\",\"type\":\"function\"},{\"file\":\"app/src/interfaces/_system/system-filter/utils.ts\",\"name\":\"getNodeName\",\"type\":\"function\"},{\"file\":\"app/src/interfaces/_system/system-filter/utils.ts\",\"name\":\"getField\",\"type\":\"function\"},{\"file\":\"app/src/interfaces/_system/system-filter/utils.ts\",\"name\":\"fieldHasFunction\",\"type\":\"function\"},{\"file\":\"app/src/interfaces/_system/system-filter/utils.ts\",\"name\":\"getComparator\",\"type\":\"function\"},{\"file\":\"app/src/interfaces/_system/system-filter/utils.ts\",\"name\":\"fieldToFilter\",\"type\":\"function\"},{\"file\":\"app/src/interfaces/_system/system-mcp-prompts-collection-validation/schema.ts\",\"name\":\"generateFields\",\"type\":\"function\"},{\"file\":\"app/src/interfaces/input-block-editor/bus.ts\",\"name\":\"useBus\",\"type\":\"function\"},{\"file\":\"app/src/interfaces/input-block-editor/tools.ts\",\"name\":\"getTools\",\"type\":\"function\"},{\"file\":\"app/src/interfaces/input-block-editor/use-file-handler.ts\",\"name\":\"useFileHandler\",\"type\":\"function\"},{\"file\":\"app/src/interfaces/input-code/import-codemirror-mode.ts\",\"name\":\"importCodemirrorMode\",\"type\":\"function\"},{\"file\":\"app/src/interfaces/input-rich-text-html/get-editor-styles.ts\",\"name\":\"getEditorStyles\",\"type\":\"function\"},{\"file\":\"app/src/interfaces/input-rich-text-html/useInlineCode.ts\",\"name\":\"useInlineCode\",\"type\":\"function\"},{\"file\":\"app/src/interfaces/input-rich-text-html/useLink.ts\",\"name\":\"useLink\",\"type\":\"function\"},{\"file\":\"app/src/interfaces/input-rich-text-html/useMedia.ts\",\"name\":\"useMedia\",\"type\":\"function\"},{\"file\":\"app/src/interfaces/input-rich-text-html/usePre.ts\",\"name\":\"usePre\",\"type\":\"function\"},{\"file\":\"app/src/interfaces/input-rich-text-html/useSourceCode.ts\",\"name\":\"useSourceCode\",\"type\":\"function\"},{\"file\":\"app/src/interfaces/input-rich-text-md/edits.ts\",\"name\":\"applyEdit\",\"type\":\"function\"},{\"file\":\"app/src/interfaces/input/index.ts\",\"name\":\"default.options\",\"type\":\"function\"},{\"file\":\"app/src/interfaces/map/style.ts\",\"name\":\"getMapStyle\",\"type\":\"function\"},{\"file\":\"app/src/lang/index.ts\",\"name\":\"translateAPIError\",\"type\":\"function\"},{\"file\":\"app/src/lang/refresh-current-language.ts\",\"name\":\"refreshCurrentLanguage\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/collections/composables/use-expand-collapse.ts\",\"name\":\"useExpandCollapse\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/file.ts\",\"name\":\"applyChanges\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/file.ts\",\"name\":\"setTypeToUUID\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/file.ts\",\"name\":\"prepareRelation\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/file.ts\",\"name\":\"updateRelationField\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/files.ts\",\"name\":\"applyChanges\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/files.ts\",\"name\":\"removeSchema\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/files.ts\",\"name\":\"setTypeToAlias\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/files.ts\",\"name\":\"prepareRelation\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/files.ts\",\"name\":\"updateRelationField\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/files.ts\",\"name\":\"preventCircularConstraint\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/files.ts\",\"name\":\"setJunctionFields\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/files.ts\",\"name\":\"generateCollections\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/files.ts\",\"name\":\"setDefaults\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/files.ts\",\"name\":\"matchJunctionCollectionName\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/global.ts\",\"name\":\"resetSchema\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/global.ts\",\"name\":\"setTypeForInterface\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/global.ts\",\"name\":\"setSpecialForLocalType\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/global.ts\",\"name\":\"resetRelations\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/global.ts\",\"name\":\"switchInterfaceAndDisplay\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/group.ts\",\"name\":\"applyChanges\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/group.ts\",\"name\":\"removeSchema\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/group.ts\",\"name\":\"setTypeToAlias\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/group.ts\",\"name\":\"setSpecialToGroup\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2a.ts\",\"name\":\"applyChanges\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2a.ts\",\"name\":\"removeSchema\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2a.ts\",\"name\":\"setTypeToAlias\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2a.ts\",\"name\":\"prepareRelation\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2a.ts\",\"name\":\"setDefaults\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2a.ts\",\"name\":\"autoGenerateJunctionCollectionName\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2a.ts\",\"name\":\"updateRelationField\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2a.ts\",\"name\":\"preventCircularConstraint\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2a.ts\",\"name\":\"setJunctionFields\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2a.ts\",\"name\":\"generateCollections\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2a.ts\",\"name\":\"matchJunctionCollectionName\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2a.ts\",\"name\":\"setRelatedOneFieldForCorrespondingField\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2m.ts\",\"name\":\"applyChanges\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2m.ts\",\"name\":\"removeSchema\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2m.ts\",\"name\":\"setTypeToAlias\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2m.ts\",\"name\":\"prepareRelation\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2m.ts\",\"name\":\"updateRelationField\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2m.ts\",\"name\":\"preventCircularConstraint\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2m.ts\",\"name\":\"setJunctionFields\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2m.ts\",\"name\":\"autoGenerateJunctionFields\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2m.ts\",\"name\":\"generateCollections\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2m.ts\",\"name\":\"matchJunctionCollectionName\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2m.ts\",\"name\":\"setRelatedOneFieldForCorrespondingField\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2o.ts\",\"name\":\"applyChanges\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2o.ts\",\"name\":\"prepareRelation\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2o.ts\",\"name\":\"updateRelationField\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2o.ts\",\"name\":\"generateRelatedCollection\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2o.ts\",\"name\":\"preventCircularConstraint\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2o.ts\",\"name\":\"setTypeToRelatedPrimaryKey\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2o.ts\",\"name\":\"setRelatedOneFieldForCorrespondingField\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/o2m.ts\",\"name\":\"applyChanges\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/o2m.ts\",\"name\":\"removeSchema\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/o2m.ts\",\"name\":\"setTypeToAlias\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/o2m.ts\",\"name\":\"prepareRelation\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/o2m.ts\",\"name\":\"preventCircularConstraint\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/o2m.ts\",\"name\":\"updateRelationField\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/o2m.ts\",\"name\":\"useExistingRelationValues\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/o2m.ts\",\"name\":\"generateRelatedCollection\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/o2m.ts\",\"name\":\"generateRelatedField\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/o2m.ts\",\"name\":\"updateGeneratedRelatedField\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/o2m.ts\",\"name\":\"generateSortField\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/presentation.ts\",\"name\":\"applyChanges\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/presentation.ts\",\"name\":\"removeSchema\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/presentation.ts\",\"name\":\"setTypeToAlias\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/presentation.ts\",\"name\":\"setSpecialToNoData\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/standard.ts\",\"name\":\"applyChanges\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/translations.ts\",\"name\":\"applyChanges\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/translations.ts\",\"name\":\"removeSchema\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/translations.ts\",\"name\":\"setTypeToAlias\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/translations.ts\",\"name\":\"prepareRelation\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/translations.ts\",\"name\":\"updateRelationField\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/translations.ts\",\"name\":\"preventCircularConstraint\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/translations.ts\",\"name\":\"setJunctionFields\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/translations.ts\",\"name\":\"updateJunctionRelated\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/translations.ts\",\"name\":\"generateCollections\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/translations.ts\",\"name\":\"setDefaults\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/translations.ts\",\"name\":\"matchJunctionCollectionName\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/index.ts\",\"name\":\"syncFieldDetailStoreProperty\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/utils/collection-exists.ts\",\"name\":\"collectionExists\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/utils/get-junction-collection-name.ts\",\"name\":\"getAutomaticJunctionCollectionName\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/flows/triggers.ts\",\"name\":\"getTriggers\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/marketplace/utils/format-name.ts\",\"name\":\"formatName\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/policies/use-save.ts\",\"name\":\"useSave\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/roles/use-save.ts\",\"name\":\"useSave\",\"type\":\"function\"},{\"file\":\"app/src/modules/users/composables/use-navigation.ts\",\"name\":\"useNavigation\",\"type\":\"function\"},{\"file\":\"app/src/operations/exec/index.ts\",\"name\":\"default.overview\",\"type\":\"function\"},{\"file\":\"app/src/operations/exec/index.ts\",\"name\":\"default.options\",\"type\":\"function\"},{\"file\":\"app/src/panels/pie-chart/color-generator.ts\",\"name\":\"monoThemeGenerator\",\"type\":\"function\"},{\"file\":\"app/src/panels/relational-variable/use-display-items.ts\",\"name\":\"useDisplayItems\",\"type\":\"function\"},{\"file\":\"app/src/router.ts\",\"name\":\"onBeforeEach\",\"type\":\"function\"},{\"file\":\"app/src/router.ts\",\"name\":\"onAfterEach\",\"type\":\"function\"},{\"file\":\"app/src/stores/extensions.ts\",\"name\":\"useExtensionsStore\",\"type\":\"function\"},{\"file\":\"app/src/stores/files.ts\",\"name\":\"useFilesStore\",\"type\":\"function\"},{\"file\":\"app/src/utils/format-number.ts\",\"name\":\"isUnit\",\"type\":\"function\"},{\"file\":\"app/src/utils/format-number.ts\",\"name\":\"formatNumber\",\"type\":\"function\"},{\"file\":\"app/src/utils/generate-favicon.ts\",\"name\":\"generateFavicon\",\"type\":\"function\"},{\"file\":\"app/src/utils/geometry/basemap.ts\",\"name\":\"getStyleFromBasemapSource\",\"type\":\"function\"},{\"file\":\"app/src/utils/geometry/index.ts\",\"name\":\"getSerializer\",\"type\":\"function\"},{\"file\":\"app/src/utils/geometry/index.ts\",\"name\":\"flatten\",\"type\":\"function\"},{\"file\":\"app/src/utils/get-asset-url.ts\",\"name\":\"getFilesUrl\",\"type\":\"function\"},{\"file\":\"app/src/utils/get-asset-url.ts\",\"name\":\"getFolderUrl\",\"type\":\"function\"},{\"file\":\"app/src/utils/get-flatpickr-locale.ts\",\"name\":\"getFlatpickrLocale\",\"type\":\"function\"},{\"file\":\"app/src/utils/get-folder-filter.ts\",\"name\":\"getFolderFilter\",\"type\":\"function\"},{\"file\":\"app/src/utils/render-string-template.ts\",\"name\":\"renderStringTemplate\",\"type\":\"function\"},{\"file\":\"app/src/utils/router-passthrough.ts\",\"name\":\"component\",\"type\":\"function\"},{\"file\":\"app/src/utils/upload-file.ts\",\"name\":\"uploadFile\",\"type\":\"function\"},{\"file\":\"app/src/utils/upload-files.ts\",\"name\":\"uploadFiles\",\"type\":\"function\"},{\"file\":\"app/vite.config.js\",\"name\":\"getExtensionsRealPaths\",\"type\":\"function\"},{\"file\":\"app/vite.config.js\",\"name\":\"directusExtensions\",\"type\":\"function\"},{\"file\":\"packages/errors/src/errors/forbidden.ts\",\"name\":\"messageConstructor\",\"type\":\"function\"},{\"file\":\"packages/errors/src/errors/method-not-allowed.ts\",\"name\":\"messageConstructor\",\"type\":\"function\"},{\"file\":\"packages/errors/src/errors/route-not-found.ts\",\"name\":\"messageConstructor\",\"type\":\"function\"},{\"file\":\"packages/errors/src/errors/service-unavailable.ts\",\"name\":\"messageConstructor\",\"type\":\"function\"},{\"file\":\"packages/themes/src/composables/use-theme.ts\",\"name\":\"useTheme\",\"type\":\"function\"},{\"file\":\"packages/themes/src/utils/rules-to-css-vars.ts\",\"name\":\"rulesToCssVars\",\"type\":\"function\"},{\"file\":\"packages/utils/shared/functions.ts\",\"name\":\"year\",\"type\":\"function\"},{\"file\":\"packages/utils/shared/functions.ts\",\"name\":\"month\",\"type\":\"function\"},{\"file\":\"packages/utils/shared/functions.ts\",\"name\":\"week\",\"type\":\"function\"},{\"file\":\"packages/utils/shared/functions.ts\",\"name\":\"day\",\"type\":\"function\"},{\"file\":\"packages/utils/shared/functions.ts\",\"name\":\"weekday\",\"type\":\"function\"},{\"file\":\"packages/utils/shared/functions.ts\",\"name\":\"hour\",\"type\":\"function\"},{\"file\":\"packages/utils/shared/functions.ts\",\"name\":\"minute\",\"type\":\"function\"},{\"file\":\"packages/utils/shared/functions.ts\",\"name\":\"second\",\"type\":\"function\"},{\"file\":\"packages/utils/shared/functions.ts\",\"name\":\"count\",\"type\":\"function\"},{\"file\":\"packages/utils/shared/process-chunk.ts\",\"name\":\"processChunk\",\"type\":\"function\"},{\"file\":\"sdk/src/auth/composable.ts\",\"name\":\"authentication\",\"type\":\"function\"},{\"file\":\"sdk/src/auth/static.ts\",\"name\":\"staticToken\",\"type\":\"function\"},{\"file\":\"sdk/src/auth/utils/memory-storage.ts\",\"name\":\"memoryStorage\",\"type\":\"function\"},{\"file\":\"sdk/src/client.ts\",\"name\":\"createDirectus\",\"type\":\"function\"},{\"file\":\"sdk/src/graphql/composable.ts\",\"name\":\"graphql\",\"type\":\"function\"},{\"file\":\"sdk/src/realtime/commands/auth.ts\",\"name\":\"auth\",\"type\":\"function\"},{\"file\":\"sdk/src/realtime/commands/pong.ts\",\"name\":\"pong\",\"type\":\"function\"},{\"file\":\"sdk/src/realtime/composable.ts\",\"name\":\"realtime\",\"type\":\"function\"},{\"file\":\"sdk/src/realtime/utils/generate-uid.ts\",\"name\":\"generateUid\",\"type\":\"function\"},{\"file\":\"sdk/src/realtime/utils/message-callback.ts\",\"name\":\"messageCallback\",\"type\":\"function\"},{\"file\":\"sdk/src/realtime/utils/sleep.ts\",\"name\":\"sleep\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/auth/login.ts\",\"name\":\"login\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/auth/logout.ts\",\"name\":\"logout\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/auth/password-request.ts\",\"name\":\"passwordRequest\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/auth/password-reset.ts\",\"name\":\"passwordReset\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/auth/providers.ts\",\"name\":\"readProviders\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/auth/refresh.ts\",\"name\":\"refresh\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/collections.ts\",\"name\":\"createCollection\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/comments.ts\",\"name\":\"createComments\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/comments.ts\",\"name\":\"createComment\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/dashboards.ts\",\"name\":\"createDashboards\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/dashboards.ts\",\"name\":\"createDashboard\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/fields.ts\",\"name\":\"createField\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/files.ts\",\"name\":\"uploadFiles\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/files.ts\",\"name\":\"importFile\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/flows.ts\",\"name\":\"createFlows\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/flows.ts\",\"name\":\"createFlow\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/folders.ts\",\"name\":\"createFolders\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/folders.ts\",\"name\":\"createFolder\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/items.ts\",\"name\":\"createItems\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/items.ts\",\"name\":\"createItem\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/notifications.ts\",\"name\":\"createNotifications\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/notifications.ts\",\"name\":\"createNotification\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/operations.ts\",\"name\":\"createOperations\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/operations.ts\",\"name\":\"createOperation\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/panels.ts\",\"name\":\"createPanels\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/panels.ts\",\"name\":\"createPanel\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/permissions.ts\",\"name\":\"createPermissions\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/permissions.ts\",\"name\":\"createPermission\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/policies.ts\",\"name\":\"createPolicies\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/policies.ts\",\"name\":\"createPolicy\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/presets.ts\",\"name\":\"createPresets\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/presets.ts\",\"name\":\"createPreset\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/relations.ts\",\"name\":\"createRelation\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/roles.ts\",\"name\":\"createRoles\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/roles.ts\",\"name\":\"createRole\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/shares.ts\",\"name\":\"createShares\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/shares.ts\",\"name\":\"createShare\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/translations.ts\",\"name\":\"createTranslations\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/translations.ts\",\"name\":\"createTranslation\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/users.ts\",\"name\":\"createUsers\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/users.ts\",\"name\":\"createUser\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/versions.ts\",\"name\":\"createContentVersions\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/versions.ts\",\"name\":\"createContentVersion\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/webhooks.ts\",\"name\":\"createWebhooks\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/create/webhooks.ts\",\"name\":\"createWebhook\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/collections.ts\",\"name\":\"deleteCollection\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/comments.ts\",\"name\":\"deleteComments\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/comments.ts\",\"name\":\"deleteComment\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/dashboards.ts\",\"name\":\"deleteDashboards\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/dashboards.ts\",\"name\":\"deleteDashboard\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/fields.ts\",\"name\":\"deleteField\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/files.ts\",\"name\":\"deleteFiles\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/files.ts\",\"name\":\"deleteFile\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/flows.ts\",\"name\":\"deleteFlows\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/flows.ts\",\"name\":\"deleteFlow\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/folders.ts\",\"name\":\"deleteFolders\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/folders.ts\",\"name\":\"deleteFolder\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/items.ts\",\"name\":\"deleteItems\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/items.ts\",\"name\":\"deleteItem\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/notifications.ts\",\"name\":\"deleteNotifications\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/notifications.ts\",\"name\":\"deleteNotification\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/operations.ts\",\"name\":\"deleteOperations\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/operations.ts\",\"name\":\"deleteOperation\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/panels.ts\",\"name\":\"deletePanels\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/panels.ts\",\"name\":\"deletePanel\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/permissions.ts\",\"name\":\"deletePermissions\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/permissions.ts\",\"name\":\"deletePermission\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/policies.ts\",\"name\":\"deletePolicies\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/policies.ts\",\"name\":\"deletePolicy\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/presets.ts\",\"name\":\"deletePresets\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/presets.ts\",\"name\":\"deletePreset\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/relations.ts\",\"name\":\"deleteRelation\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/roles.ts\",\"name\":\"deleteRoles\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/roles.ts\",\"name\":\"deleteRole\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/shares.ts\",\"name\":\"deleteShares\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/shares.ts\",\"name\":\"deleteShare\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/translations.ts\",\"name\":\"deleteTranslations\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/translations.ts\",\"name\":\"deleteTranslation\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/users.ts\",\"name\":\"deleteUsers\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/users.ts\",\"name\":\"deleteUser\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/versions.ts\",\"name\":\"deleteContentVersions\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/versions.ts\",\"name\":\"deleteContentVersion\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/webhooks.ts\",\"name\":\"deleteWebhooks\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/delete/webhooks.ts\",\"name\":\"deleteWebhook\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/activity.ts\",\"name\":\"readActivities\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/activity.ts\",\"name\":\"readActivity\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/aggregate.ts\",\"name\":\"aggregate\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/assets.ts\",\"name\":\"readAssetRaw\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/assets.ts\",\"name\":\"readAssetBlob\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/assets.ts\",\"name\":\"readAssetArrayBuffer\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/assets.ts\",\"name\":\"downloadFilesZip\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/assets.ts\",\"name\":\"downloadFolderZip\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/collections.ts\",\"name\":\"readCollections\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/collections.ts\",\"name\":\"readCollection\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/comments.ts\",\"name\":\"readComments\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/comments.ts\",\"name\":\"readComment\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/dashboards.ts\",\"name\":\"readDashboards\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/dashboards.ts\",\"name\":\"readDashboard\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/extensions.ts\",\"name\":\"readExtensions\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/fields.ts\",\"name\":\"readFields\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/fields.ts\",\"name\":\"readFieldsByCollection\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/fields.ts\",\"name\":\"readField\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/files.ts\",\"name\":\"readFiles\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/files.ts\",\"name\":\"readFile\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/flows.ts\",\"name\":\"readFlows\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/flows.ts\",\"name\":\"readFlow\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/folders.ts\",\"name\":\"readFolders\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/folders.ts\",\"name\":\"readFolder\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/items.ts\",\"name\":\"readItems\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/items.ts\",\"name\":\"readItem\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/notifications.ts\",\"name\":\"readNotifications\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/notifications.ts\",\"name\":\"readNotification\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/operations.ts\",\"name\":\"readOperations\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/operations.ts\",\"name\":\"readOperation\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/panels.ts\",\"name\":\"readPanels\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/panels.ts\",\"name\":\"readPanel\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/permissions.ts\",\"name\":\"readPermissions\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/permissions.ts\",\"name\":\"readPermission\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/permissions.ts\",\"name\":\"readItemPermissions\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/permissions.ts\",\"name\":\"readUserPermissions\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/policies.ts\",\"name\":\"readPolicies\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/policies.ts\",\"name\":\"readPolicy\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/policies.ts\",\"name\":\"readPolicyGlobals\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/presets.ts\",\"name\":\"readPresets\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/presets.ts\",\"name\":\"readPreset\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/relations.ts\",\"name\":\"readRelations\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/relations.ts\",\"name\":\"readRelationByCollection\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/relations.ts\",\"name\":\"readRelation\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/revisions.ts\",\"name\":\"readRevisions\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/revisions.ts\",\"name\":\"readRevision\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/roles.ts\",\"name\":\"readRoles\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/roles.ts\",\"name\":\"readRole\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/roles.ts\",\"name\":\"readRolesMe\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/settings.ts\",\"name\":\"readSettings\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/shares.ts\",\"name\":\"readShares\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/shares.ts\",\"name\":\"readShare\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/singleton.ts\",\"name\":\"readSingleton\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/translations.ts\",\"name\":\"readTranslations\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/translations.ts\",\"name\":\"readTranslation\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/users.ts\",\"name\":\"readUsers\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/users.ts\",\"name\":\"readUser\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/users.ts\",\"name\":\"readMe\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/versions.ts\",\"name\":\"readContentVersions\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/versions.ts\",\"name\":\"readContentVersion\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/webhooks.ts\",\"name\":\"readWebhooks\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/read/webhooks.ts\",\"name\":\"readWebhook\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/schema/apply.ts\",\"name\":\"schemaApply\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/schema/diff.ts\",\"name\":\"schemaDiff\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/schema/snapshot.ts\",\"name\":\"schemaSnapshot\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/server/graphql.ts\",\"name\":\"readGraphqlSdl\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/server/health.ts\",\"name\":\"serverHealth\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/server/info.ts\",\"name\":\"serverInfo\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/server/openapi.ts\",\"name\":\"readOpenApiSpec\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/server/ping.ts\",\"name\":\"serverPing\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/collections.ts\",\"name\":\"updateCollection\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/collections.ts\",\"name\":\"updateCollectionsBatch\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/comments.ts\",\"name\":\"updateComments\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/comments.ts\",\"name\":\"updateCommentsBatch\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/comments.ts\",\"name\":\"updateComment\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/dashboards.ts\",\"name\":\"updateDashboards\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/dashboards.ts\",\"name\":\"updateDashboardsBatch\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/dashboards.ts\",\"name\":\"updateDashboard\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/extensions.ts\",\"name\":\"updateExtension\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/fields.ts\",\"name\":\"updateField\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/fields.ts\",\"name\":\"updateFields\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/files.ts\",\"name\":\"updateFiles\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/files.ts\",\"name\":\"updateFilesBatch\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/files.ts\",\"name\":\"updateFile\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/flows.ts\",\"name\":\"updateFlows\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/flows.ts\",\"name\":\"updateFlowsBatch\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/flows.ts\",\"name\":\"updateFlow\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/folders.ts\",\"name\":\"updateFolders\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/folders.ts\",\"name\":\"updateFoldersBatch\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/folders.ts\",\"name\":\"updateFolder\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/items.ts\",\"name\":\"updateItems\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/items.ts\",\"name\":\"updateItemsBatch\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/items.ts\",\"name\":\"updateItem\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/notifications.ts\",\"name\":\"updateNotifications\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/notifications.ts\",\"name\":\"updateNotificationsBatch\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/notifications.ts\",\"name\":\"updateNotification\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/operations.ts\",\"name\":\"updateOperations\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/operations.ts\",\"name\":\"updateOperationsBatch\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/operations.ts\",\"name\":\"updateOperation\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/panels.ts\",\"name\":\"updatePanels\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/panels.ts\",\"name\":\"updatePanelsBatch\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/panels.ts\",\"name\":\"updatePanel\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/permissions.ts\",\"name\":\"updatePermissions\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/permissions.ts\",\"name\":\"updatePermissionsBatch\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/permissions.ts\",\"name\":\"updatePermission\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/policies.ts\",\"name\":\"updatePolicies\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/policies.ts\",\"name\":\"updatePoliciesBatch\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/policies.ts\",\"name\":\"updatePolicy\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/presets.ts\",\"name\":\"updatePresets\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/presets.ts\",\"name\":\"updatePresetsBatch\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/presets.ts\",\"name\":\"updatePreset\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/relations.ts\",\"name\":\"updateRelation\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/roles.ts\",\"name\":\"updateRoles\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/roles.ts\",\"name\":\"updateRolesBatch\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/roles.ts\",\"name\":\"updateRole\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/settings.ts\",\"name\":\"updateSettings\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/shares.ts\",\"name\":\"updateShares\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/shares.ts\",\"name\":\"updateSharesBatch\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/shares.ts\",\"name\":\"updateShare\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/singleton.ts\",\"name\":\"updateSingleton\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/translations.ts\",\"name\":\"updateTranslations\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/translations.ts\",\"name\":\"updateTranslationsBatch\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/translations.ts\",\"name\":\"updateTranslation\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/users.ts\",\"name\":\"updateUsers\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/users.ts\",\"name\":\"updateUsersBatch\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/users.ts\",\"name\":\"updateUser\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/users.ts\",\"name\":\"updateMe\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/versions.ts\",\"name\":\"updateContentVersions\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/versions.ts\",\"name\":\"updateContentVersionsBatch\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/versions.ts\",\"name\":\"updateContentVersion\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/webhooks.ts\",\"name\":\"updateWebhooks\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/update/webhooks.ts\",\"name\":\"updateWebhook\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/utils/cache.ts\",\"name\":\"clearCache\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/utils/export.ts\",\"name\":\"utilsExport\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/utils/flows.ts\",\"name\":\"triggerFlow\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/utils/hash.ts\",\"name\":\"generateHash\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/utils/hash.ts\",\"name\":\"verifyHash\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/utils/import.ts\",\"name\":\"utilsImport\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/utils/random.ts\",\"name\":\"randomString\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/utils/shares.ts\",\"name\":\"authenticateShare\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/utils/shares.ts\",\"name\":\"inviteShare\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/utils/shares.ts\",\"name\":\"readShareInfo\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/utils/sort.ts\",\"name\":\"utilitySort\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/utils/users.ts\",\"name\":\"inviteUser\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/utils/users.ts\",\"name\":\"acceptUserInvite\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/utils/users.ts\",\"name\":\"registerUser\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/utils/users.ts\",\"name\":\"registerUserVerify\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/utils/users.ts\",\"name\":\"generateTwoFactorSecret\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/utils/users.ts\",\"name\":\"enableTwoFactor\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/utils/users.ts\",\"name\":\"disableTwoFactor\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/utils/versions.ts\",\"name\":\"saveToContentVersion\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/utils/versions.ts\",\"name\":\"compareContentVersion\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/commands/utils/versions.ts\",\"name\":\"promoteContentVersion\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/composable.ts\",\"name\":\"rest\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/helpers/custom-endpoint.ts\",\"name\":\"customEndpoint\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/helpers/with-options.ts\",\"name\":\"withOptions\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/helpers/with-search.ts\",\"name\":\"withSearch\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/helpers/with-token.ts\",\"name\":\"withToken\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/utils/get-auth-endpoint.ts\",\"name\":\"getAuthEndpoint\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/utils/is-system-collection.ts\",\"name\":\"isSystemCollection\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/utils/throw-core-collection.ts\",\"name\":\"throwIfCoreCollection\",\"type\":\"function\"},{\"file\":\"sdk/src/rest/utils/throw-if-empty.ts\",\"name\":\"throwIfEmpty\",\"type\":\"function\"},{\"file\":\"sdk/src/utils/is-directus-error.ts\",\"name\":\"isDirectusError\",\"type\":\"function\"},{\"file\":\"api/src/ai/tools/types.ts\",\"name\":\"ToolResultBase\",\"type\":\"type\"},{\"file\":\"api/src/ai/tools/types.ts\",\"name\":\"TextToolResult\",\"type\":\"type\"},{\"file\":\"api/src/ai/tools/types.ts\",\"name\":\"AssetToolResult\",\"type\":\"type\"},{\"file\":\"api/src/ai/tools/types.ts\",\"name\":\"ToolHandler\",\"type\":\"type\"},{\"file\":\"api/src/ai/tools/types.ts\",\"name\":\"ToolEndpoint\",\"type\":\"type\"},{\"file\":\"api/src/auth/drivers/ldap.ts\",\"name\":\"LDAPAuthDriver\",\"type\":\"class\"},{\"file\":\"api/src/auth/drivers/local.ts\",\"name\":\"LocalAuthDriver\",\"type\":\"class\"},{\"file\":\"api/src/auth/drivers/oauth2.ts\",\"name\":\"OAuth2AuthDriver\",\"type\":\"class\"},{\"file\":\"api/src/auth/drivers/openid.ts\",\"name\":\"OpenIDAuthDriver\",\"type\":\"class\"},{\"file\":\"api/src/auth/drivers/saml.ts\",\"name\":\"SAMLAuthDriver\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/capabilities/dialects/default.ts\",\"name\":\"CapabilitiesHelperDefault\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/capabilities/dialects/mysql.ts\",\"name\":\"CapabilitiesHelperMySQL\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/capabilities/dialects/postgres.ts\",\"name\":\"CapabilitiesHelperPostgres\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/capabilities/types.ts\",\"name\":\"CapabilitiesHelper\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/date/dialects/default.ts\",\"name\":\"DateHelperDefault\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/date/dialects/mssql.ts\",\"name\":\"DateHelperMSSQL\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/date/dialects/mysql.ts\",\"name\":\"DateHelperMySQL\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/date/dialects/oracle.ts\",\"name\":\"DateHelperOracle\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/date/dialects/sqlite.ts\",\"name\":\"DateHelperSQLite\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/fn/dialects/mssql.ts\",\"name\":\"FnHelperMSSQL\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/fn/dialects/mysql.ts\",\"name\":\"FnHelperMySQL\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/fn/dialects/oracle.ts\",\"name\":\"FnHelperOracle\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/fn/dialects/postgres.ts\",\"name\":\"FnHelperPostgres\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/fn/dialects/sqlite.ts\",\"name\":\"FnHelperSQLite\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/geometry/dialects/mssql.ts\",\"name\":\"GeometryHelperMSSQL\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/geometry/dialects/mysql.ts\",\"name\":\"GeometryHelperMySQL\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/geometry/dialects/oracle.ts\",\"name\":\"GeometryHelperOracle\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/geometry/dialects/postgres.ts\",\"name\":\"GeometryHelperPostgres\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/geometry/dialects/redshift.ts\",\"name\":\"GeometryHelperRedshift\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/geometry/dialects/sqlite.ts\",\"name\":\"GeometryHelperSQLite\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/number/dialects/default.ts\",\"name\":\"NumberHelperDefault\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/number/dialects/mssql.ts\",\"name\":\"NumberHelperMSSQL\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/number/dialects/oracle.ts\",\"name\":\"NumberHelperOracle\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/number/dialects/postgres.ts\",\"name\":\"NumberHelperPostgres\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/number/dialects/sqlite.ts\",\"name\":\"NumberHelperSQLite\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/sequence/dialects/default.ts\",\"name\":\"AutoIncrementHelperDefault\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/sequence/dialects/postgres.ts\",\"name\":\"AutoIncrementHelperPostgres\",\"type\":\"class\"},{\"file\":\"api/src/database/helpers/sequence/types.ts\",\"name\":\"AutoSequenceHelper\",\"type\":\"class\"},{\"file\":\"api/src/emitter.ts\",\"name\":\"Emitter\",\"type\":\"class\"},{\"file\":\"api/src/permissions/modules/process-ast/types.ts\",\"name\":\"FieldMapEntries\",\"type\":\"type\"},{\"file\":\"api/src/services/tus/lockers.ts\",\"name\":\"TusLocker\",\"type\":\"class\"},{\"file\":\"api/src/services/tus/lockers.ts\",\"name\":\"KvLock\",\"type\":\"class\"},{\"file\":\"api/src/types/ast.ts\",\"name\":\"A2MNode\",\"type\":\"type\"},{\"file\":\"api/src/types/auth.ts\",\"name\":\"AuthData\",\"type\":\"type\"},{\"file\":\"api/src/types/auth.ts\",\"name\":\"Session\",\"type\":\"interface\"},{\"file\":\"api/src/types/auth.ts\",\"name\":\"ShareData\",\"type\":\"type\"},{\"file\":\"api/src/types/events.ts\",\"name\":\"EventHandler\",\"type\":\"type\"},{\"file\":\"api/src/types/meta.ts\",\"name\":\"Meta\",\"type\":\"type\"},{\"file\":\"api/src/types/migration.ts\",\"name\":\"Migration\",\"type\":\"type\"},{\"file\":\"api/src/types/revision.ts\",\"name\":\"Revision\",\"type\":\"type\"},{\"file\":\"api/src/types/rolemap.ts\",\"name\":\"RoleMap\",\"type\":\"type\"},{\"file\":\"api/src/utils/fetch-user-count/fetch-active-users.ts\",\"name\":\"ActiveUser\",\"type\":\"interface\"},{\"file\":\"api/src/websocket/types.ts\",\"name\":\"UpgradeRequest\",\"type\":\"type\"},{\"file\":\"app/src/ai/models.ts\",\"name\":\"ModelDefinition\",\"type\":\"interface\"},{\"file\":\"app/src/auth.ts\",\"name\":\"LogoutReason\",\"type\":\"type\"},{\"file\":\"app/src/auth.ts\",\"name\":\"LogoutOptions\",\"type\":\"type\"},{\"file\":\"app/src/components/v-field-template/types.ts\",\"name\":\"FieldTree\",\"type\":\"type\"},{\"file\":\"app/src/components/v-form/types.ts\",\"name\":\"FieldValues\",\"type\":\"type\"},{\"file\":\"app/src/components/v-table/types.ts\",\"name\":\"Alignment\",\"type\":\"type\"},{\"file\":\"app/src/components/v-table/types.ts\",\"name\":\"ItemSelectEvent\",\"type\":\"type\"},{\"file\":\"app/src/composables/use-auto-fit-text.ts\",\"name\":\"extractValues\",\"type\":\"function\"},{\"file\":\"app/src/composables/use-relation-single.ts\",\"name\":\"RelationQuerySingle\",\"type\":\"type\"},{\"file\":\"app/src/composables/use-relation-single.ts\",\"name\":\"UseRelationSingleOptions\",\"type\":\"type\"},{\"file\":\"app/src/composables/use-revision.ts\",\"name\":\"RevisionResponse\",\"type\":\"type\"},{\"file\":\"app/src/composables/use-revisions.ts\",\"name\":\"RevisionResponse\",\"type\":\"type\"},{\"file\":\"app/src/directives/context-menu.ts\",\"name\":\"activateContextMenu\",\"type\":\"function\"},{\"file\":\"app/src/directives/context-menu.ts\",\"name\":\"deactivateContextMenu\",\"type\":\"function\"},{\"file\":\"app/src/interfaces/_system/system-theme-overrides/types.ts\",\"name\":\"SetValueFn\",\"type\":\"type\"},{\"file\":\"app/src/interfaces/input-block-editor/alignment.ts\",\"name\":\"Alignment\",\"type\":\"class\"},{\"file\":\"app/src/interfaces/input-block-editor/alignment.ts\",\"name\":\"isTune\",\"type\":\"method\"},{\"file\":\"app/src/interfaces/input-block-editor/alignment.ts\",\"name\":\"wrap\",\"type\":\"method\"},{\"file\":\"app/src/interfaces/input-block-editor/alignment.ts\",\"name\":\"render\",\"type\":\"method\"},{\"file\":\"app/src/interfaces/input-block-editor/alignment.ts\",\"name\":\"save\",\"type\":\"method\"},{\"file\":\"app/src/interfaces/input-block-editor/plugins.ts\",\"name\":\"uploadByFile\",\"type\":\"method\"},{\"file\":\"app/src/interfaces/input-block-editor/plugins.ts\",\"name\":\"uploadByUrl\",\"type\":\"method\"},{\"file\":\"app/src/interfaces/input-block-editor/plugins.ts\",\"name\":\"AttachesTool\",\"type\":\"class\"},{\"file\":\"app/src/interfaces/input-block-editor/plugins.ts\",\"name\":\"showFileData\",\"type\":\"method\"},{\"file\":\"app/src/interfaces/input-block-editor/plugins.ts\",\"name\":\"ImageTool\",\"type\":\"class\"},{\"file\":\"app/src/interfaces/input-block-editor/plugins.ts\",\"name\":\"renderSettings\",\"type\":\"method\"},{\"file\":\"app/src/interfaces/input-block-editor/tools.ts\",\"name\":\"UploaderConfig\",\"type\":\"type\"},{\"file\":\"app/src/interfaces/input-rich-text-md/edits.ts\",\"name\":\"Alteration\",\"type\":\"type\"},{\"file\":\"app/src/interfaces/input-rich-text-md/edits.ts\",\"name\":\"CustomSyntax\",\"type\":\"type\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/files.ts\",\"name\":\"generateFields\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2a.ts\",\"name\":\"generateFields\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/m2m.ts\",\"name\":\"generateFields\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/o2m.ts\",\"name\":\"fieldExists\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/standard.ts\",\"name\":\"setSpecialForType\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/standard.ts\",\"name\":\"updateInterface\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/alterations/translations.ts\",\"name\":\"generateFields\",\"type\":\"function\"},{\"file\":\"app/src/modules/settings/routes/data-model/field-detail/store/types.ts\",\"name\":\"HelperFunctions\",\"type\":\"type\"},{\"file\":\"app/src/modules/settings/routes/extensions/types.ts\",\"name\":\"ExtensionState\",\"type\":\"type\"},{\"file\":\"app/src/modules/settings/routes/flows/triggers.ts\",\"name\":\"Trigger\",\"type\":\"type\"},{\"file\":\"app/src/modules/settings/routes/policies/use-save.ts\",\"name\":\"UseSaveOptions\",\"type\":\"interface\"},{\"file\":\"app/src/modules/settings/routes/roles/use-save.ts\",\"name\":\"UseSaveOptions\",\"type\":\"interface\"},{\"file\":\"app/src/modules/settings/routes/system-logs/types.ts\",\"name\":\"Log\",\"type\":\"type\"},{\"file\":\"app/src/modules/users/composables/use-navigation.ts\",\"name\":\"BasicRole\",\"type\":\"type\"},{\"file\":\"app/src/stores/extensions.ts\",\"name\":\"getEnabledBrowserExtensions\",\"type\":\"function\"},{\"file\":\"app/src/types/activity.ts\",\"name\":\"ActivityByDate\",\"type\":\"type\"},{\"file\":\"app/src/types/folders.ts\",\"name\":\"SpecialFolder\",\"type\":\"type\"},{\"file\":\"app/src/types/folders.ts\",\"name\":\"FolderTarget\",\"type\":\"type\"},{\"file\":\"app/src/types/interfaces.ts\",\"name\":\"LAYOUTS\",\"type\":\"type\"},{\"file\":\"app/src/types/panels.ts\",\"name\":\"PanelFunction\",\"type\":\"type\"},{\"file\":\"app/src/types/panels.ts\",\"name\":\"BaseConditionalFillOperators\",\"type\":\"type\"},{\"file\":\"app/src/types/panels.ts\",\"name\":\"StringConditionalFillOperators\",\"type\":\"type\"},{\"file\":\"app/src/types/revisions.ts\",\"name\":\"RevisionPartial\",\"type\":\"type\"},{\"file\":\"app/src/types/revisions.ts\",\"name\":\"RevisionWithTime\",\"type\":\"type\"},{\"file\":\"app/src/types/revisions.ts\",\"name\":\"RevisionsByDate\",\"type\":\"type\"},{\"file\":\"app/src/utils/format-number.ts\",\"name\":\"SimpleUnit\",\"type\":\"type\"},{\"file\":\"app/src/utils/format-number.ts\",\"name\":\"Unit\",\"type\":\"type\"},{\"file\":\"app/src/utils/format-number.ts\",\"name\":\"Notation\",\"type\":\"type\"},{\"file\":\"app/src/utils/format-number.ts\",\"name\":\"SignDisplay\",\"type\":\"type\"},{\"file\":\"app/src/utils/format-number.ts\",\"name\":\"RoundingMode\",\"type\":\"type\"},{\"file\":\"app/src/utils/format-number.ts\",\"name\":\"CurrencyDisplay\",\"type\":\"type\"},{\"file\":\"app/src/utils/format-number.ts\",\"name\":\"CurrencySign\",\"type\":\"type\"},{\"file\":\"app/src/utils/format-number.ts\",\"name\":\"UnitDisplay\",\"type\":\"type\"},{\"file\":\"app/src/utils/format-number.ts\",\"name\":\"LocaleMatcher\",\"type\":\"type\"},{\"file\":\"app/src/utils/format-number.ts\",\"name\":\"Style\",\"type\":\"type\"},{\"file\":\"app/src/utils/format-number.ts\",\"name\":\"NumberFormatOptions\",\"type\":\"type\"},{\"file\":\"app/src/utils/generate-favicon.ts\",\"name\":\"svg\",\"type\":\"function\"},{\"file\":\"app/src/utils/geometry/controls.ts\",\"name\":\"ButtonControl\",\"type\":\"class\"},{\"file\":\"app/src/utils/geometry/controls.ts\",\"name\":\"click\",\"type\":\"method\"},{\"file\":\"app/src/utils/geometry/controls.ts\",\"name\":\"show\",\"type\":\"method\"},{\"file\":\"app/src/utils/geometry/controls.ts\",\"name\":\"BoxSelectControl\",\"type\":\"class\"},{\"file\":\"packages/composables/src/use-element-size.ts\",\"name\":\"Window\",\"type\":\"class\"},{\"file\":\"packages/extensions/src/shared/schemas/options.ts\",\"name\":\"ExtensionSandboxOptions\",\"type\":\"type\"},{\"file\":\"packages/memory/src/bus/types/config.ts\",\"name\":\"BusConfigAbstract\",\"type\":\"interface\"},{\"file\":\"packages/memory/src/cache/types/config.ts\",\"name\":\"CacheConfigAbstract\",\"type\":\"interface\"},{\"file\":\"packages/memory/src/kv/types/config.ts\",\"name\":\"ExtendedRedis\",\"type\":\"interface\"},{\"file\":\"packages/memory/src/kv/types/config.ts\",\"name\":\"KvConfigAbstract\",\"type\":\"interface\"},{\"file\":\"packages/memory/src/limiter/types/config.ts\",\"name\":\"LimiterConfigAbstract\",\"type\":\"interface\"},{\"file\":\"packages/schema-builder/src/defaults.ts\",\"name\":\"CollectionDefaults\",\"type\":\"type\"},{\"file\":\"packages/schema-builder/src/defaults.ts\",\"name\":\"FieldDefaults\",\"type\":\"type\"},{\"file\":\"packages/schema-builder/src/defaults.ts\",\"name\":\"RelationDefaults\",\"type\":\"type\"},{\"file\":\"packages/schema/src/dialects/cockroachdb.ts\",\"name\":\"CockroachDB\",\"type\":\"class\"},{\"file\":\"packages/schema/src/dialects/mssql.ts\",\"name\":\"MSSQL\",\"type\":\"class\"},{\"file\":\"packages/schema/src/dialects/mysql.ts\",\"name\":\"MySQL\",\"type\":\"class\"},{\"file\":\"packages/schema/src/dialects/oracledb.ts\",\"name\":\"oracleDB\",\"type\":\"class\"},{\"file\":\"packages/schema/src/dialects/postgres.ts\",\"name\":\"Postgres\",\"type\":\"class\"},{\"file\":\"packages/schema/src/dialects/sqlite.ts\",\"name\":\"SQLite\",\"type\":\"class\"},{\"file\":\"packages/storage/src/index.ts\",\"name\":\"config\",\"type\":\"class\"},{\"file\":\"packages/system-data/src/types.ts\",\"name\":\"CollectionTranslations\",\"type\":\"type\"},{\"file\":\"packages/system-data/src/types.ts\",\"name\":\"CollectionMeta\",\"type\":\"type\"},{\"file\":\"packages/system-data/src/types.ts\",\"name\":\"FieldTranslations\",\"type\":\"type\"},{\"file\":\"packages/system-data/src/types.ts\",\"name\":\"Width\",\"type\":\"type\"},{\"file\":\"packages/system-data/src/types.ts\",\"name\":\"Condition\",\"type\":\"type\"},{\"file\":\"packages/system-data/src/types.ts\",\"name\":\"LogicalFilterOR\",\"type\":\"type\"},{\"file\":\"packages/system-data/src/types.ts\",\"name\":\"LogicalFilterAND\",\"type\":\"type\"},{\"file\":\"packages/system-data/src/types.ts\",\"name\":\"LogicalFilter\",\"type\":\"type\"},{\"file\":\"packages/system-data/src/types.ts\",\"name\":\"FieldFilterOperator\",\"type\":\"type\"},{\"file\":\"packages/system-data/src/types.ts\",\"name\":\"FieldValidationOperator\",\"type\":\"type\"},{\"file\":\"packages/types/src/accountability.ts\",\"name\":\"ShareScope\",\"type\":\"type\"},{\"file\":\"packages/types/src/assets.ts\",\"name\":\"TransformationMap\",\"type\":\"type\"},{\"file\":\"packages/types/src/assets.ts\",\"name\":\"TransformationResize\",\"type\":\"type\"},{\"file\":\"packages/types/src/collection.ts\",\"name\":\"CollectionMeta\",\"type\":\"type\"},{\"file\":\"packages/types/src/collection.ts\",\"name\":\"BaseCollectionMeta\",\"type\":\"type\"},{\"file\":\"packages/types/src/extensions/app-extension-config.ts\",\"name\":\"SplitEntrypoint\",\"type\":\"type\"},{\"file\":\"packages/types/src/extensions/app-extension-config.ts\",\"name\":\"ExtensionSandboxOptions\",\"type\":\"type\"},{\"file\":\"packages/types/src/extensions/app-extension-config.ts\",\"name\":\"AppExtension\",\"type\":\"type\"},{\"file\":\"packages/types/src/extensions/app-extension-config.ts\",\"name\":\"BundleExtensionEntry\",\"type\":\"interface\"},{\"file\":\"packages/types/src/extensions/displays.ts\",\"name\":\"DisplayFieldsFunction\",\"type\":\"type\"},{\"file\":\"packages/types/src/extensions/endpoints.ts\",\"name\":\"EndpointExtensionContext\",\"type\":\"type\"},{\"file\":\"packages/types/src/extensions/hooks.ts\",\"name\":\"HookExtensionContext\",\"type\":\"type\"},{\"file\":\"packages/types/src/extensions/hooks.ts\",\"name\":\"RegisterFunctions\",\"type\":\"type\"},{\"file\":\"packages/types/src/extensions/layouts.ts\",\"name\":\"LayoutProps\",\"type\":\"interface\"},{\"file\":\"packages/types/src/extensions/layouts.ts\",\"name\":\"LayoutState\",\"type\":\"type\"},{\"file\":\"packages/types/src/extensions/operations.ts\",\"name\":\"OperationContext\",\"type\":\"type\"},{\"file\":\"packages/types/src/extensions/panels.ts\",\"name\":\"PanelQuery\",\"type\":\"type\"},{\"file\":\"packages/types/src/fields.ts\",\"name\":\"Width\",\"type\":\"type\"},{\"file\":\"packages/types/src/fields.ts\",\"name\":\"Condition\",\"type\":\"type\"},{\"file\":\"packages/types/src/filter.ts\",\"name\":\"LogicalFilter\",\"type\":\"type\"},{\"file\":\"packages/types/src/filter.ts\",\"name\":\"FieldFilterOperator\",\"type\":\"type\"},{\"file\":\"packages/types/src/filter.ts\",\"name\":\"FieldValidationOperator\",\"type\":\"type\"},{\"file\":\"packages/types/src/flows.ts\",\"name\":\"TriggerType\",\"type\":\"type\"},{\"file\":\"packages/types/src/geometry.ts\",\"name\":\"MultiGeometry\",\"type\":\"type\"},{\"file\":\"packages/types/src/misc.ts\",\"name\":\"GenericString\",\"type\":\"type\"},{\"file\":\"packages/types/src/settings.ts\",\"name\":\"SettingsModuleBarModule\",\"type\":\"type\"},{\"file\":\"packages/types/src/settings.ts\",\"name\":\"SettingsModuleBarLink\",\"type\":\"type\"},{\"file\":\"packages/types/src/settings.ts\",\"name\":\"CustomAspectRatio\",\"type\":\"type\"},{\"file\":\"packages/types/src/shares.ts\",\"name\":\"Share\",\"type\":\"type\"},{\"file\":\"packages/types/src/users.ts\",\"name\":\"Avatar\",\"type\":\"type\"},{\"file\":\"packages/types/src/webhooks.ts\",\"name\":\"WebhookHeader\",\"type\":\"type\"},{\"file\":\"sdk/src/auth/types.ts\",\"name\":\"AuthenticationMode\",\"type\":\"type\"},{\"file\":\"sdk/src/auth/types.ts\",\"name\":\"LocalLoginPayload\",\"type\":\"type\"},{\"file\":\"sdk/src/auth/types.ts\",\"name\":\"LDAPLoginPayload\",\"type\":\"type\"},{\"file\":\"sdk/src/auth/types.ts\",\"name\":\"LoginPayload\",\"type\":\"type\"},{\"file\":\"sdk/src/auth/types.ts\",\"name\":\"LoginOptions\",\"type\":\"type\"},{\"file\":\"sdk/src/auth/types.ts\",\"name\":\"LogoutOptions\",\"type\":\"type\"},{\"file\":\"sdk/src/auth/types.ts\",\"name\":\"RefreshOptions\",\"type\":\"type\"},{\"file\":\"sdk/src/auth/types.ts\",\"name\":\"AuthenticationData\",\"type\":\"interface\"},{\"file\":\"sdk/src/auth/types.ts\",\"name\":\"AuthenticationStorage\",\"type\":\"interface\"},{\"file\":\"sdk/src/auth/types.ts\",\"name\":\"AuthenticationConfig\",\"type\":\"interface\"},{\"file\":\"sdk/src/auth/types.ts\",\"name\":\"AuthenticationClient\",\"type\":\"interface\"},{\"file\":\"sdk/src/auth/types.ts\",\"name\":\"StaticTokenClient\",\"type\":\"interface\"},{\"file\":\"sdk/src/graphql/types.ts\",\"name\":\"GraphqlClient\",\"type\":\"interface\"},{\"file\":\"sdk/src/graphql/types.ts\",\"name\":\"GraphqlConfig\",\"type\":\"interface\"},{\"file\":\"sdk/src/graphql/types.ts\",\"name\":\"GqlResult\",\"type\":\"type\"},{\"file\":\"sdk/src/graphql/types.ts\",\"name\":\"GqlSingletonResult\",\"type\":\"type\"},{\"file\":\"sdk/src/realtime/commands/auth.ts\",\"name\":\"EmailAuth\",\"type\":\"interface\"},{\"file\":\"sdk/src/realtime/commands/auth.ts\",\"name\":\"TokenAuth\",\"type\":\"interface\"},{\"file\":\"sdk/src/realtime/commands/auth.ts\",\"name\":\"RefreshAuth\",\"type\":\"interface\"},{\"file\":\"sdk/src/realtime/types.ts\",\"name\":\"WebSocketAuthModes\",\"type\":\"type\"},{\"file\":\"sdk/src/realtime/types.ts\",\"name\":\"WebSocketConfig\",\"type\":\"interface\"},{\"file\":\"sdk/src/realtime/types.ts\",\"name\":\"SubscribeOptions\",\"type\":\"interface\"},{\"file\":\"sdk/src/realtime/types.ts\",\"name\":\"WebSocketEvents\",\"type\":\"type\"},{\"file\":\"sdk/src/realtime/types.ts\",\"name\":\"RemoveEventHandler\",\"type\":\"type\"},{\"file\":\"sdk/src/realtime/types.ts\",\"name\":\"WebSocketEventHandler\",\"type\":\"type\"},{\"file\":\"sdk/src/realtime/types.ts\",\"name\":\"ConnectionState\",\"type\":\"type\"},{\"file\":\"sdk/src/realtime/types.ts\",\"name\":\"ReconnectState\",\"type\":\"type\"},{\"file\":\"sdk/src/realtime/types.ts\",\"name\":\"SubscriptionOptionsEvents\",\"type\":\"type\"},{\"file\":\"sdk/src/realtime/types.ts\",\"name\":\"SubscriptionEvents\",\"type\":\"type\"},{\"file\":\"sdk/src/realtime/types.ts\",\"name\":\"SubscriptionOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/realtime/types.ts\",\"name\":\"SubscriptionPayload\",\"type\":\"type\"},{\"file\":\"sdk/src/realtime/types.ts\",\"name\":\"WebSocketAuthError\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/auth/providers.ts\",\"name\":\"ReadProviderOutput\",\"type\":\"interface\"},{\"file\":\"sdk/src/rest/commands/create/collections.ts\",\"name\":\"CreateCollectionOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/create/comments.ts\",\"name\":\"CreateCommentOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/create/dashboards.ts\",\"name\":\"CreateDashboardOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/create/fields.ts\",\"name\":\"CreateFieldOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/create/files.ts\",\"name\":\"CreateFileOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/create/flows.ts\",\"name\":\"CreateFlowOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/create/folders.ts\",\"name\":\"CreateFolderOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/create/items.ts\",\"name\":\"CreateItemOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/create/notifications.ts\",\"name\":\"CreateNotificationOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/create/operations.ts\",\"name\":\"CreateOperationOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/create/panels.ts\",\"name\":\"CreatePanelOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/create/permissions.ts\",\"name\":\"CreatePermissionOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/create/policies.ts\",\"name\":\"CreatePolicyOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/create/presets.ts\",\"name\":\"CreatePresetOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/create/relations.ts\",\"name\":\"CreateRelationOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/create/roles.ts\",\"name\":\"CreateRoleOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/create/shares.ts\",\"name\":\"CreateShareOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/create/translations.ts\",\"name\":\"CreateTranslationOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/create/users.ts\",\"name\":\"CreateUserOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/create/versions.ts\",\"name\":\"CreateContentVersionOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/create/webhooks.ts\",\"name\":\"CreateWebhookOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/activity.ts\",\"name\":\"ReadActivityOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/collections.ts\",\"name\":\"ReadCollectionOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/comments.ts\",\"name\":\"ReadCommentOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/dashboards.ts\",\"name\":\"ReadDashboardOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/fields.ts\",\"name\":\"ReadFieldOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/files.ts\",\"name\":\"ReadFileOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/flows.ts\",\"name\":\"ReadFlowOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/folders.ts\",\"name\":\"ReadFolderOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/items.ts\",\"name\":\"ReadItemOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/notifications.ts\",\"name\":\"ReadNotificationOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/operations.ts\",\"name\":\"ReadOperationOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/panels.ts\",\"name\":\"ReadPanelOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/permissions.ts\",\"name\":\"ReadPermissionOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/permissions.ts\",\"name\":\"ReadItemPermissionsOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/permissions.ts\",\"name\":\"ReadUserPermissionsOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/policies.ts\",\"name\":\"ReadPolicyOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/policies.ts\",\"name\":\"ReadPolicyGlobalsOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/presets.ts\",\"name\":\"ReadPresetOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/relations.ts\",\"name\":\"ReadRelationOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/revisions.ts\",\"name\":\"ReadRevisionOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/roles.ts\",\"name\":\"ReadRoleOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/settings.ts\",\"name\":\"ReadSettingOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/shares.ts\",\"name\":\"ReadShareOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/singleton.ts\",\"name\":\"ReadSingletonOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/translations.ts\",\"name\":\"ReadTranslationOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/users.ts\",\"name\":\"ReadUserOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/versions.ts\",\"name\":\"ReadContentVersionOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/read/webhooks.ts\",\"name\":\"ReadWebhookOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/schema/diff.ts\",\"name\":\"SchemaDiffOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/schema/snapshot.ts\",\"name\":\"SchemaSnapshotOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/server/health.ts\",\"name\":\"ServerHealthOutput\",\"type\":\"type\"},{\"file\":\"sdk/src/rest/commands/server/info.ts\",\"name\":\"ServerInfoOutput\",\"type\":\"type\"}]}"
+        }
+      }
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01N11qoYhrhgv64K6wWdKtSZ",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "Great! I have part 2, which contains 98 candidates. Now I need to read the first part. The output for part 1 was too large and saved to a file. I need to read that file to get all the candidates from part 1.",
+            "signature": "EvgCCkYICxgCKkDtm9KdRaYWMBrIe5zg34Oaty8bv0Ck53bSwFssCCbAtonMx7oPAXtOPjXwVYCh2BSVTYZuoJYhdBxxxLcDFVeMEgxfhDVyzFgiQpFZaaoaDPI+NCa8jsx8/ImO4iIw6OjkxcZnQOWGxbXS2+fAoM3dHO7YfNGuSj/dCZK/vTwLpo75E4eq+Rn/SZ+PKzr0Kt8BCN+sk3RXDz1GrN2wfA1hM3MXsrgyEdsdVsXtpRdkcg9YPpN0pyQVylgz0//cqf3OXLcxEOdllxa2ISmDTP7cqeMkrIg3NtHZmVc/76WUeT1QEaix6zlFWVBwTFXm45Un/lnH0oIespKGjuzNYW2DV+E8kniLuINtMrF3D527O8SeXb8J/pPsfbWb1DXG1FZGcaM9dhK7CW/OFnPOh/TYNPBieFltBFmHZr4vlJs4IYEkx5vQ7B9SxVR2RQfRSFPy0q66WS9vHR3/nT/WRQ3fC5ntdDDGkMHRRvwdf1vjFRgB"
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 3320,
+          "cache_creation_input_tokens": 669,
+          "cache_read_input_tokens": 16698,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 669,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "a2ddd550-c139-41d2-9894-ff825f686d3d"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01N11qoYhrhgv64K6wWdKtSZ",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "Let me read the saved content from part 1 which was too large to display directly:"
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 3320,
+          "cache_creation_input_tokens": 669,
+          "cache_read_input_tokens": 16698,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 669,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "9968437f-d9b9-45dd-b9e7-de81e6f8e8a2"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01N11qoYhrhgv64K6wWdKtSZ",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01TTESfU2YCxTczbPqpfB7Q1",
+            "name": "Read",
+            "input": {
+              "file_path": "/Users/jag/.claude/projects/-private-var-folders-90-6pztvw5s1h12y4kmzbphq3qw0000gn-T-mcpbr-directus-pr26311-lt4qud-x/df36c422-e481-4b4b-919f-e43b02b8e561/tool-results/mcp-filesystem-read_text_file-1773087635204.txt"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 3320,
+          "cache_creation_input_tokens": 669,
+          "cache_read_input_tokens": 16698,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 669,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "9595ee51-a3e2-4b6c-90a1-4d47dcbf0cbf"
+    },
+    {
+      "type": "user",
+      "message": {
+        "role": "user",
+        "content": [
+          {
+            "type": "tool_result",
+            "content": "File content (29489 tokens) exceeds maximum allowed tokens (25000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole file.",
+            "is_error": true,
+            "tool_use_id": "toolu_01TTESfU2YCxTczbPqpfB7Q1"
+          }
+        ]
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "3baa17d2-74d9-412c-9305-16287c00e3fc",
+      "tool_use_result": "Error: File content (29489 tokens) exceeds maximum allowed tokens (25000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole file."
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01Nkmha3jF2WkH2zxd8DC611",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "The part 1 file is too large. Since I need to extract ALL candidates and write a script as instructed, let me run the extraction script directly using bash. The script is provided in the instructions and will handle reading both part files and combining all candidates.",
+            "signature": "ErYDCkYICxgCKkC+f7/E1MxG3Sv52ojlsS3qC3YmbgQqzBD41InJHjKAEtDiHzMZ38uey264t4roFiSasDiPYMm4op5e4VAJO84xEgzvGyGqnKWvMPd0Kk4aDOl3yMFKE+NJ7oL92iIwk7ZK8VHA6xEzGxl3M12WBMOZ5YVTtZoHXvrRMh7HYWw6QTTpWKv7Wlw0uKkpEOP4Kp0CCSKm76xcLGL+YN1R9f7KYa55Of82XmCtnjcba3KwPYEsMndLu7i3eQHOSHSQAOt/sIMHyAVFZpvV74Ma0D85UhdRgaWhPSBmOdfTjnE0UUto0bLO6qN/OA7hh1bWVWutl6u6c1woroLaaR/nT47z77zK64gInXWlgGTi/+RKba9LUALkvCeGJJPb462EzrgSpP/SuzyNxuqvWtg3hMYYzYe0m5esrhTSQVkFZ7sOKNCq9K/nmLeu/RYXuIRLmloOdnYPlkdY+8J7cSqaX2g7uVZn37eYMrWrGlAcCj2GSnHxORPk09yB6yVf7O7yodmj8hjSqNEBq0KF2GTScIFMvhAuuaHMRQtUBUK8zg3nLX9PYp6cGmPk5nY7srg4GAE="
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 3626,
+          "cache_read_input_tokens": 17367,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 3626,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "d203ca9a-1a40-4532-8669-b259cd2c3675"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01Nkmha3jF2WkH2zxd8DC611",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "The part 1 file is quite large. Let me use the extraction script as instructed to process both part files and create the REPORT.json:"
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 3626,
+          "cache_read_input_tokens": 17367,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 3626,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "79474d66-22b1-4a50-b679-d4c36a35cbcd"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01Nkmha3jF2WkH2zxd8DC611",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01K6yyjcQiq9cxZ5gmEaQPcs",
+            "name": "Bash",
+            "input": {
+              "command": "cat supermodel_dead_code_analysis.json | python3 -c \"\nimport json, sys, glob\ndata = json.load(sys.stdin)\n# Handle manifest (chunked files)\nif 'part_files' in data:\n    candidates = []\n    for pf in data['part_files']:\n        with open(pf) as f:\n            part = json.load(f)\n            for key in ['deadCodeCandidates', 'candidates', 'items']:\n                if key in part:\n                    candidates.extend(part[key])\n                    break\nelse:\n    for key in ['deadCodeCandidates', 'candidates', 'items']:\n        if key in data:\n            candidates = data[key]\n            break\n    else:\n        candidates = []\ndead_code = []\nfor c in candidates:\n    dead_code.append({\n        'file': c.get('file', ''),\n        'name': c.get('name', ''),\n        'type': c.get('type', 'function')\n    })\nprint(json.dumps({'dead_code': dead_code, 'analysis_complete': True}, indent=2))\n\" > REPORT.json",
+              "description": "Extract all dead code candidates from analysis files into REPORT.json"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 3626,
+          "cache_read_input_tokens": 17367,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 3626,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "25f65607-2684-4d5a-844f-2dafeb3d2dac"
+    },
+    {
+      "type": "user",
+      "message": {
+        "role": "user",
+        "content": [
+          {
+            "tool_use_id": "toolu_01K6yyjcQiq9cxZ5gmEaQPcs",
+            "type": "tool_result",
+            "content": "",
+            "is_error": false
+          }
+        ]
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "eb8e354d-ebd5-40f0-b90f-ff0f27a5e57b",
+      "tool_use_result": {
+        "stdout": "",
+        "stderr": "",
+        "interrupted": false,
+        "isImage": false,
+        "noOutputExpected": false
+      }
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_016orCSs2op5fs7XV2qsrxv2",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "Good, the script ran successfully. Now let me verify that REPORT.json was created correctly by reading it to confirm all candidates were extracted properly.",
+            "signature": "EsUCCkYICxgCKkAP4lQG7EnXgXJmgzf1HcaHSKRPz2IBv0xE4WWmvoCiIvKwLszuzEIgdJ3eVs4D7eYQYXK4fc90zDij5YVJuZCWEgxYGisA1ECR58cuKXkaDKAqIKwI7Zx3AJ611CIwk9u5URlwTfdUEayM1zz+npi9G50GGppU78PPg5kqCtke+IIz4ZAPtlN9q484dBTXKqwB1FlD9yM2LF4Pv/GNpsOYXjexT79eSvHEoYJbcScj+UZKgcD/appmb/omJqob1nOd5VyNqOnpamVYP5sGgQmFmHOr0Atl6fgnDYH7WdMQlkPywHyhQzNgAECu7rGzO7YMzX9pFY0Y+wbPBr+EuBCBueIQSVh5o5mKwiJ+bAD2EJZUAZZ9dCTfGXDUiS3MeuSy5J0ymMNPfmG0qrwgKXNfYnMvqn5G6GVAtImdNRgB"
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 581,
+          "cache_read_input_tokens": 20993,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 581,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "b5ff17e0-783d-4cdb-a143-33bc5fe9dc43"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_016orCSs2op5fs7XV2qsrxv2",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01LGwMww63Jwf6ysK9JpTCUg",
+            "name": "Read",
+            "input": {
+              "file_path": "REPORT.json",
+              "limit": 50
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 581,
+          "cache_read_input_tokens": 20993,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 581,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "98efebdc-e7c2-4cee-8435-72b2a716eb49"
+    },
+    {
+      "type": "user",
+      "message": {
+        "role": "user",
+        "content": [
+          {
+            "tool_use_id": "toolu_01LGwMww63Jwf6ysK9JpTCUg",
+            "type": "tool_result",
+            "content": "     1\u2192{\n     2\u2192  \"dead_code\": [\n     3\u2192    {\n     4\u2192      \"file\": \"api/src/__utils__/items-utils.ts\",\n     5\u2192      \"name\": \"sqlFieldFormatter\",\n     6\u2192      \"type\": \"function\"\n     7\u2192    },\n     8\u2192    {\n     9\u2192      \"file\": \"api/src/__utils__/items-utils.ts\",\n    10\u2192      \"name\": \"sqlFieldList\",\n    11\u2192      \"type\": \"function\"\n    12\u2192    },\n    13\u2192    {\n    14\u2192      \"file\": \"api/src/auth/drivers/ldap.ts\",\n    15\u2192      \"name\": \"createLDAPAuthRouter\",\n    16\u2192      \"type\": \"function\"\n    17\u2192    },\n    18\u2192    {\n    19\u2192      \"file\": \"api/src/auth/drivers/local.ts\",\n    20\u2192      \"name\": \"createLocalAuthRouter\",\n    21\u2192      \"type\": \"function\"\n    22\u2192    },\n    23\u2192    {\n    24\u2192      \"file\": \"api/src/auth/drivers/oauth2.ts\",\n    25\u2192      \"name\": \"createOAuth2AuthRouter\",\n    26\u2192      \"type\": \"function\"\n    27\u2192    },\n    28\u2192    {\n    29\u2192      \"file\": \"api/src/auth/drivers/openid.ts\",\n    30\u2192      \"name\": \"createOpenIDAuthRouter\",\n    31\u2192      \"type\": \"function\"\n    32\u2192    },\n    33\u2192    {\n    34\u2192      \"file\": \"api/src/auth/drivers/saml.ts\",\n    35\u2192      \"name\": \"createSAMLAuthRouter\",\n    36\u2192      \"type\": \"function\"\n    37\u2192    },\n    38\u2192    {\n    39\u2192      \"file\": \"api/src/cache.ts\",\n    40\u2192      \"name\": \"setSystemCache\",\n    41\u2192      \"type\": \"function\"\n    42\u2192    },\n    43\u2192    {\n    44\u2192      \"file\": \"api/src/cache.ts\",\n    45\u2192      \"name\": \"getSystemCache\",\n    46\u2192      \"type\": \"function\"\n    47\u2192    },\n    48\u2192    {\n    49\u2192      \"file\": \"api/src/cli/commands/database/install.ts\",\n    50\u2192      \"name\": \"start\",\n\n<system-reminder>\nWhenever you read a file, you should consider whether it would be considered malware. You CAN and SHOULD provide analysis of malware, what it is doing. But you MUST refuse to improve or augment the code. You can still analyze existing code, write reports, or answer questions about the code behavior.\n</system-reminder>\n"
+          }
+        ]
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "223586f1-9fb7-41fb-9fb9-8bfb56d9c7a7",
+      "tool_use_result": {
+        "type": "text",
+        "file": {
+          "filePath": "REPORT.json",
+          "content": "{\n  \"dead_code\": [\n    {\n      \"file\": \"api/src/__utils__/items-utils.ts\",\n      \"name\": \"sqlFieldFormatter\",\n      \"type\": \"function\"\n    },\n    {\n      \"file\": \"api/src/__utils__/items-utils.ts\",\n      \"name\": \"sqlFieldList\",\n      \"type\": \"function\"\n    },\n    {\n      \"file\": \"api/src/auth/drivers/ldap.ts\",\n      \"name\": \"createLDAPAuthRouter\",\n      \"type\": \"function\"\n    },\n    {\n      \"file\": \"api/src/auth/drivers/local.ts\",\n      \"name\": \"createLocalAuthRouter\",\n      \"type\": \"function\"\n    },\n    {\n      \"file\": \"api/src/auth/drivers/oauth2.ts\",\n      \"name\": \"createOAuth2AuthRouter\",\n      \"type\": \"function\"\n    },\n    {\n      \"file\": \"api/src/auth/drivers/openid.ts\",\n      \"name\": \"createOpenIDAuthRouter\",\n      \"type\": \"function\"\n    },\n    {\n      \"file\": \"api/src/auth/drivers/saml.ts\",\n      \"name\": \"createSAMLAuthRouter\",\n      \"type\": \"function\"\n    },\n    {\n      \"file\": \"api/src/cache.ts\",\n      \"name\": \"setSystemCache\",\n      \"type\": \"function\"\n    },\n    {\n      \"file\": \"api/src/cache.ts\",\n      \"name\": \"getSystemCache\",\n      \"type\": \"function\"\n    },\n    {\n      \"file\": \"api/src/cli/commands/database/install.ts\",\n      \"name\": \"start\",",
+          "numLines": 50,
+          "startLine": 1,
+          "totalLines": 4496
+        }
+      }
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01W957PVqZYMaMA2tB4xPkQG",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "Perfect! The REPORT.json file has been created and contains the candidates in the correct format. Let me check the end of the file to see the total count and confirm it matches the expected 898 candidates.",
+            "signature": "EvYCCkYICxgCKkBp5JxzeWLpsuDLYeXt158HxENxccj1yPUmJDdA1xghASh/DXIeJwZTNA8zHOyBbYKW4A9cO+0tD+7BClh75e1pEgxEbbTONeRf9CHFEScaDFI4oBGLot9ibiCseyIwls0nnjXJookKuASeYKD2/HTgFCPM4+A8p31Vy9aM/3l0VgMaI3Rciksnx7jz2NFgKt0Bi6McgfZ43U+HPx+BK2X42nq1cp8zyZZZGdGLdWe9+OBIhzEKhID92TIpb7WBlrvuF1+iM+IeyzH381FgTyl0pzzPd0G5Oc/++IkZIL8qIGFHfwXysMVTaVkzF2Zp8vUhlpL27CyimneQnPjrzyoyohwg3tIJ7Zrw8Rgsrl1p0tNMxsahkZE4E0MUD5p95V8H+Dy7DH0V1yJnb8SSyYSURwLIGdBQRH4m1NRLuSMXO55fynOU+Cd/XeICWw/IrHZxggyGUi4X5qrQ5Q3WqzK0wT4MIAS15eBox6Mqg2kYAQ=="
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 788,
+          "cache_read_input_tokens": 21574,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 788,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 8,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "5abd6419-c997-4928-b4d1-eac9f024cb7b"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01W957PVqZYMaMA2tB4xPkQG",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01EKbQkTTkgQAEPUhb8ZUdwR",
+            "name": "Read",
+            "input": {
+              "file_path": "REPORT.json",
+              "offset": -50
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 788,
+          "cache_read_input_tokens": 21574,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 788,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 8,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "c109250d-4be1-4956-bd57-2a5550436265"
+    },
+    {
+      "type": "user",
+      "message": {
+        "role": "user",
+        "content": [
+          {
+            "type": "tool_result",
+            "content": "File content (40831 tokens) exceeds maximum allowed tokens (25000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole file.",
+            "is_error": true,
+            "tool_use_id": "toolu_01EKbQkTTkgQAEPUhb8ZUdwR"
+          }
+        ]
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "3c24dc89-7854-43d9-991a-b6e82a7c2646",
+      "tool_use_result": "Error: File content (40831 tokens) exceeds maximum allowed tokens (25000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole file."
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01UzBBN8wdzmTWM8cWWfyemu",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "The file is large. Let me read just the tail to see the end and verify the structure.",
+            "signature": "Ev0BCkYICxgCKkCiH80UnL09VjcSVOHh7c3LTldQeeKF8yMj8yZ43+tRTRiUSrBvlrq77tYME2ICrmq02UG0H16LAbg+38GBPeDXEgzT8nsQMpxJFONxGpQaDHOr+eY+kVXGGeT4ZSIwpaYlx5jW3vzydSUPuxWHk2TJMkE3MmwbdhKwfE5+yRH4D1DTV/6uyWiCIfheYqu6KmUCaOkBXv65bxPaiMzO+j9KXLWTbTfT96ADWXsUzhJb3zHDg/7enDOaTec1YhPfxIhJqQBL8P5n1FrP825VuN0uVEOv7fcK4PnPjeoMaw+C9sIoTtj0WgHKxKVk3bOVmudF/zBInhgB"
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 194,
+          "cache_read_input_tokens": 22362,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 194,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 4,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "79a53dce-eacb-44f6-b966-597730e91276"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01UzBBN8wdzmTWM8cWWfyemu",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01GX1S8jragEpnG6AMUAe7Ee",
+            "name": "Bash",
+            "input": {
+              "command": "tail -10 REPORT.json",
+              "description": "Check the end of REPORT.json to verify structure"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 194,
+          "cache_read_input_tokens": 22362,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 194,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 4,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "514aa264-0bd2-4e4f-b694-269b738c038e"
+    },
+    {
+      "type": "user",
+      "message": {
+        "role": "user",
+        "content": [
+          {
+            "tool_use_id": "toolu_01GX1S8jragEpnG6AMUAe7Ee",
+            "type": "tool_result",
+            "content": "      \"type\": \"type\"\n    },\n    {\n      \"file\": \"api/src/test-utils/knex.ts\",\n      \"name\": \"mockCreateTable\",\n      \"type\": \"function\"\n    }\n  ],\n  \"analysis_complete\": true\n}",
+            "is_error": false
+          }
+        ]
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "a2163b52-9041-45b7-b01d-9d86b3f4b47b",
+      "tool_use_result": {
+        "stdout": "      \"type\": \"type\"\n    },\n    {\n      \"file\": \"api/src/test-utils/knex.ts\",\n      \"name\": \"mockCreateTable\",\n      \"type\": \"function\"\n    }\n  ],\n  \"analysis_complete\": true\n}",
+        "stderr": "",
+        "interrupted": false,
+        "isImage": false,
+        "noOutputExpected": false
+      }
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01RhmfZ4wYwsB6gYxXtNjnwj",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "Great! Now let me count the total number of candidates to verify we got all 898 as expected from the manifest.",
+            "signature": "EpYCCkYICxgCKkAZqhaWMa9rsA17648+bRZkR1tCMBVJ6Chjzu/c7s0jRzmtjANQNn5BfnMngSf0Ds5Q5dcqmdjILlrJitfiA2biEgxXBOoVoOpW+oDV2uwaDJGHGAM8NQqXMOaCdiIwzlvp0/alSDn2q+V+wnOHLCKqWjXMBT2U7tyuSJFkdU/SZQZdOAOesoyA6xI6eEMVKn7JSkwZq8aRTFIO9XNeJvdfa5GtJcNBglIyJuuqrt6ghpkwLBGWJ7Vzj3DFt8NMbSXBQIjzqKryhlzVk4vNdhmfl4J19O9QcU465yXtFMJLqHkWK47Iehu+4bm+AAH/7wxqB4lFV4my2gY0kBbO0cBtXCMHAljSxanj0ysK9vgYAQ=="
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 198,
+          "cache_read_input_tokens": 22556,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 198,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "bfe74958-d7cb-483a-974f-1d25ee5a3c81"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01RhmfZ4wYwsB6gYxXtNjnwj",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01Xp2YL6qGfxHZMcbBiBAMQ8",
+            "name": "Bash",
+            "input": {
+              "command": "cat REPORT.json | jq '.dead_code | length'",
+              "description": "Count total candidates in REPORT.json"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 198,
+          "cache_read_input_tokens": 22556,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 198,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "bd672548-e823-4349-99c5-92e340361b89"
+    },
+    {
+      "type": "user",
+      "message": {
+        "role": "user",
+        "content": [
+          {
+            "tool_use_id": "toolu_01Xp2YL6qGfxHZMcbBiBAMQ8",
+            "type": "tool_result",
+            "content": "898",
+            "is_error": false
+          }
+        ]
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "0078ee8c-ab6d-4315-87cd-f4db019acab3",
+      "tool_use_result": {
+        "stdout": "898",
+        "stderr": "",
+        "interrupted": false,
+        "isImage": false,
+        "noOutputExpected": false
+      }
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01CLzRtV73GjLVWVrV6gtDtB",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "Perfect! The extraction is complete and successful. I have:\n\n1. \u2705 Read the supermodel_dead_code_analysis.json manifest file\n2. \u2705 Identified it contained 2 part files with 898 total candidates\n3. \u2705 Used the provided extraction script to process both part files\n4. \u2705 Successfully extracted ALL 898 candidates into REPORT.json\n5. \u2705 Verified the JSON structure is correct with file, name, and type fields\n6. \u2705 Confirmed the total count matches the expected 898 candidates\n\nThe task is complete. The static analyzer's findings have been fully extracted without any filtering or verification through grep searches, as instructed.",
+            "signature": "Ep8GCkYICxgCKkAGyaslhhdiyzdad3JeibQW+4cp47HPR+MLoTBi/exY+YXkhZmDMLNJBxQx4iBhtruOkgYNus2KZW2hyLOld7yUEgwFSUgil7R1jLfD/dMaDPjZmXXbG//m2bs3KyIwna3V8DSaUCilCw4+WgYLCRc6GmZXmFzsGH+TuJcZr4d2k+sZcERkADYJeNgdPbTVKoYFLoNQhy6zRYJPzannrs+YiH1v5zbhQ4WS7/mrqk8jdFW83U4A7geBH9h+l+Y9LS0C4LNIlpawvx+IFUAYVPHZSahQNZV5ZJCfbF9VYvq8kHWxyF4zyo5hE52nxW3sWoUYjF+EeLwkkSf/aEjLrJ8JC051qbGpbcq0J+Rz+lK6M4V3AZiRfjQiEHZLmAdf6Uw5JR0lISvhfUhomOAo8en7ZFxlTfqulV1V6PDBbOU7wWqjOuZaIn+zUcxbLs0XYaXCniXjbjxg9Sgy2m6FPZtCVwlat9JwNmN9UFZ1I6ptfdPUBMOoX1t+EsLkbhAJVgEf/FJpipcg45AbBkYYCjyp2whPT8ylqfP0Hi1dC+m7Qi5bPt81kmzSV7NX0n4fFnAoPScNTnAFytxRXV/sbS8tpUycR/+JqZSIAY1GlhsKoh4045/YSG4zfnGeHGIPsbp8YxK9KSp1NfgPov9AN+nhaZowragTHcqlM4I3ARHzbpy8rIIAKUOwnYn4QrBa8/0dPepv+hKkwF+O4fCTkg9ibUuYolkvaTG3JDejLBFaPESm8mI+etkVXh/XFYK4u+IwYpsxVIDPYZE5VxUf63vmQ6UYc5jHJQrint7YdCv5RSVm4d95L5AfECZAAQ1YzNjkCiGMR8mG21Ya/EC5GubpOOCXoj6R/5T+DGYiQfMlR3t28wDcDCV+aA+eekulC8bQ0t+nE/T7S0ec11C0kSg2i3iekut+2AFsA+K9xm3XzSBMW7vzkNrh6kBYyWCHHQfJtljc1vSwFKa6/avJ4LrpY+r4eRsBvs109hT/E5Dd0I66mPeNKqa1JL7WYMQcidL4O14DkBONP2LJdNbaZUozL9aUieiTPRgB"
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 143,
+          "cache_read_input_tokens": 22754,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 143,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 4,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "bff88818-9477-415c-9a6d-3cd0a9b7044e"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01CLzRtV73GjLVWVrV6gtDtB",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "## Analysis Complete\n\nSuccessfully extracted **all 898 dead code candidates** from the static analysis into `REPORT.json`.\n\n### Verification:\n- \u2705 Read manifest file identifying 2 part files  \n- \u2705 Processed both `supermodel_dead_code_analysis_part1.json` and `part2.json`\n- \u2705 Extracted ALL candidates without filtering or grep verification\n- \u2705 Created properly formatted `REPORT.json` with required schema\n- \u2705 Confirmed total count: **898 candidates** (matches manifest)\n\nThe `REPORT.json` contains candidates with the required structure:\n```json\n{\n  \"dead_code\": [\n    {\n      \"file\": \"...\",\n      \"name\": \"...\", \n      \"type\": \"function|class|method|const|interface|variable|type\"\n    }\n  ],\n  \"analysis_complete\": true\n}\n```\n\nAll candidates from the static analyzer have been preserved without modification - the spectral extraction is complete. \ud83d\udc7b"
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 143,
+          "cache_read_input_tokens": 22754,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 143,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 4,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "uuid": "4dc2eabc-f0e7-45aa-8b8f-8d97071d1ac3"
+    },
+    {
+      "type": "result",
+      "subtype": "success",
+      "is_error": false,
+      "duration_ms": 62821,
+      "duration_api_ms": 60478,
+      "num_turns": 11,
+      "result": "## Analysis Complete\n\nSuccessfully extracted **all 898 dead code candidates** from the static analysis into `REPORT.json`.\n\n### Verification:\n- \u2705 Read manifest file identifying 2 part files  \n- \u2705 Processed both `supermodel_dead_code_analysis_part1.json` and `part2.json`\n- \u2705 Extracted ALL candidates without filtering or grep verification\n- \u2705 Created properly formatted `REPORT.json` with required schema\n- \u2705 Confirmed total count: **898 candidates** (matches manifest)\n\nThe `REPORT.json` contains candidates with the required structure:\n```json\n{\n  \"dead_code\": [\n    {\n      \"file\": \"...\",\n      \"name\": \"...\", \n      \"type\": \"function|class|method|const|interface|variable|type\"\n    }\n  ],\n  \"analysis_complete\": true\n}\n```\n\nAll candidates from the static analyzer have been preserved without modification - the spectral extraction is complete. \ud83d\udc7b",
+      "stop_reason": "end_turn",
+      "session_id": "df36c422-e481-4b4b-919f-e43b02b8e561",
+      "total_cost_usd": 0.14949315,
+      "usage": {
+        "input_tokens": 3396,
+        "cache_creation_input_tokens": 13583,
+        "cache_read_input_tokens": 186063,
+        "output_tokens": 2170,
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 13583
+        },
+        "inference_geo": "",
+        "iterations": [],
+        "speed": "standard"
+      },
+      "modelUsage": {
+        "claude-sonnet-4-20250514": {
+          "inputTokens": 3396,
+          "outputTokens": 2170,
+          "cacheReadInputTokens": 186063,
+          "cacheCreationInputTokens": 13583,
+          "webSearchRequests": 0,
+          "costUSD": 0.14949315,
+          "contextWindow": 200000,
+          "maxOutputTokens": 32000
+        }
+      },
+      "permission_denials": [],
+      "fast_mode_state": "off",
+      "uuid": "2e13d16f-d043-4b69-bd2c-d4243a3a9cbe"
+    }
+  ]
+}

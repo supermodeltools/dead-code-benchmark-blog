@@ -1,0 +1,173 @@
+# Supermodel Dead Code Detection Benchmark (PR-based ground truth)
+#
+# Usage:
+#   uv run mcpbr run --config config/supermodel-deadcode-pr.yaml
+#   uv run mcpbr run --config config/supermodel-deadcode-pr.yaml --mcp-only -t tyr_pr258
+#   uv run mcpbr run --config config/supermodel-deadcode-pr.yaml --baseline-only -n 1
+#
+# Task quality notes:
+#   - tyr_pr258: 95.5% API recall (21/22 GT items detected). Best test case.
+#   - gemini_cli_pr18681: 33% API recall (2/6). 4304 candidates. Test-import gap + misses.
+#   - prisma_pr28485: 0% recall — GT items only referenced by tests (API gap).
+#   - n8n_pr23572: 0% recall — GT items are live code (feature removal, not dead code).
+#   - typescript_pr56817: Staging API cannot complete (too large). Needs cached_analysis.
+
+benchmark: "supermodel"
+analysis_type: "dead-code"
+
+tasks:
+  - id: tyr_pr258
+    repo: uncovering-world/track-your-regions
+    pr_number: 258
+    merge_commit: "6f480121e4641b5551e6af092283a5d161490e5f"
+    language: typescript
+    description: "Remove dead code and unused exports — 22 functions/interfaces across backend+frontend"
+
+  - id: gemini_cli_pr18681
+    repo: google-gemini/gemini-cli
+    pr_number: 18681
+    merge_commit: "14219bb57d7d865b284047b05a9e93d70f61af9b"
+    language: typescript
+    scope_prefix: "packages"
+    description: "Remove unused exports and redundant hook files (ts-prune verified)"
+
+  - id: prisma_pr28485
+    repo: prisma/prisma
+    pr_number: 28485
+    merge_commit: "e12307364896b8ab9b47ac0b9941820ba5070ec6"
+    language: typescript
+    scope_prefix: "packages"
+    description: "Remove dead code from generators (API recall limited by test-import gap)"
+
+  - id: typescript_pr56817
+    repo: microsoft/TypeScript
+    pr_number: 56817
+    merge_commit: "752135eb4046fc820006b41b2f621242f77b6c3e"
+    language: typescript
+    scope_prefix: "src"
+    description: "Remove unused exports via Knip — 122 items (staging API too slow, needs cached_analysis)"
+    zip_exclude: ["loc/*", "lib/*", "harness/*", "testRunner/*", "*.lcl", "*.d.ts"]
+
+  - id: n8n_pr23572
+    repo: n8n-io/n8n
+    pr_number: 23572
+    merge_commit: "ea889bee8990d50fcafa989669288bff549750c4"
+    language: typescript
+    scope_prefix: "packages"
+    description: "Remove Pyodide — feature removal, not dead code (API correctly sees as alive)"
+
+  - id: podman_pr16084
+    repo: podman-desktop/podman-desktop
+    pr_number: 16084
+    merge_commit: "5e41b895c6d3dce16954bfdcd10aa295739d3bff"
+    language: typescript
+    scope_prefix: "packages"
+    description: "Remove unused exports from main package — only 2 actual deletions (rest are de-exports)"
+
+  - id: ansible_pr2588
+    repo: ansible/vscode-ansible
+    pr_number: 2588
+    merge_commit: "e87fb1e917325bdad431d5205c70aafaddde8c32"
+    language: typescript
+    description: "Remove unused exports — 0 actual deletions (all de-exports only, no GT items)"
+
+  - id: jslpsolver_pr159
+    repo: JWally/jsLPSolver
+    pr_number: 159
+    merge_commit: "f213147a0eed531edceac4504b6125278b41f0ba"
+    language: typescript
+    description: "Remove dead code — 15 deleted functions/interfaces/classes (pseudo-cost, sparse simplex)"
+
+  - id: mimir_pr3613
+    repo: statisticsnorway/mimir
+    pr_number: 3613
+    merge_commit: "9beb91366382b956572303644ea89d411c02f1f3"
+    language: typescript
+    description: "Remove unused functions and types — 25 deleted symbols across 18 files"
+
+  - id: gemini_cli_pr17443
+    repo: google-gemini/gemini-cli
+    pr_number: 17443
+    merge_commit: "80e1fa198f7e71c70b7f8b3bba2ebfbe01bac35d"
+    language: typescript
+    scope_prefix: "packages"
+    description: "Clean up dead code — 15+ deleted functions/interfaces/enums (982 lines removed, 3 added)"
+
+  - id: latitude_pr2300
+    repo: latitude-dev/latitude-llm
+    pr_number: 2300
+    merge_commit: "e008b11650ff629693f5c7de2e7c60b35e684736"
+    language: typescript
+    scope_prefix: "packages"
+    description: "Add knip and remove dead code — 50+ deleted server actions, components, hooks (8021 lines removed)"
+
+  - id: logto_pr7631
+    repo: logto-io/logto
+    pr_number: 7631
+    merge_commit: "593b1f90749524f5dd0164e6a22bee909f64eecf"
+    language: typescript
+    scope_prefix: "packages"
+    description: "Remove unused auth status page and phrases — pure deletion (947 lines, 0 additions)"
+
+  - id: otel_js_pr5444
+    repo: open-telemetry/opentelemetry-js
+    pr_number: 5444
+    merge_commit: "94059f7cf7425e139626d3c179ac67dca378ad4d"
+    language: typescript
+    scope_prefix: "packages"
+    description: "Remove unused/obsolete functions and types from core — ~10 deleted symbols (267 lines removed)"
+
+  - id: maskbook_pr12361
+    repo: DimensionDev/Maskbook
+    pr_number: 12361
+    merge_commit: "3a86713bff5d4853c30bff22eb798f94a65a080b"
+    language: typescript
+    scope_prefix: "packages"
+    description: "Remove unused code — 37 exported symbols deleted (contracts, hooks, utils, 1689 lines removed)"
+
+  - id: grafana_pr115471
+    repo: grafana/grafana
+    pr_number: 115471
+    merge_commit: "27eb488a967b2c5cc3592d33e80e4691de9a1b12"
+    language: typescript
+    scope_prefix: "apps"
+    description: "Remove Drilldown Investigations — 20 exported interfaces/consts deleted (6686 lines removed)"
+
+  - id: calcom_pr26222
+    repo: calcom/cal.com
+    pr_number: 26222
+    merge_commit: "18b041514f4e1efea756968faf96a45da3f02918"
+    language: typescript
+    scope_prefix: "packages"
+    description: "Remove unused UI components and exports — 23 deleted (710 lines removed)"
+
+  - id: directus_pr26311
+    repo: directus/directus
+    pr_number: 26311
+    merge_commit: "acf6d3d4caebe52888a9d65fdd69a85e0897ba27"
+    language: typescript
+    description: "Remove deprecated webhooks route and dead code — 15 exported symbols (1384 lines removed)"
+
+  - id: nextjs_pr87149
+    repo: vercel/next.js
+    pr_number: 87149
+    merge_commit: "889d181474c8fe2847801d607ddff9f63e2de382"
+    language: typescript
+    scope_prefix: "packages"
+    description: "Delete old navigation response handling — 17 exported functions/types (2395 lines removed)"
+
+supermodel_api_base: "https://staging-api.supermodeltools.com"
+supermodel_api_key: null  # Set via SUPERMODEL_API_KEY env var
+resolved_threshold: 0.8
+
+mcp_server:
+  name: "filesystem"
+  command: "npx"
+  args: ["-y", "@modelcontextprotocol/server-filesystem", "{workdir}"]
+
+provider: "anthropic"
+agent_harness: "claude-code"
+model: "claude-sonnet-4-20250514"
+max_concurrent: 1
+timeout_seconds: 1200
+max_iterations: 30

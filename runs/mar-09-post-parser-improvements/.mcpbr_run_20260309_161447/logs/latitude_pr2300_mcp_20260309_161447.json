@@ -1,0 +1,1451 @@
+{
+  "instance_id": "latitude_pr2300",
+  "run_type": "mcp",
+  "events": [
+    {
+      "type": "system",
+      "subtype": "hook_started",
+      "hook_id": "0c0b015c-888e-4c02-b259-7ce0187fa02f",
+      "hook_name": "SessionStart:startup",
+      "hook_event": "SessionStart",
+      "uuid": "b09be521-2aad-422a-ad59-5922fe57818d",
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_started",
+      "hook_id": "92f0498d-eaea-4c84-80e9-951514346feb",
+      "hook_name": "SessionStart:startup",
+      "hook_event": "SessionStart",
+      "uuid": "6980e4a9-b997-4142-b7dc-9d2726b9ee4a",
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_started",
+      "hook_id": "e3d3470b-4ed6-49c9-9d8a-5b8619b621ec",
+      "hook_name": "SessionStart:startup",
+      "hook_event": "SessionStart",
+      "uuid": "2683647b-1e72-4145-9e3b-e1ed2b827c2c",
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_response",
+      "hook_id": "92f0498d-eaea-4c84-80e9-951514346feb",
+      "hook_name": "SessionStart:startup",
+      "hook_event": "SessionStart",
+      "output": "",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "outcome": "success",
+      "uuid": "c0d27f6f-58fa-4325-bdf5-1fdb7e45e177",
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_response",
+      "hook_id": "e3d3470b-4ed6-49c9-9d8a-5b8619b621ec",
+      "hook_name": "SessionStart:startup",
+      "hook_event": "SessionStart",
+      "output": "",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "outcome": "success",
+      "uuid": "a3393bad-e788-40d9-8688-c1d2c791f889",
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085"
+    },
+    {
+      "type": "system",
+      "subtype": "hook_response",
+      "hook_id": "0c0b015c-888e-4c02-b259-7ce0187fa02f",
+      "hook_name": "SessionStart:startup",
+      "hook_event": "SessionStart",
+      "output": "",
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0,
+      "outcome": "success",
+      "uuid": "047a4ee4-bc27-4df1-b9f7-a95df58e9487",
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085"
+    },
+    {
+      "type": "system",
+      "subtype": "init",
+      "cwd": "/private/var/folders/90/6pztvw5s1h12y4kmzbphq3qw0000gn/T/mcpbr_latitude_pr2300_k5xl5n6j",
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "tools": [
+        "Task",
+        "TaskOutput",
+        "Bash",
+        "Glob",
+        "Grep",
+        "ExitPlanMode",
+        "Read",
+        "Edit",
+        "Write",
+        "NotebookEdit",
+        "WebFetch",
+        "TodoWrite",
+        "WebSearch",
+        "TaskStop",
+        "AskUserQuestion",
+        "Skill",
+        "EnterPlanMode",
+        "EnterWorktree",
+        "CronCreate",
+        "CronDelete",
+        "CronList",
+        "ToolSearch",
+        "mcp__filesystem__read_file",
+        "mcp__filesystem__read_text_file",
+        "mcp__filesystem__read_media_file",
+        "mcp__filesystem__read_multiple_files",
+        "mcp__filesystem__write_file",
+        "mcp__filesystem__edit_file",
+        "mcp__filesystem__create_directory",
+        "mcp__filesystem__list_directory",
+        "mcp__filesystem__list_directory_with_sizes",
+        "mcp__filesystem__directory_tree",
+        "mcp__filesystem__move_file",
+        "mcp__filesystem__search_files",
+        "mcp__filesystem__get_file_info",
+        "mcp__filesystem__list_allowed_directories"
+      ],
+      "mcp_servers": [
+        {
+          "name": "plugin:github:github",
+          "status": "failed"
+        },
+        {
+          "name": "filesystem",
+          "status": "connected"
+        },
+        {
+          "name": "claude.ai Gmail",
+          "status": "needs-auth"
+        },
+        {
+          "name": "claude.ai Google Calendar",
+          "status": "needs-auth"
+        }
+      ],
+      "model": "claude-sonnet-4-20250514",
+      "permissionMode": "bypassPermissions",
+      "slash_commands": [
+        "keybindings-help",
+        "debug",
+        "simplify",
+        "batch",
+        "loop",
+        "claude-api",
+        "ghost",
+        "ralph-loop:cancel-ralph",
+        "ralph-loop:help",
+        "ralph-loop:ralph-loop",
+        "compact",
+        "context",
+        "cost",
+        "heapdump",
+        "init",
+        "pr-comments",
+        "release-notes",
+        "review",
+        "security-review",
+        "insights"
+      ],
+      "apiKeySource": "ANTHROPIC_API_KEY",
+      "claude_code_version": "2.1.71",
+      "output_style": "default",
+      "agents": [
+        "general-purpose",
+        "statusline-setup",
+        "Explore",
+        "Plan",
+        "claude-code-guide"
+      ],
+      "skills": [
+        "keybindings-help",
+        "debug",
+        "simplify",
+        "batch",
+        "loop",
+        "claude-api"
+      ],
+      "plugins": [
+        {
+          "name": "github",
+          "path": "/Users/jag/.claude/plugins/cache/claude-plugins-official/github/205b6e0b3036"
+        },
+        {
+          "name": "ralph-loop",
+          "path": "/Users/jag/.claude/plugins/cache/claude-plugins-official/ralph-loop/205b6e0b3036"
+        },
+        {
+          "name": "uncompact",
+          "path": "/Users/jag/.claude/plugins/cache/supermodeltools-Uncompact/uncompact/1.0.0"
+        }
+      ],
+      "uuid": "3beffcfd-36eb-48ff-b99f-5c78b2f20bf5",
+      "fast_mode_state": "off"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01Wk8U9WmstFkmvr1ti5Zcd3",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "I need to analyze the dead code analysis JSON file and extract all candidates into a REPORT.json file. Let me break this down:\n\n1. Read the `supermodel_dead_code_analysis.json` file\n2. Check if it's a manifest with part files or contains candidates directly\n3. Extract all candidates and write them to REPORT.json in the specified format\n4. Confirm the REPORT.json was written correctly\n\nThe user is very clear that I should NOT second-guess the static analyzer or verify with grep searches. I just need to extract what's already been identified.\n\nLet me start by reading the analysis file to see its structure.",
+            "signature": "EoYGCkYICxgCKkASZq0ekTjAJxDskacOgcFN+r8mAurnTNiI9hhr9qJi1LAlRM3s975q8lHhXWLFfITkzoEjdH7TkFW24B/QxIy9Egyx4t6/NpsYHADr4iIaDDfV0C6O8v57oCk4ICIwImDU780K2i4jntBcq2c70vbrz4lvywdgpBOQ+ScqQ8QQhlvhYiXI+SNRPY4rW0odKu0ERnwlndi3Gc2mmS88jzbNUyg11C7R/T0t5O/xGYOo8y2/2SplK6hGShaWDrlZqvVWdyheiWJ29HGeqJDZfU4oeIn7PBCVlVUqubGxR7IBrqLOeEnSxhc9UdjWRdpO2UKg325Us3KBGhZl++/lHA6tXu9UhJFRQtQwa8KFUWEBm/ozB7Qcf6n1qyqeNqdS3gHi2gW7v786J/OkxtaFlpqCb5s7pBV247OxjWLiCkcUrUKnnRBFp24YJtIuj0xazYUMas7YAhow8Xg/Fmh3L6g/OtEZxB7HQXSQPJbvBCFbaFgfoXkwBWZz45834FZAYU7xWHh1ySXu6omYGpthA+0wsut13JlZHyucIEvRqkcyIYcKJPfL7Io1a8kCS8n77qcdJPbph6Cff/1Hxi/4Rrpma14Z4vdKPR9SEnjl3ETu7Qhok4ParCFiujRj5QZ5YSWNks0dfenZYoIG2U2R6qi7wQVP4lMCc9WatjOg0S1kg/bRwKZwor8ao8L+TlRgU68Ur2zxEwEUN4F5JLZFg6W0GVt23ngnkWbxQYnBhGQr4UMs9PYiGnexabdGFmB1sT3Z6HQC+zX6cqLKdsu/XL6YIxr0VPix/wHxxH8P7buwwU2iV+yBU1dMJHNBAkgTO8sbDAxzkYMKxzKws06sq1c3oZJqocH0rocvXzKo3qLuZDBjJ9/cwfHET7ZJHsYfvPfimmyV+JL7uOGv8y5Pkk5lxGuW7EJu7UrOnkGdFbxwTrJ2f7T7SSVB8IYyLinq5xiTgKsEcDqh73QRfffHWgk5s1ysula6LddxyqpmG4JPO3CxHnxfb9BIhHfBt92wGAE="
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 6640,
+          "cache_read_input_tokens": 9314,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 6640,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "fa56bf58-e572-4e65-8630-a29f2c48e75c"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01Wk8U9WmstFkmvr1ti5Zcd3",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "*The Ghost materializes in the digital realm, ready to extract the spectral remnants of dead code...*\n\nLet me examine the dead code analysis and extract all candidates as commanded."
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 6640,
+          "cache_read_input_tokens": 9314,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 6640,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "14ccc92d-49a3-4e30-89e4-448637abe8cf"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01Wk8U9WmstFkmvr1ti5Zcd3",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_015CyUJSnmojyeZvNbhCq1ru",
+            "name": "ToolSearch",
+            "input": {
+              "query": "select:mcp__filesystem__read_text_file",
+              "max_results": 1
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 6640,
+          "cache_read_input_tokens": 9314,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 6640,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "7b463516-cd35-4d68-9637-b31e616e8c03"
+    },
+    {
+      "type": "user",
+      "message": {
+        "role": "user",
+        "content": [
+          {
+            "type": "tool_result",
+            "tool_use_id": "toolu_015CyUJSnmojyeZvNbhCq1ru",
+            "content": [
+              {
+                "type": "tool_reference",
+                "tool_name": "mcp__filesystem__read_text_file"
+              }
+            ]
+          }
+        ]
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "625093be-7931-46ca-a187-ff3d0b54eb11",
+      "tool_use_result": {
+        "matches": [
+          "mcp__filesystem__read_text_file"
+        ],
+        "query": "select:mcp__filesystem__read_text_file",
+        "total_deferred_tools": 27
+      }
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01CKQtT68ZfuifZbEsjCLg8C",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "Good, now I have access to the MCP filesystem tool. Let me read the dead code analysis file to understand its structure.",
+            "signature": "EqECCkYICxgCKkA3ojmhAnJ7f754vCzykoLPX0mmEEqqM36PcPaoUNx/o0OUOZgfpCvD1fbkj6EkT8YZH3sW7O/Pd7dJ4QRoF+75EgxyecwX1Tg2HjEdzM0aDNNM3oIWHM2k0H7v7SIwToxc4/UkNF9dIjlmpBfLjUHQN2dgQjT8bRIMrXEEbt+YIUy05v0Ku06gZQH46G0YKogBd3Z8zBk3pzXkvD5/kycjUDea9k0TtmfFnVLDvFMWYpn+GdCTBkTxfsBL5/MbTTNzaRidZURuODwbpiBpsdRFUR5aRp29EbBTQgvNk1L1EYGkpWWMJV5jxRPF+hDdPEd49T098m/nGoyjwwTe9J7+9djidJYIqRmFskzNTTAES+goID346X39yhgB"
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 530,
+          "cache_read_input_tokens": 15954,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 530,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "992e315e-e919-41ee-ad10-2d8b9335dbab"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01CKQtT68ZfuifZbEsjCLg8C",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_014QBqqLPrKZbnJAEfKnRJv6",
+            "name": "mcp__filesystem__read_text_file",
+            "input": {
+              "path": "supermodel_dead_code_analysis.json"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 530,
+          "cache_read_input_tokens": 15954,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 530,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "2b703340-d524-4bfd-9a95-1af31bc7d8d2"
+    },
+    {
+      "type": "user",
+      "message": {
+        "role": "user",
+        "content": [
+          {
+            "tool_use_id": "toolu_014QBqqLPrKZbnJAEfKnRJv6",
+            "type": "tool_result",
+            "content": "Error: result (89,065 characters) exceeds maximum allowed tokens. Output has been saved to /Users/jag/.claude/projects/-private-var-folders-90-6pztvw5s1h12y4kmzbphq3qw0000gn-T-mcpbr-latitude-pr2300-k5xl5n6j/b503b054-b6f3-464c-bac2-92df31711085/tool-results/mcp-filesystem-read_text_file-1773087461220.txt.\nFormat: JSON with schema: {content: string}\nUse offset and limit parameters to read specific portions of the file, search within it for specific content, and jq to make structured queries.\nREQUIREMENTS FOR SUMMARIZATION/ANALYSIS/REVIEW:\n- You MUST read the content from the file at /Users/jag/.claude/projects/-private-var-folders-90-6pztvw5s1h12y4kmzbphq3qw0000gn-T-mcpbr-latitude-pr2300-k5xl5n6j/b503b054-b6f3-464c-bac2-92df31711085/tool-results/mcp-filesystem-read_text_file-1773087461220.txt in sequential chunks until 100% of the content has been read.\n- If you receive truncation warnings when reading the file, reduce the chunk size until you have read 100% of the content without truncation.\n- Before producing ANY summary or analysis, you MUST explicitly describe what portion of the content you have read. ***If you did not read the entire content, you MUST explicitly state this.***\n"
+          }
+        ]
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "54b5a261-8810-4920-b3d9-11f8313f0c68",
+      "tool_use_result": {
+        "content": "Error: result (89,065 characters) exceeds maximum allowed tokens. Output has been saved to /Users/jag/.claude/projects/-private-var-folders-90-6pztvw5s1h12y4kmzbphq3qw0000gn-T-mcpbr-latitude-pr2300-k5xl5n6j/b503b054-b6f3-464c-bac2-92df31711085/tool-results/mcp-filesystem-read_text_file-1773087461220.txt.\nFormat: JSON with schema: {content: string}\nUse offset and limit parameters to read specific portions of the file, search within it for specific content, and jq to make structured queries.\nREQUIREMENTS FOR SUMMARIZATION/ANALYSIS/REVIEW:\n- You MUST read the content from the file at /Users/jag/.claude/projects/-private-var-folders-90-6pztvw5s1h12y4kmzbphq3qw0000gn-T-mcpbr-latitude-pr2300-k5xl5n6j/b503b054-b6f3-464c-bac2-92df31711085/tool-results/mcp-filesystem-read_text_file-1773087461220.txt in sequential chunks until 100% of the content has been read.\n- If you receive truncation warnings when reading the file, reduce the chunk size until you have read 100% of the content without truncation.\n- Before producing ANY summary or analysis, you MUST explicitly describe what portion of the content you have read. ***If you did not read the entire content, you MUST explicitly state this.***\n",
+        "structuredContent": {
+          "content": "{\"deadCodeCandidates\":[{\"file\":\"packages/constants/src/helpers.ts\",\"name\":\"createRelativePath\",\"type\":\"function\"},{\"file\":\"packages/constants/src/helpers.ts\",\"name\":\"simplifyDocument\",\"type\":\"function\"},{\"file\":\"packages/constants/src/helpers.ts\",\"name\":\"isInlineImage\",\"type\":\"function\"},{\"file\":\"packages/constants/src/helpers.ts\",\"name\":\"isEncodedImage\",\"type\":\"function\"},{\"file\":\"packages/constants/src/helpers.ts\",\"name\":\"isSafeUrl\",\"type\":\"function\"},{\"file\":\"packages/constants/src/helpers.ts\",\"name\":\"isLatitudeUrl\",\"type\":\"function\"},{\"file\":\"packages/constants/src/helpers.ts\",\"name\":\"isCloneActionUrl\",\"type\":\"function\"},{\"file\":\"packages/constants/src/issues/constants.ts\",\"name\":\"ISSUE_EMBEDDING_CACHE_KEY\",\"type\":\"function\"},{\"file\":\"packages/constants/src/issues/constants.ts\",\"name\":\"ISSUE_DISCOVERY_RERANK_CACHE_KEY\",\"type\":\"function\"},{\"file\":\"packages/constants/src/issues/constants.ts\",\"name\":\"ISSUE_GENERATION_CACHE_KEY\",\"type\":\"function\"},{\"file\":\"packages/constants/src/issues/parameters.ts\",\"name\":\"issuesFiltersQueryParamsParser\",\"type\":\"function\"},{\"file\":\"packages/constants/src/issues/parseParameters.ts\",\"name\":\"parseIssuesQueryParams\",\"type\":\"function\"},{\"file\":\"packages/constants/src/issues/parseParameters.ts\",\"name\":\"convertIssuesParamsToQueryParams\",\"type\":\"function\"},{\"file\":\"packages/constants/src/issues/parseParameters.ts\",\"name\":\"buildIssuesCacheKey\",\"type\":\"function\"},{\"file\":\"packages/constants/src/latitudePromptSchema/providers/openai/fileSearchToolSchema.ts\",\"name\":\"CompoundFilterSchema\",\"type\":\"function\"},{\"file\":\"packages/constants/src/tracing/index.ts\",\"name\":\"SPAN_INGESTION_STORAGE_KEY\",\"type\":\"function\"},{\"file\":\"packages/constants/src/tracing/index.ts\",\"name\":\"SPAN_PROCESSING_STORAGE_KEY\",\"type\":\"function\"},{\"file\":\"packages/constants/src/tracing/index.ts\",\"name\":\"TRACING_JOBS_DELAY_BETWEEN_CONFLICTS\",\"type\":\"function\"},{\"file\":\"packages/constants/src/tracing/span.ts\",\"name\":\"isCompletionSpan\",\"type\":\"function\"},{\"file\":\"packages/core/scripts/updateModelsDevData.ts\",\"name\":\"updateModelsDevData\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/commits/list.ts\",\"name\":\"listDrafts\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/documents/list.ts\",\"name\":\"listPrompts\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/documents/read.ts\",\"name\":\"readPrompt\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/general/think.ts\",\"name\":\"think\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/projects/deletePrompt.ts\",\"name\":\"deletePrompt\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/projects/editProject.ts\",\"name\":\"editProject\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/projects/list.ts\",\"name\":\"listProjects\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/projects/writePrompt.ts\",\"name\":\"writePrompt\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/settings/createIntegration.ts\",\"name\":\"createIntegrationLatte\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/settings/listExistingIntegrations.ts\",\"name\":\"listExistingIntegrations\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/settings/listIntegrationTools.ts\",\"name\":\"listIntegrationTools\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/settings/listProviders.ts\",\"name\":\"listProviders\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/settings/searchAvailableIntegrations.ts\",\"name\":\"searchAvailableIntegrations\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/triggers/actions/createTrigger.ts\",\"name\":\"createTrigger\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/triggers/actions/deleteTrigger.ts\",\"name\":\"deleteTrigger\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/triggers/actions/updateTrigger.ts\",\"name\":\"updateTrigger\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/triggers/listIntegrationTriggers.ts\",\"name\":\"listIntegrationTriggers\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/evaluationsV2/human/index.ts\",\"name\":\"validate\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/evaluationsV2/human/index.ts\",\"name\":\"annotate\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/evaluationsV2/human/rating.ts\",\"name\":\"validate\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/evaluationsV2/human/rating.ts\",\"name\":\"annotate\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/NotificationsFooter/index.tsx\",\"name\":\"NotificationsFooter\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H1\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H1B\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H2\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H2M\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H2B\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H3\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H3M\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H3B\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H4\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H4M\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H4B\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H5\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H5M\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H5B\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H6\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H6M\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H6B\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H6C\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/datasets/DatasetReadyMail.tsx\",\"name\":\"DatasetReadyMail\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/documentTrigger/DocumentTriggerResponseMail.tsx\",\"name\":\"DocumentTriggerResponseMail\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/exports/ExportReadyMail.tsx\",\"name\":\"ExportReadyMail\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/invitations/InvitationMail.tsx\",\"name\":\"InvitationMail\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/invitations/ReferralMail.tsx\",\"name\":\"InvitationMail\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/issues/IssueEscalatingMail.tsx\",\"name\":\"EscalatingBadge\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/issues/IssueEscalatingMail.tsx\",\"name\":\"MiniHistogram\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/issues/IssueEscalatingMail.tsx\",\"name\":\"IssueTableRow\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/issues/IssueEscalatingMail.tsx\",\"name\":\"IssueEscalatingMail\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/weeklyEmail/WeeklyEmailMail.tsx\",\"name\":\"BlankSlateCard\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/weeklyEmail/WeeklyEmailMail.tsx\",\"name\":\"StatCard\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/weeklyEmail/WeeklyEmailMail.tsx\",\"name\":\"LogsSection\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/weeklyEmail/WeeklyEmailMail.tsx\",\"name\":\"IssuesSection\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/weeklyEmail/WeeklyEmailMail.tsx\",\"name\":\"AnnotationsSection\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/weeklyEmail/WeeklyEmailMail.tsx\",\"name\":\"WeeklyEmailMail\",\"type\":\"function\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/util/utils.py\",\"name\":\"get_package\",\"type\":\"function\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/util/utils.py\",\"name\":\"get_env\",\"type\":\"function\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/util/utils.py\",\"name\":\"returns_identity\",\"type\":\"function\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/util/utils.py\",\"name\":\"is_like\",\"type\":\"function\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/util/utils.py\",\"name\":\"returns_like\",\"type\":\"function\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/version/version.py\",\"name\":\"_to_semver\",\"type\":\"function\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/version/version.py\",\"name\":\"_to_info\",\"type\":\"function\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/version/version.py\",\"name\":\"_version\",\"type\":\"function\"},{\"file\":\"packages/telemetry/python/examples/run_all.py\",\"name\":\"check_common_env\",\"type\":\"function\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/env/env.py\",\"name\":\"_get_gateway_base_url\",\"type\":\"function\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/exporter/exporter.py\",\"name\":\"create_exporter\",\"type\":\"function\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/managers/__init__.py\",\"name\":\"get_current_context\",\"type\":\"function\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/util/utils.py\",\"name\":\"get_env\",\"type\":\"function\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/util/utils.py\",\"name\":\"is_package_installed\",\"type\":\"function\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/util/utils.py\",\"name\":\"returns_identity\",\"type\":\"function\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/util/utils.py\",\"name\":\"is_like\",\"type\":\"function\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/util/utils.py\",\"name\":\"returns_like\",\"type\":\"function\"},{\"file\":\"packages/telemetry/typescript/src/env/env.ts\",\"name\":\"GET_GATEWAY_BASE_URL\",\"type\":\"function\"},{\"file\":\"packages/telemetry/typescript/src/utils/utils.ts\",\"name\":\"capitalize\",\"type\":\"function\"},{\"file\":\"packages/telemetry/typescript/src/utils/utils.ts\",\"name\":\"toCamelCase\",\"type\":\"function\"},{\"file\":\"packages/telemetry/typescript/src/utils/utils.ts\",\"name\":\"toSnakeCase\",\"type\":\"function\"},{\"file\":\"packages/telemetry/typescript/src/utils/utils.ts\",\"name\":\"toKebabCase\",\"type\":\"function\"},{\"file\":\"packages/telemetry/typescript/src/utils/utils.ts\",\"name\":\"omit\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Charts/index.tsx\",\"name\":\"ChartContainer\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Charts/index.tsx\",\"name\":\"ChartStyle\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Charts/index.tsx\",\"name\":\"ChartTooltipContent\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Charts/index.tsx\",\"name\":\"ChartLegendContent\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Command/index.tsx\",\"name\":\"CommandDialog\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Command/index.tsx\",\"name\":\"CommandSeparator\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Command/index.tsx\",\"name\":\"CommandShortcut\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DataGrid/EditCell/Editor.tsx\",\"name\":\"EditCell\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DataGrid/EditCell/EditorWrapper.tsx\",\"name\":\"CellTextEditorLazy\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DataGrid/EditCell/EditorWrapper.tsx\",\"name\":\"EditorCellWrapper\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DatePicker/Primitives/index.tsx\",\"name\":\"Calendar\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DatePicker/Range/index.tsx\",\"name\":\"DatePickerRange\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DatePicker/Range/usePresets.ts\",\"name\":\"usePresets\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DropdownMenu/index.tsx\",\"name\":\"TriggerButton\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DropdownMenu/index.tsx\",\"name\":\"DropdownMenu\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DropdownMenu/Primitives/index.tsx\",\"name\":\"DropdownMenuSubTrigger\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DropdownMenu/Primitives/index.tsx\",\"name\":\"DropdownMenuSubContent\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DropdownMenu/Primitives/index.tsx\",\"name\":\"DropdownMenuContent\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DropdownMenu/Primitives/index.tsx\",\"name\":\"DropdownMenuItem\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DropdownMenu/Primitives/index.tsx\",\"name\":\"DropdownMenuCheckboxItem\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DropdownMenu/Primitives/index.tsx\",\"name\":\"DropdownMenuRadioItem\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DropdownMenu/Primitives/index.tsx\",\"name\":\"DropdownMenuLabel\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DropdownMenu/Primitives/index.tsx\",\"name\":\"DropdownMenuSeparator\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DropdownMenu/Primitives/index.tsx\",\"name\":\"DropdownMenuShortcut\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Icons/custom-icons/FilledBadgeCheck.tsx\",\"name\":\"FilledBadgeCheckIcon\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Icons/custom-icons/GridVertical.tsx\",\"name\":\"GridVertical\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Icons/custom-icons/llmProviders/googleVertex.tsx\",\"name\":\"GoogleGemini\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Icons/custom-icons/Logo.tsx\",\"name\":\"LatitudeLogo\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Icons/custom-icons/LogoMonochrome.tsx\",\"name\":\"LogoMonochrome\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Icons/custom-icons/logos/Mintlify.tsx\",\"name\":\"Notion\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Icons/custom-icons/MCP.tsx\",\"name\":\"MCPIcon\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Illustrations/Evaluation.tsx\",\"name\":\"EvaluationIllustration\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Label/index.tsx\",\"name\":\"BatchLabel\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Modal/Primitives/index.tsx\",\"name\":\"DialogOverlay\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Popover/index.tsx\",\"name\":\"PopoverContent\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Popover/index.tsx\",\"name\":\"ButtonTrigger\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Select/index.tsx\",\"name\":\"Select\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Select/Options.tsx\",\"name\":\"Options\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Select/Primitives/index.tsx\",\"name\":\"SelectValueWithIcon\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Select/Primitives/index.tsx\",\"name\":\"SelectScrollUpButton\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Select/Primitives/index.tsx\",\"name\":\"SelectScrollDownButton\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Select/Primitives/index.tsx\",\"name\":\"SelectLabel\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Select/Primitives/index.tsx\",\"name\":\"SelectSeparator\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/SplitPane/index.tsx\",\"name\":\"usePanelDomRef\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Table/index.tsx\",\"name\":\"TableFooter\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Table/index.tsx\",\"name\":\"ServerSideTableCell\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Table/index.tsx\",\"name\":\"TableCaption\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Table/sortedTable/index.tsx\",\"name\":\"SortableTableHead\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H1\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H1B\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H2\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H2M\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H2B\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H3\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H3M\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H3B\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H4\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H4M\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H4B\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H5\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H5M\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H5B\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H6\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H6M\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H6B\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H6C\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H7\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H7C\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H8\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"Mono\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Toast/index.tsx\",\"name\":\"ToastViewport\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Toast/index.tsx\",\"name\":\"Toast\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Toast/index.tsx\",\"name\":\"ToastAction\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Toast/index.tsx\",\"name\":\"ToastClose\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Toast/index.tsx\",\"name\":\"ToastTitle\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Toast/index.tsx\",\"name\":\"ToastDescription\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Toast/ToastHref.tsx\",\"name\":\"ToastHref\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Toast/ToastProvider.tsx\",\"name\":\"ToastProvider\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Toast/useToast.ts\",\"name\":\"toast\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Toast/useToast.ts\",\"name\":\"useToast\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/Breadcrumb/Item.tsx\",\"name\":\"BreadcrumbItem\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/Breadcrumb/Item.tsx\",\"name\":\"BreadcrumbItemSkeleton\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/Breadcrumb/Separator.tsx\",\"name\":\"BreadcrumbSeparator\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/Charts/AreaChart/index.tsx\",\"name\":\"AreaChart\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/Charts/BarChart/index.tsx\",\"name\":\"CustomTick\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/Charts/BarChart/index.tsx\",\"name\":\"BarChart\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/Charts/PanelChart/index.tsx\",\"name\":\"PanelChart\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/Charts/ScatterChart/index.tsx\",\"name\":\"ScatterChart\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/ClickToCopy/index.tsx\",\"name\":\"ClickToCopy\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/DiffViewer/Editor/useEditorOptions.ts\",\"name\":\"useEditorOptions\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/DiffViewer/Editor/useMonacoSetup.ts\",\"name\":\"useMonacoSetup\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/DocumentChange/Change.tsx\",\"name\":\"DocumentChange\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/DocumentChange/Skeleton.tsx\",\"name\":\"DocumentChangeSkeleton\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/ErrorComponent/index.tsx\",\"name\":\"ErrorComponent\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/TabSelector/index.tsx\",\"name\":\"TabSelector\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/TruncatedTooltip/index.tsx\",\"name\":\"TruncatedTooltip\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/ClickToCopyUuid/index.tsx\",\"name\":\"ClickToCopyUuid\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/Custom.tsx\",\"name\":\"CustomCronInput\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/index.tsx\",\"name\":\"CronInputContent\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/index.tsx\",\"name\":\"CronInput\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/index.tsx\",\"name\":\"CronFormField\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/Interval.tsx\",\"name\":\"IntervalCronInput\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/Schedule.tsx\",\"name\":\"ScheduleCronInput\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/useCronModel.ts\",\"name\":\"useCronModel\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/utils.ts\",\"name\":\"humanizeCronValue\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/utils.ts\",\"name\":\"parseCronValue\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/utils.ts\",\"name\":\"formatCronValue\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/utils.ts\",\"name\":\"isIntervalCron\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/utils.ts\",\"name\":\"isScheduleCron\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/utils.ts\",\"name\":\"getInitialTab\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/lib/hooks/useAutoScroll.ts\",\"name\":\"useAutoScroll\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/lib/hooks/useHover.ts\",\"name\":\"useHover\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/lib/hooks/useLocalStorage.ts\",\"name\":\"isLocalStorageAvailable\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/lib/hooks/useToolContentMap.ts\",\"name\":\"useToolContentMap\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/lib/hooks/useTypewriterValue.ts\",\"name\":\"useTypeWriterValue\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/lib/textUtils.ts\",\"name\":\"stringifyUnknown\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/lib/versionedMessagesHelpers.ts\",\"name\":\"extractToolContents\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/providers/ThemeProvider/index.tsx\",\"name\":\"ThemeProvider\",\"type\":\"function\"},{\"file\":\"packages/constants/src/actions.ts\",\"name\":\"ActionType\",\"type\":\"type\"},{\"file\":\"packages/constants/src/actions.ts\",\"name\":\"CreateAgentActionBackendParameters\",\"type\":\"type\"},{\"file\":\"packages/constants/src/actions.ts\",\"name\":\"CreateAgentActionFrontendParameters\",\"type\":\"type\"},{\"file\":\"packages/constants/src/actions.ts\",\"name\":\"CloneAgentActionBackendParameters\",\"type\":\"type\"},{\"file\":\"packages/constants/src/actions.ts\",\"name\":\"CloneAgentActionFrontendParameters\",\"type\":\"type\"},{\"file\":\"packages/constants/src/actions.ts\",\"name\":\"ActionBackendParameters\",\"type\":\"type\"},{\"file\":\"packages/constants/src/actions.ts\",\"name\":\"ActionFrontendParameters\",\"type\":\"type\"},{\"file\":\"packages/constants/src/ai/vercelSdkV5ToV4.ts\",\"name\":\"ReplaceTextDelta\",\"type\":\"type\"},{\"file\":\"packages/constants/src/ai/vercelSdkV5ToV4.ts\",\"name\":\"LegacyVercelSDKToolResultPart\",\"type\":\"type\"},{\"file\":\"packages/constants/src/ai/vercelSdkV5ToV4.ts\",\"name\":\"LegacyVercelSDKVersion4ToolResultContent\",\"type\":\"type\"},{\"file\":\"packages/constants/src/documentTriggers/schema.ts\",\"name\":\"ScheduledTriggerEventPayload\",\"type\":\"type\"},{\"file\":\"packages/constants/src/documentTriggers/schema.ts\",\"name\":\"IntegrationTriggerEventPayload\",\"type\":\"type\"},{\"file\":\"packages/constants/src/errors/constants.ts\",\"name\":\"DbErrorRef\",\"type\":\"type\"},{\"file\":\"packages/constants/src/errors/constants.ts\",\"name\":\"ApiResponseCode\",\"type\":\"type\"},{\"file\":\"packages/constants/src/errors/latitudeError.ts\",\"name\":\"OverloadedError\",\"type\":\"class\"},{\"file\":\"packages/constants/src/errors/latitudeError.ts\",\"name\":\"AbortedError\",\"type\":\"class\"},{\"file\":\"packages/constants/src/errors/latitudeError.ts\",\"name\":\"ConflictError\",\"type\":\"class\"},{\"file\":\"packages/constants/src/errors/latitudeError.ts\",\"name\":\"UnauthorizedError\",\"type\":\"class\"},{\"file\":\"packages/constants/src/errors/latitudeError.ts\",\"name\":\"RateLimitError\",\"type\":\"class\"},{\"file\":\"packages/constants/src/evaluations/index.ts\",\"name\":\"EvaluationConfiguration\",\"type\":\"type\"},{\"file\":\"packages/constants/src/evaluations/index.ts\",\"name\":\"EvaluationResultMetadata\",\"type\":\"type\"},{\"file\":\"packages/constants/src/evaluations/index.ts\",\"name\":\"EvaluationResultError\",\"type\":\"type\"},{\"file\":\"packages/constants/src/evaluations/index.ts\",\"name\":\"EvaluationMetricSpecification\",\"type\":\"type\"},{\"file\":\"packages/constants/src/evaluations/index.ts\",\"name\":\"EvaluationSpecification\",\"type\":\"type\"},{\"file\":\"packages/constants/src/evaluations/index.ts\",\"name\":\"LiveEvaluationMetric\",\"type\":\"type\"},{\"file\":\"packages/constants/src/evaluations/index.ts\",\"name\":\"BatchEvaluationMetric\",\"type\":\"type\"},{\"file\":\"packages/constants/src/evaluations/index.ts\",\"name\":\"EvaluationResultErrorValue\",\"type\":\"type\"},{\"file\":\"packages/constants/src/evaluations/index.ts\",\"name\":\"EvaluationResultValue\",\"type\":\"type\"},{\"file\":\"packages/constants/src/evaluations/index.ts\",\"name\":\"EvaluationSettings\",\"type\":\"type\"},{\"file\":\"packages/constants/src/evaluations/index.ts\",\"name\":\"EvaluationOptions\",\"type\":\"type\"},{\"file\":\"packages/constants/src/evaluations/shared.ts\",\"name\":\"ExpectedOutputConfiguration\",\"type\":\"type\"},{\"file\":\"packages/constants/src/events/events.ts\",\"name\":\"LatitudeChainStartedEventData\",\"type\":\"interface\"},{\"file\":\"packages/constants/src/events/events.ts\",\"name\":\"LatitudeStepStartedEventData\",\"type\":\"interface\"},{\"file\":\"packages/constants/src/events/events.ts\",\"name\":\"LatitudeProviderStartedEventData\",\"type\":\"interface\"},{\"file\":\"packages/constants/src/events/events.ts\",\"name\":\"LatitudeToolsStartedEventData\",\"type\":\"interface\"},{\"file\":\"packages/constants/src/events/events.ts\",\"name\":\"LatitudeToolCompletedEventData\",\"type\":\"interface\"},{\"file\":\"packages/constants/src/events/events.ts\",\"name\":\"LatitudeStepCompletedEventData\",\"type\":\"interface\"},{\"file\":\"packages/constants/src/events/events.ts\",\"name\":\"LatitudeIntegrationWakingUpEventData\",\"type\":\"interface\"},{\"file\":\"packages/constants/src/grants.ts\",\"name\":\"Grant\",\"type\":\"type\"},{\"file\":\"packages/constants/src/index.ts\",\"name\":\"TodoListItem\",\"type\":\"type\"},{\"file\":\"packages/constants/src/integrations.ts\",\"name\":\"ActiveIntegrationType\",\"type\":\"type\"},{\"file\":\"packages/constants/src/issues/constants.ts\",\"name\":\"IssueStatuses\",\"type\":\"type\"},{\"file\":\"packages/constants/src/issues/constants.ts\",\"name\":\"IssueStatus\",\"type\":\"type\"},{\"file\":\"packages/constants/src/issues/parameters.ts\",\"name\":\"IssuesFiltersQueryParamsOutput\",\"type\":\"type\"},{\"file\":\"packages/constants/src/issues/parameters.ts\",\"name\":\"IssuesFiltersQueryParamsInput\",\"type\":\"type\"},{\"file\":\"packages/constants/src/issues/parseParameters.ts\",\"name\":\"formatDateLocal\",\"type\":\"function\"},{\"file\":\"packages/constants/src/latitudePromptSchema/providers/azure/index.ts\",\"name\":\"AzureConfig\",\"type\":\"type\"},{\"file\":\"packages/constants/src/latitudePromptSchema/providers/openai/fileSearchToolSchema.ts\",\"name\":\"ComparisonFilter\",\"type\":\"type\"},{\"file\":\"packages/constants/src/latitudePromptSchema/providers/openai/fileSearchToolSchema.ts\",\"name\":\"CompoundFilter\",\"type\":\"type\"},{\"file\":\"packages/constants/src/latitudePromptSchema/providers/openai/fileSearchToolSchema.ts\",\"name\":\"Filter\",\"type\":\"type\"},{\"file\":\"packages/constants/src/latitudePromptSchema/providers/openai/fileSearchToolSchema.ts\",\"name\":\"OpenAIFilesSearchTool\",\"type\":\"type\"},{\"file\":\"packages/constants/src/latitudePromptSchema/providers/openai/webSearchSchema.ts\",\"name\":\"OpenAIWebSearchTool\",\"type\":\"type\"},{\"file\":\"packages/constants/src/messages.ts\",\"name\":\"ContentType\",\"type\":\"type\"},{\"file\":\"packages/constants/src/messages.ts\",\"name\":\"MessageRole\",\"type\":\"type\"},{\"file\":\"packages/constants/src/messages.ts\",\"name\":\"PromptlSourceRef\",\"type\":\"type\"},{\"file\":\"packages/constants/src/messages.ts\",\"name\":\"ReasoningContent\",\"type\":\"type\"},{\"file\":\"packages/constants/src/messages.ts\",\"name\":\"RedactedReasoningContent\",\"type\":\"type\"},{\"file\":\"packages/constants/src/messages.ts\",\"name\":\"TextContent\",\"type\":\"type\"},{\"file\":\"packages/constants/src/messages.ts\",\"name\":\"ImageContent\",\"type\":\"type\"},{\"file\":\"packages/constants/src/messages.ts\",\"name\":\"FileContent\",\"type\":\"type\"},{\"file\":\"packages/constants/src/models.ts\",\"name\":\"DocumentLogWithMetadata\",\"type\":\"type\"},{\"file\":\"packages/constants/src/models.ts\",\"name\":\"RunErrorField\",\"type\":\"type\"},{\"file\":\"packages/constants/src/models.ts\",\"name\":\"DocumentLogWithMetadataAndError\",\"type\":\"type\"},{\"file\":\"packages/constants/src/models.ts\",\"name\":\"ProviderLog\",\"type\":\"type\"},{\"file\":\"packages/constants/src/onboarding.ts\",\"name\":\"OnboardingDocumentParameterKeys\",\"type\":\"type\"},{\"file\":\"packages/constants/src/onboarding.ts\",\"name\":\"OnboardingParameters\",\"type\":\"type\"},{\"file\":\"packages/constants/src/optimizations.ts\",\"name\":\"OptimizationBudget\",\"type\":\"type\"},{\"file\":\"packages/constants/src/optimizations.ts\",\"name\":\"OptimizationConfiguration\",\"type\":\"type\"},{\"file\":\"packages/constants/src/relativeDates.ts\",\"name\":\"RelativeDate\",\"type\":\"type\"},{\"file\":\"packages/constants/src/tracing/index.ts\",\"name\":\"StatusCode\",\"type\":\"type\"},{\"file\":\"packages/constants/src/tracing/index.ts\",\"name\":\"ScopeSpan\",\"type\":\"type\"},{\"file\":\"packages/constants/src/tracing/index.ts\",\"name\":\"ServiceRequest\",\"type\":\"type\"},{\"file\":\"packages/constants/src/tracing/index.ts\",\"name\":\"SpanIngestionData\",\"type\":\"type\"},{\"file\":\"packages/constants/src/tracing/index.ts\",\"name\":\"SpanProcessingData\",\"type\":\"type\"},{\"file\":\"packages/core/src/services/evaluationsV2/human/binary.ts\",\"name\":\"validate\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/evaluationsV2/human/binary.ts\",\"name\":\"grade\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/evaluationsV2/human/binary.ts\",\"name\":\"annotate\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/evaluationsV2/human/rating.ts\",\"name\":\"grade\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"Common\",\"type\":\"type\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"TextProps\",\"type\":\"type\"},{\"file\":\"packages/emails/src/templates/issues/IssueEscalatingMail.tsx\",\"name\":\"IssueEscalatingMailProps\",\"type\":\"type\"},{\"file\":\"packages/emails/src/templates/weeklyEmail/types.ts\",\"name\":\"TopProjectLog\",\"type\":\"type\"},{\"file\":\"packages/emails/src/templates/weeklyEmail/types.ts\",\"name\":\"LogStats\",\"type\":\"type\"},{\"file\":\"packages/emails/src/templates/weeklyEmail/types.ts\",\"name\":\"TopProjectAnnotation\",\"type\":\"type\"},{\"file\":\"packages/emails/src/templates/weeklyEmail/types.ts\",\"name\":\"TopProjectIssue\",\"type\":\"type\"},{\"file\":\"packages/emails/src/templates/weeklyEmail/types.ts\",\"name\":\"NewIssue\",\"type\":\"type\"},{\"file\":\"packages/emails/src/types.ts\",\"name\":\"ContainerLayoutProps\",\"type\":\"type\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/client.py\",\"name\":\"ClientResponse\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/client.py\",\"name\":\"sse\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/client.py\",\"name\":\"ClientOptions\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/client.py\",\"name\":\"Client\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/client.py\",\"name\":\"__init__\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/client.py\",\"name\":\"request\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/client.py\",\"name\":\"_exception\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/payloads.py\",\"name\":\"ErrorResponse\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/payloads.py\",\"name\":\"PromptRequestParams\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/payloads.py\",\"name\":\"GetPromptRequestParams\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/payloads.py\",\"name\":\"GetAllPromptsRequestParams\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/payloads.py\",\"name\":\"GetOrCreatePromptRequestParams\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/payloads.py\",\"name\":\"GetOrCreatePromptRequestBody\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/payloads.py\",\"name\":\"RunPromptRequestParams\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/payloads.py\",\"name\":\"RunPromptRequestBody\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/payloads.py\",\"name\":\"ConversationRequestParams\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/payloads.py\",\"name\":\"ChatPromptRequestParams\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/payloads.py\",\"name\":\"ChatPromptRequestBody\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/payloads.py\",\"name\":\"AttachRunRequestParams\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/payloads.py\",\"name\":\"AttachRunRequestBody\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/payloads.py\",\"name\":\"StopRunRequestParams\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/payloads.py\",\"name\":\"LogRequestParams\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/payloads.py\",\"name\":\"CreateLogRequestParams\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/payloads.py\",\"name\":\"CreateLogRequestBody\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/payloads.py\",\"name\":\"AnnotateEvaluationRequestParams\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/payloads.py\",\"name\":\"AnnotateEvaluationRequestBody\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/payloads.py\",\"name\":\"Metadata\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/payloads.py\",\"name\":\"ToolResultsRequestBody\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/payloads.py\",\"name\":\"CreateProjectRequestBody\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/payloads.py\",\"name\":\"GetAllVersionsRequestParams\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/payloads.py\",\"name\":\"RequestHandler\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/router.py\",\"name\":\"RouterOptions\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/router.py\",\"name\":\"Router\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/router.py\",\"name\":\"__init__\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/router.py\",\"name\":\"resolve\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/router.py\",\"name\":\"conversations\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/router.py\",\"name\":\"prompts\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/router.py\",\"name\":\"commits_url\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/router.py\",\"name\":\"projects_url\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/router.py\",\"name\":\"Conversations\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/client/router.py\",\"name\":\"Prompts\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/env/env.py\",\"name\":\"Env\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/errors.py\",\"name\":\"ApiErrorCodes\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/errors.py\",\"name\":\"ApiErrorDbRef\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/errors.py\",\"name\":\"ApiError\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/errors.py\",\"name\":\"__init__\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/errors.py\",\"name\":\"_exception_message\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/errors.py\",\"name\":\"__eq__\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/evaluations.py\",\"name\":\"AnnotateEvaluationOptions\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/evaluations.py\",\"name\":\"AnnotateEvaluationResult\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/evaluations.py\",\"name\":\"Evaluations\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/evaluations.py\",\"name\":\"__init__\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/evaluations.py\",\"name\":\"annotate\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/latitude.py\",\"name\":\"InternalOptions\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/latitude.py\",\"name\":\"LatitudeOptions\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/latitude.py\",\"name\":\"Latitude\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/latitude.py\",\"name\":\"__init__\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/logs.py\",\"name\":\"LogOptions\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/logs.py\",\"name\":\"CreateLogOptions\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/logs.py\",\"name\":\"CreateLogResult\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/logs.py\",\"name\":\"Logs\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/logs.py\",\"name\":\"__init__\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/logs.py\",\"name\":\"_ensure_log_options\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/logs.py\",\"name\":\"create\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/projects.py\",\"name\":\"CreateProjectResult\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/projects.py\",\"name\":\"Projects\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/projects.py\",\"name\":\"__init__\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/projects.py\",\"name\":\"get_all\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/projects.py\",\"name\":\"create\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/projects.py\",\"name\":\"get_all_versions\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/prompts.py\",\"name\":\"PromptOptions\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/prompts.py\",\"name\":\"GetPromptOptions\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/prompts.py\",\"name\":\"GetPromptResult\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/prompts.py\",\"name\":\"GetAllPromptsOptions\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/prompts.py\",\"name\":\"GetOrCreatePromptOptions\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/prompts.py\",\"name\":\"GetOrCreatePromptResult\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/prompts.py\",\"name\":\"RunPromptOptions\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/prompts.py\",\"name\":\"ChatPromptOptions\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/prompts.py\",\"name\":\"ChatPromptResult\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/prompts.py\",\"name\":\"RenderPromptOptions\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/prompts.py\",\"name\":\"RenderPromptResult\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/prompts.py\",\"name\":\"RenderChainOptions\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/prompts.py\",\"name\":\"RenderChainResult\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/prompts.py\",\"name\":\"Prompts\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/prompts.py\",\"name\":\"__init__\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/prompts.py\",\"name\":\"get_all\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/prompts.py\",\"name\":\"get_or_create\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/prompts.py\",\"name\":\"chat\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/prompts.py\",\"name\":\"render\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/prompts.py\",\"name\":\"render_chain\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/runs.py\",\"name\":\"AttachRunOptions\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/runs.py\",\"name\":\"AttachRunResult\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/runs.py\",\"name\":\"Runs\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/runs.py\",\"name\":\"__init__\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/runs.py\",\"name\":\"attach\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/runs.py\",\"name\":\"stop\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/stream.py\",\"name\":\"Streamer\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/stream.py\",\"name\":\"__init__\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/stream.py\",\"name\":\"handle\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/stream.py\",\"name\":\"_wrap_tool_handler\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/stream.py\",\"name\":\"_handle_tool_call\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"DbErrorRef\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"Providers\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"ParameterType\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"PromptParameter\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"Prompt\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"ModelUsage\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"FinishReason\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"ToolCall\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"ToolResult\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"StreamTypes\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"BaseChainResponse\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"ChainTextResponse\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"ChainObjectResponse\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"ChainError\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"StreamEvents\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"ProviderEvents\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"GenericProviderEvent\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"ProviderEventToolCalled\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"ChainEvents\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"GenericChainEvent\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"ChainEventChainStarted\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"ChainEventStepStarted\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"ChainEventProviderStarted\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"ChainEventProviderCompleted\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"ChainEventToolsStarted\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"ChainEventToolCompleted\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"ChainEventStepCompleted\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"ChainEventChainCompleted\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"ChainEventChainError\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"FinishedResult\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"BackgroundResult\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"LogSources\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"Log\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"EvaluationResult\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"Project\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"Version\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"StreamCallbacks\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"SdkOptions\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"GatewayOptions\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/types.py\",\"name\":\"base_url\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/versions.py\",\"name\":\"VersionOptions\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/versions.py\",\"name\":\"GetAllVersionsOptions\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/versions.py\",\"name\":\"Versions\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/versions.py\",\"name\":\"__init__\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/versions.py\",\"name\":\"_ensure_version_options\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/sdk/versions.py\",\"name\":\"get_all\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/util/utils.py\",\"name\":\"StrEnum\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/util/utils.py\",\"name\":\"__str__\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/util/utils.py\",\"name\":\"entries\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/util/utils.py\",\"name\":\"names\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/util/utils.py\",\"name\":\"values\",\"type\":\"method\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/util/utils.py\",\"name\":\"Model\",\"type\":\"class\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/version/version.py\",\"name\":\"Version\",\"type\":\"class\"},{\"file\":\"packages/sdks/typescript/src/utils/types.ts\",\"name\":\"HandlerConfig\",\"type\":\"type\"},{\"file\":\"packages/sdks/typescript/src/utils/types.ts\",\"name\":\"AnnotateBodyParams\",\"type\":\"type\"},{\"file\":\"packages/sdks/typescript/src/utils/types.ts\",\"name\":\"CreateProjectBodyParams\",\"type\":\"type\"},{\"file\":\"packages/sdks/typescript/src/utils/types.ts\",\"name\":\"CreateVersionBodyParams\",\"type\":\"type\"},{\"file\":\"packages/sdks/typescript/src/utils/types.ts\",\"name\":\"PushVersionBodyParams\",\"type\":\"type\"},{\"file\":\"packages/sdks/typescript/src/utils/types.ts\",\"name\":\"LogBodyParams\",\"type\":\"type\"},{\"file\":\"packages/sdks/typescript/src/utils/types.ts\",\"name\":\"ToolResultsBodyParams\",\"type\":\"type\"},{\"file\":\"packages/sdks/typescript/src/utils/types.ts\",\"name\":\"HandlerConfigs\",\"type\":\"type\"},{\"file\":\"packages/sdks/typescript/src/utils/types.ts\",\"name\":\"RenderToolHandler\",\"type\":\"type\"},{\"file\":\"packages/sdks/typescript/src/utils/types.ts\",\"name\":\"EvalOptions\",\"type\":\"interface\"},{\"file\":\"packages/sdks/typescript/src/utils/types.ts\",\"name\":\"EvalPromptOptions\",\"type\":\"type\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_PromptMessageField\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"__init__\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"role\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"content\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"toolCalls\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"tool\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_PromptField\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"__init__\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"index\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_LatitudeRequestAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_LatitudeResponseAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_LatitudeUsageAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_LatitudeAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_GenAIUsageAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_GenAIResponseAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_GenAIToolCallAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_GenAIToolAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_GenAIDeprecatedToolResultAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_GenAIDeprecatedToolAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_GenAIDeprecatedAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_GenAIInputAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_GenAIOutputAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_GenAIAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_HTTPRequestAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_HTTPResponseAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_HTTPAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OTELStatusAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OTELScopeAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OTELAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_ServiceAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_ErrorAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_ExceptionAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OpenTelemetryAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OpenInferenceToolCallFunctionAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OpenInferenceToolCallAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OpenInferenceToolAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OpenInferenceLLMTokenCountPromptDetailsAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OpenInferenceLLMTokenCountCompletionDetailsAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OpenInferenceLLMTokenCountAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OpenInferenceLLMCostAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OpenInferenceLLMAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OpenInferenceAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OpenLLMetryLLMRequestAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OpenLLMetryLLMResponseAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OpenLLMetryLLMAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OpenLLMetryUsageAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OpenLLMetryAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_AISdkModelAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_AISdkResponseAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_AISdkToolCallAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_AISdkUsageAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_AISdkPromptAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_AISdkRequestHeadersAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_AISdkRequestAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_AISdkAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"ATTRIBUTES\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_GenAIOperationValues\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_GenAIResponseFinishReasonsValues\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_GenAIOutputTypeValues\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_GenAIToolTypeValues\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_GenAIDeprecatedOperationValues\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_GenAIDeprecatedValues\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OpenTelemetryGenAIResponseValues\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OpenTelemetryGenAIOutputValues\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OpenTelemetryGenAIToolValues\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OpenTelemetryGenAIValues\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OpenTelemetryValues\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OpenLLMetryLLMRequestTypeValues\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OpenLLMetryLLMRequestValues\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OpenLLMetryLLMValues\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_OpenLLMetryValues\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_AISdkOperationIdValues\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_AISdkValues\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"_LatitudeValues\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/attributes.py\",\"name\":\"VALUES\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/scope.py\",\"name\":\"InstrumentationScope\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/span.py\",\"name\":\"SpanKind\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/span.py\",\"name\":\"SpanType\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/span.py\",\"name\":\"SpanStatus\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/span.py\",\"name\":\"SpanSpecification\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/constants/span.py\",\"name\":\"LogSources\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/env/env.py\",\"name\":\"Env\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/exporter/exporter.py\",\"name\":\"ExporterOptions\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/base.py\",\"name\":\"BaseInstrumentation\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/base.py\",\"name\":\"is_enabled\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/base.py\",\"name\":\"enable\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/base.py\",\"name\":\"disable\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"TraceContext\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"StartSpanOptions\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"EndSpanOptions\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"ErrorOptions\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"ToolCallInfo\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"ToolResultInfo\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"StartToolSpanOptions\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"EndToolSpanOptions\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"TokenUsage\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"StartCompletionSpanOptions\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"EndCompletionSpanOptions\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"HttpRequest\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"HttpResponse\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"StartHttpSpanOptions\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"EndHttpSpanOptions\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"PromptSpanOptions\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"ChatSpanOptions\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"ExternalSpanOptions\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"CaptureOptions\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"SpanHandle\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"ToolSpanHandle\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"CompletionSpanHandle\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"HttpSpanHandle\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"ManualInstrumentation\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"__init__\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"is_enabled\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"enable\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"disable\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"resume\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"_capitalize\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"_to_camel_case\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"_to_snake_case\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"_to_kebab_case\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"_safe_json\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"_error\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"_span\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"tool\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"_attribify_message_tool_calls\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"_attribify_message_content\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"_attribify_messages\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"_attribify_configuration\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"completion\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"embedding\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"_attribify_headers\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"http\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"prompt\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"chat\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"external\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/instrumentations/manual.py\",\"name\":\"unresolved_external\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/managers/__init__.py\",\"name\":\"SpanFactory\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/managers/__init__.py\",\"name\":\"tool\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/managers/__init__.py\",\"name\":\"completion\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/managers/__init__.py\",\"name\":\"embedding\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/managers/__init__.py\",\"name\":\"http\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/managers/__init__.py\",\"name\":\"prompt\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/managers/__init__.py\",\"name\":\"chat\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/managers/__init__.py\",\"name\":\"external\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/managers/__init__.py\",\"name\":\"ContextManager\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/managers/__init__.py\",\"name\":\"resume\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/managers/__init__.py\",\"name\":\"active\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/managers/__init__.py\",\"name\":\"InstrumentationManager\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/managers/__init__.py\",\"name\":\"enable\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/managers/__init__.py\",\"name\":\"disable\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/managers/__init__.py\",\"name\":\"ScopedTracerProvider\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/managers/__init__.py\",\"name\":\"TracerManager\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/managers/__init__.py\",\"name\":\"get\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/telemetry.py\",\"name\":\"InternalOptions\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/telemetry.py\",\"name\":\"TelemetryOptions\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/telemetry.py\",\"name\":\"BadRequestError\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/telemetry.py\",\"name\":\"CaptureContext\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/telemetry.py\",\"name\":\"__init__\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/telemetry.py\",\"name\":\"_validate_path\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/telemetry.py\",\"name\":\"_start_span\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/telemetry.py\",\"name\":\"_end_span\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/telemetry.py\",\"name\":\"_create_new_context\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/telemetry.py\",\"name\":\"__call__\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/telemetry.py\",\"name\":\"__enter__\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/telemetry.py\",\"name\":\"__exit__\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/telemetry.py\",\"name\":\"__aenter__\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/telemetry.py\",\"name\":\"__aexit__\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/telemetry.py\",\"name\":\"Telemetry\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/telemetry.py\",\"name\":\"__init__\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/telemetry.py\",\"name\":\"_init_instrumentors\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/telemetry.py\",\"name\":\"_init_instrumentations\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/telemetry.py\",\"name\":\"instrument\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/telemetry.py\",\"name\":\"uninstrument\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/telemetry.py\",\"name\":\"flush\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/telemetry.py\",\"name\":\"shutdown\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/telemetry.py\",\"name\":\"capture\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/telemetry.py\",\"name\":\"legacy_span\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/types.py\",\"name\":\"Instrumentors\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/types.py\",\"name\":\"TelemetryAttributes\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/types.py\",\"name\":\"SpanPrompt\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/types.py\",\"name\":\"GatewayOptions\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/telemetry/types.py\",\"name\":\"traces_url\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/util/utils.py\",\"name\":\"StrEnum\",\"type\":\"class\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/util/utils.py\",\"name\":\"__str__\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/util/utils.py\",\"name\":\"entries\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/util/utils.py\",\"name\":\"names\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/util/utils.py\",\"name\":\"values\",\"type\":\"method\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/util/utils.py\",\"name\":\"Model\",\"type\":\"class\"},{\"file\":\"packages/telemetry/typescript/src/instrumentations/latitude.ts\",\"name\":\"LatitudeInstrumentation\",\"type\":\"class\"},{\"file\":\"packages/telemetry/typescript/src/instrumentations/manual.ts\",\"name\":\"ManualInstrumentation\",\"type\":\"class\"},{\"file\":\"packages/telemetry/typescript/src/sdk/redact.ts\",\"name\":\"RedactSpanProcessor\",\"type\":\"class\"},{\"file\":\"packages/web-ui/src/ds/atoms/Charts/index.tsx\",\"name\":\"ChartConfig\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/atoms/DataGrid/EditCell/types.ts\",\"name\":\"EditorCellProps\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/atoms/DatePicker/Primitives/index.tsx\",\"name\":\"CalendarProps\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/atoms/DatePicker/Range/index.tsx\",\"name\":\"DatePickerMode\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/atoms/DatePicker/Range/usePresets.ts\",\"name\":\"buildPreset\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DatePicker/Range/usePresets.ts\",\"name\":\"buildPresets\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DropdownMenu/index.tsx\",\"name\":\"TriggerButtonProps\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/atoms/DropdownMenu/index.tsx\",\"name\":\"MenuOption\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/atoms/DropdownMenu/Primitives/index.tsx\",\"name\":\"ContentProps\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/atoms/Popover/index.tsx\",\"name\":\"PopoverContentProps\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/atoms/Table/sortedTable/index.tsx\",\"name\":\"SortDirection\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"Common\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"TextProps\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"MonoProps\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/atoms/Toast/ToastHref.tsx\",\"name\":\"getToastHrefColor\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/Charts/ScatterChart/index.tsx\",\"name\":\"DataGroup\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/molecules/Charts/types.ts\",\"name\":\"CartesianDataItem\",\"type\":\"interface\"},{\"file\":\"packages/web-ui/src/ds/molecules/Charts/types.ts\",\"name\":\"CartesianAxisConfig\",\"type\":\"interface\"},{\"file\":\"packages/web-ui/src/ds/molecules/Charts/types.ts\",\"name\":\"ScatterDataItem\",\"type\":\"interface\"},{\"file\":\"packages/web-ui/src/ds/molecules/Charts/types.ts\",\"name\":\"ScatterChartConfig\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/molecules/Charts/types.ts\",\"name\":\"AreaChartConfig\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/molecules/Charts/types.ts\",\"name\":\"BarChartConfig\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/molecules/Charts/types.ts\",\"name\":\"PanelChartConfig\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/molecules/DocumentTextEditor/types.ts\",\"name\":\"DiffOptions\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/molecules/TabSelector/index.tsx\",\"name\":\"TabSelectorOption\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/molecules/TabSelector/index.tsx\",\"name\":\"TabOptionGroup\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/molecules/TabSelector/index.tsx\",\"name\":\"TabSelectorOptionOrGroup\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/molecules/TabSelector/index.tsx\",\"name\":\"TabSelectorProps\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/utils.ts\",\"name\":\"CronValue\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/utils.ts\",\"name\":\"CronTab\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/tokens/colors.ts\",\"name\":\"DarkTextColor\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/tokens/colors.ts\",\"name\":\"BorderColor\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/tokens/colors.ts\",\"name\":\"BackgroundHoverColor\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/tokens/colors.ts\",\"name\":\"BorderHoverColor\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/tokens/colors.ts\",\"name\":\"ProseColor\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/tokens/font.ts\",\"name\":\"FontFamily\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/tokens/font.ts\",\"name\":\"FontSize\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/tokens/font.ts\",\"name\":\"TextAlign\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/tokens/font.ts\",\"name\":\"FontWeight\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/tokens/font.ts\",\"name\":\"FontSpacing\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/tokens/opacity.ts\",\"name\":\"TextOpacity\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/tokens/overflow.ts\",\"name\":\"Overflow\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/tokens/shadow.ts\",\"name\":\"BoxShadow\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/tokens/skeleton.ts\",\"name\":\"SkeletonHeight\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/tokens/whiteSpace.ts\",\"name\":\"WhiteSpace\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/ds/tokens/wordBreak.ts\",\"name\":\"WordBreak\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/lib/hooks/useMeasure.ts\",\"name\":\"UseMeasureRect\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/lib/hooks/useMeasure.ts\",\"name\":\"UseMeasureRef\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/lib/hooks/useMeasure.ts\",\"name\":\"UseMeasureResult\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/lib/hooks/useToolContentMap.ts\",\"name\":\"transformContent\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/lib/versionedMessagesHelpers.ts\",\"name\":\"PromptlVersion\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/lib/versionedMessagesHelpers.ts\",\"name\":\"VersionedMessage\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/lib/versionedMessagesHelpers.ts\",\"name\":\"ToolPart\",\"type\":\"type\"},{\"file\":\"packages/web-ui/src/lib/versionedMessagesHelpers.ts\",\"name\":\"extractPromptlToolContents\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/tracing/spans/specifications/chat.ts\",\"name\":\"process\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/tracing/spans/specifications/embedding.ts\",\"name\":\"process\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/tracing/spans/specifications/external.ts\",\"name\":\"process\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/tracing/spans/specifications/http.ts\",\"name\":\"process\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/tracing/spans/specifications/http.ts\",\"name\":\"extractRequestMethod\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/tracing/spans/specifications/http.ts\",\"name\":\"extractRequestUrl\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/tracing/spans/specifications/http.ts\",\"name\":\"extractRequestHeaders\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/tracing/spans/specifications/http.ts\",\"name\":\"extractRequestBody\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/tracing/spans/specifications/http.ts\",\"name\":\"extractResponseStatus\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/tracing/spans/specifications/http.ts\",\"name\":\"extractResponseHeaders\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/tracing/spans/specifications/http.ts\",\"name\":\"extractResponseBody\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/tracing/spans/specifications/prompt.ts\",\"name\":\"process\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/tracing/spans/specifications/tool.ts\",\"name\":\"process\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/tracing/spans/specifications/tool.ts\",\"name\":\"extractToolName\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/tracing/spans/specifications/tool.ts\",\"name\":\"extractToolCallId\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/tracing/spans/specifications/tool.ts\",\"name\":\"extractToolCallArguments\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/tracing/spans/specifications/tool.ts\",\"name\":\"extractToolResultValue\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/tracing/spans/specifications/tool.ts\",\"name\":\"extractToolResultIsError\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/tracing/spans/specifications/unknown.ts\",\"name\":\"process\",\"type\":\"function\"},{\"file\":\"packages/telemetry/python/examples/run_all.py\",\"name\":\"check_test_env\",\"type\":\"function\"},{\"file\":\"packages/telemetry/python/examples/run_all.py\",\"name\":\"can_run_test\",\"type\":\"function\"},{\"file\":\"packages/telemetry/python/examples/run_all.py\",\"name\":\"run_test\",\"type\":\"function\"},{\"file\":\"packages/telemetry/python/examples/run_all.py\",\"name\":\"list_tests\",\"type\":\"function\"}]}"
+        }
+      }
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01NUuhLXjmU6gxpt6APhSXHG",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "The file is quite large (89,065 characters) and exceeded the token limit, so the output was saved to a temporary file. I need to read that temporary file to see the content. Let me do that.",
+            "signature": "EuYCCkYICxgCKkA2Heyte4W6s1KrOV1dTOEJe7nPv7kwhU2PBmN39MFDX3jl2KLhS+7B2GTkQtk6fZQXD8sfdTuyQHe0Wbhxh1ChEgwD4uKFJWw2FHESSisaDFm9qJ+KVt2tTMDnYCIwLOmZsNfpSc/AxRoNbNCM35rEt6rfw1WoHsQzkndaytiosSeNZMHCrBcJq8P6YtWKKs0B7RyYVMQb3wVOVgrDmbwsY9FGSTyUVcf1jrTVf7jgcwku7hp2vK1kocUs84W6BmOrG3FH7gpnSyf9GBsiTGiEX6ObAz9fXBzO869vY/xYQ3eulupDY2+GmaM9fMBE6am3oLQ3YOEDqt7td1L68PjIKn8jWFUy++OjMLKb3Pwu+FI2A1GIyv1MsufE0GxqAKm/P3XzgvjPZM1iL6tKpYNkPyqKfQyEgDThpKi3sRZ5y+3BzKsC8hwWvbKT0QYO1ZngMrsklRSIZ+gEiQKvrBgB"
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 516,
+          "cache_read_input_tokens": 16484,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 516,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "db3188ef-5eae-427d-b554-1508b26f2925"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01NUuhLXjmU6gxpt6APhSXHG",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01J6pMHW89yp1MdgYkwVD2uo",
+            "name": "Read",
+            "input": {
+              "file_path": "/Users/jag/.claude/projects/-private-var-folders-90-6pztvw5s1h12y4kmzbphq3qw0000gn-T-mcpbr-latitude-pr2300-k5xl5n6j/b503b054-b6f3-464c-bac2-92df31711085/tool-results/mcp-filesystem-read_text_file-1773087461220.txt"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 516,
+          "cache_read_input_tokens": 16484,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 516,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "e78f1a74-f170-4b99-b298-4f92d775741f"
+    },
+    {
+      "type": "user",
+      "message": {
+        "role": "user",
+        "content": [
+          {
+            "type": "tool_result",
+            "content": "File content (30795 tokens) exceeds maximum allowed tokens (25000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole file.",
+            "is_error": true,
+            "tool_use_id": "toolu_01J6pMHW89yp1MdgYkwVD2uo"
+          }
+        ]
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "99303d8d-f781-4a34-9fc7-49c8997526e5",
+      "tool_use_result": "Error: File content (30795 tokens) exceeds maximum allowed tokens (25000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole file."
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01FdLPyQuRKFxnQsdvc3vP5x",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "The file is too large to read in one go. Let me read it in chunks to understand its structure. I'll start by reading the beginning to see if it's a manifest file with part_files or if it contains the candidates directly.",
+            "signature": "EoUDCkYICxgCKkCBF3QL651xZ8U4KTNL8vRgWJRqpj8vUOXC7FLeJyKtw5NO589NoYd671kr5brRe6mtNlzrruMM50MwWYzGrIQMEgwTeIE/SpmR+qQ1LEMaDMeVO4MUenA1YMgGWyIwPk19s9y4127tVQSnBLj+PqB2TUYSNEkrutoj1I8gWyaiJdt3w+gyRSgoZkwuUtI2KuwB10Axc6/DW3I5SoTdgt/0yliwzDZQP4thlwnW6tMpqIBekdY2YW99LMXoFLcAsFmeyIOgR8NBVJkeLnLTb3hnx1o70JY61Wzh/UMBS9XNWDmXxr1XbldYtzQYK/Ont5yJQyvij9X5BdaIZT8hd3p2y3u/4C+7oGh4LbWVr/vGiKIScIRgLXXdaaamWr2QsLW5vWHizC7ivl56XQo5Nmypi1fGMQT52IZNW+E/8Oug9kS6KBpcaiAB6rSAyA1x91p03H4AF54pu71V8gO5qAQwbFLbq1P3w47LB+mLELISL1ECr/drf003oeVBfRsYAQ=="
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 281,
+          "cache_read_input_tokens": 17000,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 281,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 8,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "74606ece-227a-4bc2-be62-914bedbe5596"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01FdLPyQuRKFxnQsdvc3vP5x",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_018jarAFJpwadZeNN8EWTERR",
+            "name": "Read",
+            "input": {
+              "file_path": "/Users/jag/.claude/projects/-private-var-folders-90-6pztvw5s1h12y4kmzbphq3qw0000gn-T-mcpbr-latitude-pr2300-k5xl5n6j/b503b054-b6f3-464c-bac2-92df31711085/tool-results/mcp-filesystem-read_text_file-1773087461220.txt",
+              "limit": 100
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 281,
+          "cache_read_input_tokens": 17000,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 281,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 8,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "5b7fafff-8e2c-43e0-bffd-1c4525fd59d0"
+    },
+    {
+      "type": "user",
+      "message": {
+        "role": "user",
+        "content": [
+          {
+            "type": "tool_result",
+            "content": "File content (30795 tokens) exceeds maximum allowed tokens (25000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole file.",
+            "is_error": true,
+            "tool_use_id": "toolu_018jarAFJpwadZeNN8EWTERR"
+          }
+        ]
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "e551d0ec-9e52-46ca-85f3-7d14bbf4b385",
+      "tool_use_result": "Error: File content (30795 tokens) exceeds maximum allowed tokens (25000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole file."
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01U8mFEYGLxAeghFoj1MEehP",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "Even with a limit of 100 lines, it's still too large. Let me try a much smaller chunk.",
+            "signature": "Ev4BCkYICxgCKkDmUap9TzJ1xSKBe74P344/A3wMhtdHqfVaYeh+g1WfC2+DvAB1u+prDUErozZB8cuFE2wS2Ug5d3dr3SXQmm/rEgyuciAKPSW43dSMvp4aDEU82Kuh94ZSrBUpHCIwK/2PUKZ8+m7u6jyAx+5va3q670xlcoeCmrcmFV7eHcF8NDK42N8G7UkTA0NDErfGKmZNzRQatWPBuW/G21KORHOX0L+rdxPE3FU3Jr1dwIFsqnb0jbGeW5H6IRaT1nODZ4pKxq6jq7n5Ac16UNByUOH9h9Dm0OrfHX6DiiD9dJeY5khMGtoNp9gQSziGdvtdLlICIGpQ0DoYAQ=="
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 302,
+          "cache_read_input_tokens": 17281,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 302,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "5089d272-37ff-482a-b98f-2995803777be"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01U8mFEYGLxAeghFoj1MEehP",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_015zBUeE8ZZPHc9h5bcxz4uX",
+            "name": "Read",
+            "input": {
+              "file_path": "/Users/jag/.claude/projects/-private-var-folders-90-6pztvw5s1h12y4kmzbphq3qw0000gn-T-mcpbr-latitude-pr2300-k5xl5n6j/b503b054-b6f3-464c-bac2-92df31711085/tool-results/mcp-filesystem-read_text_file-1773087461220.txt",
+              "limit": 20
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 302,
+          "cache_read_input_tokens": 17281,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 302,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "7f1856fc-54f2-4cc1-9fcc-2b0c0cf4294f"
+    },
+    {
+      "type": "user",
+      "message": {
+        "role": "user",
+        "content": [
+          {
+            "type": "tool_result",
+            "content": "File content (30795 tokens) exceeds maximum allowed tokens (25000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole file.",
+            "is_error": true,
+            "tool_use_id": "toolu_015zBUeE8ZZPHc9h5bcxz4uX"
+          }
+        ]
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "b1a57ea9-f6c5-4041-9f6c-affd1747d0ea",
+      "tool_use_result": "Error: File content (30795 tokens) exceeds maximum allowed tokens (25000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole file."
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01CifmcNzoGNsV984FqAUFhA",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "It seems the issue is with the overall file size, not just the lines I'm requesting. Let me try using Grep to search for key structures in the original analysis file to understand its format.",
+            "signature": "EugCCkYICxgCKkAYweae7VZ2xVATlLTdeGgvRLIgTimBcx3DfphJzZ7G17C9ciXugbQ3/6txzXlvQXjKDANU1dxcbYvdt5GlBK/pEgw14+z3tryvSsTc4igaDA1IjtrzQVnN0jbIXSIwlqj2pT0Kc8GI3miee6tnsVgQaopts+zEf1r23zP9LpAp0iLkkzhmIDH4gJiEM31SKs8BFp/kPBr/Y9+aX6jQWIHuRzPTbsP/8HA2zGigS90zF2wetoL30GCoOpNV5PiEewkQneIpcvx9AKzeurPSxjKG1zh0Xudixue8len4kOYq4qxGy9qedFvOMlvAPQSpx4EvLjNtURIa6lYsMPS5yd6P0R/a5L4Fatk1rWf5qq9A620jRRjRVjE+Vo/BTk3YckOHgvMjrlnp2S4OcZWrvs4ejANgVKc9rQCCNdkN1UOQSFeb+RK6K+UIJw8T5l/GwTWo9X6ofzFQq469AzIsREBBGAE="
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 277,
+          "cache_read_input_tokens": 17583,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 277,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 4,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "bbe2f1d7-2dd3-44a2-bae6-c64b6794cfa0"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01CifmcNzoGNsV984FqAUFhA",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01Cvrt8uXRSXQXKd2hzPCdTe",
+            "name": "Grep",
+            "input": {
+              "pattern": "\"part_files\"|\"deadCodeCandidates\"|\"candidates\"|\"items\"",
+              "path": "supermodel_dead_code_analysis.json",
+              "output_mode": "content",
+              "-n": true,
+              "head_limit": 10
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 277,
+          "cache_read_input_tokens": 17583,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 277,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 4,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "d1bf2265-df38-4db6-b45a-8f114e86d076"
+    },
+    {
+      "type": "user",
+      "message": {
+        "role": "user",
+        "content": [
+          {
+            "tool_use_id": "toolu_01Cvrt8uXRSXQXKd2hzPCdTe",
+            "type": "tool_result",
+            "content": "1:[Omitted long matching line]\n\n[Showing results with pagination = limit: 10, offset: 0]"
+          }
+        ]
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "2db85c59-d471-48e0-ada0-aace0b352968",
+      "tool_use_result": {
+        "mode": "content",
+        "numFiles": 0,
+        "filenames": [],
+        "content": "1:[Omitted long matching line]",
+        "numLines": 1,
+        "appliedLimit": 10
+      }
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_011YTK7PfzZ5pXgPcHkkbueg",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "It seems like it found a match but the line is too long. Let me try a more focused approach by using bash to extract just the structure information.",
+            "signature": "Er0CCkYICxgCKkBQF4ko+JMvv8OH+LNsW3L0x36j666QGr6jQx/xDNd2t0K/Rh7ROQHTYDUadyAZCzmGQP2Vpi/fvaLlAWGy5MXXEgwtpjIWBL9uxpZoa/8aDNUNzEs8b2eE7OJhWSIwR46aRXYX9HAu5CEAXlAaQPpeF+TK3Ns/g8dBtyTL1kNeAn2D6LKKro1uAK3b6kOVKqQBWpgg/qzqv/7dPQkI+usoPfo8QG2yMjrHgcVvyOz8RxfnqLpTLWok7tnTsMyktnkJgHqoibO4KZTRkS7aIOEXhbYvNppzzc4YyNOD+R6NnmRX6Wf493HyO6dvT8K7qEXcUb+cwiV3/xgooUkTJdtHoVJ7Dwv9SGo+Ph7PvdnIXYkTKVIdB0C0XyhrxIr0Ya6c3eGc7QcWZqeaUl0bzRiCLMKwljMYAQ=="
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 246,
+          "cache_read_input_tokens": 17860,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 246,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 3,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "58963391-99f3-4e36-b057-e533719a0f9c"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_011YTK7PfzZ5pXgPcHkkbueg",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01U8a8edoc4xhrnMwoHnsyrH",
+            "name": "Bash",
+            "input": {
+              "command": "head -5 supermodel_dead_code_analysis.json",
+              "description": "Check the beginning of the analysis file"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 246,
+          "cache_read_input_tokens": 17860,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 246,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 3,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "a743b2a5-1475-464a-90b4-973bd26ac1da"
+    },
+    {
+      "type": "user",
+      "message": {
+        "role": "user",
+        "content": [
+          {
+            "tool_use_id": "toolu_01U8a8edoc4xhrnMwoHnsyrH",
+            "type": "tool_result",
+            "content": "<persisted-output>\nOutput too large (78.3KB). Full output saved to: /Users/jag/.claude/projects/-private-var-folders-90-6pztvw5s1h12y4kmzbphq3qw0000gn-T-mcpbr-latitude-pr2300-k5xl5n6j/b503b054-b6f3-464c-bac2-92df31711085/tool-results/bp300al4z.txt\n\nPreview (first 2KB):\n{\"deadCodeCandidates\":[{\"file\":\"packages/constants/src/helpers.ts\",\"name\":\"createRelativePath\",\"type\":\"function\"},{\"file\":\"packages/constants/src/helpers.ts\",\"name\":\"simplifyDocument\",\"type\":\"function\"},{\"file\":\"packages/constants/src/helpers.ts\",\"name\":\"isInlineImage\",\"type\":\"function\"},{\"file\":\"packages/constants/src/helpers.ts\",\"name\":\"isEncodedImage\",\"type\":\"function\"},{\"file\":\"packages/constants/src/helpers.ts\",\"name\":\"isSafeUrl\",\"type\":\"function\"},{\"file\":\"packages/constants/src/helpers.ts\",\"name\":\"isLatitudeUrl\",\"type\":\"function\"},{\"file\":\"packages/constants/src/helpers.ts\",\"name\":\"isCloneActionUrl\",\"type\":\"function\"},{\"file\":\"packages/constants/src/issues/constants.ts\",\"name\":\"ISSUE_EMBEDDING_CACHE_KEY\",\"type\":\"function\"},{\"file\":\"packages/constants/src/issues/constants.ts\",\"name\":\"ISSUE_DISCOVERY_RERANK_CACHE_KEY\",\"type\":\"function\"},{\"file\":\"packages/constants/src/issues/constants.ts\",\"name\":\"ISSUE_GENERATION_CACHE_KEY\",\"type\":\"function\"},{\"file\":\"packages/constants/src/issues/parameters.ts\",\"name\":\"issuesFiltersQueryParamsParser\",\"type\":\"function\"},{\"file\":\"packages/constants/src/issues/parseParameters.ts\",\"name\":\"parseIssuesQueryParams\",\"type\":\"function\"},{\"file\":\"packages/constants/src/issues/parseParameters.ts\",\"name\":\"convertIssuesParamsToQueryParams\",\"type\":\"function\"},{\"file\":\"packages/constants/src/issues/parseParameters.ts\",\"name\":\"buildIssuesCacheKey\",\"type\":\"function\"},{\"file\":\"packages/constants/src/latitudePromptSchema/providers/openai/fileSearchToolSchema.ts\",\"name\":\"CompoundFilterSchema\",\"type\":\"function\"},{\"file\":\"packages/constants/src/tracing/index.ts\",\"name\":\"SPAN_INGESTION_STORAGE_KEY\",\"type\":\"function\"},{\"file\":\"packages/constants/src/tracing/index.ts\",\"name\":\"SPAN_PROCESSING_STORAGE_KEY\",\"type\":\"function\"},{\"file\":\"packages/constants/src/tracing/index.ts\",\"name\":\"TRACING_JOBS_DELAY_BETWEEN_CONFLICTS\",\"type\":\"function\"},{\"file\":\"packages/constants/src/tracing/span.ts\",\"name\":\"isCompletionSpan\",\"type\":\"function\"},{\"file\":\"packages/core/s\n...\n</persisted-output>",
+            "is_error": false
+          }
+        ]
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "9a019b61-34c9-481b-b0b8-bc1fb8445bd0",
+      "tool_use_result": {
+        "stdout": "{\"deadCodeCandidates\":[{\"file\":\"packages/constants/src/helpers.ts\",\"name\":\"createRelativePath\",\"type\":\"function\"},{\"file\":\"packages/constants/src/helpers.ts\",\"name\":\"simplifyDocument\",\"type\":\"function\"},{\"file\":\"packages/constants/src/helpers.ts\",\"name\":\"isInlineImage\",\"type\":\"function\"},{\"file\":\"packages/constants/src/helpers.ts\",\"name\":\"isEncodedImage\",\"type\":\"function\"},{\"file\":\"packages/constants/src/helpers.ts\",\"name\":\"isSafeUrl\",\"type\":\"function\"},{\"file\":\"packages/constants/src/helpers.ts\",\"name\":\"isLatitudeUrl\",\"type\":\"function\"},{\"file\":\"packages/constants/src/helpers.ts\",\"name\":\"isCloneActionUrl\",\"type\":\"function\"},{\"file\":\"packages/constants/src/issues/constants.ts\",\"name\":\"ISSUE_EMBEDDING_CACHE_KEY\",\"type\":\"function\"},{\"file\":\"packages/constants/src/issues/constants.ts\",\"name\":\"ISSUE_DISCOVERY_RERANK_CACHE_KEY\",\"type\":\"function\"},{\"file\":\"packages/constants/src/issues/constants.ts\",\"name\":\"ISSUE_GENERATION_CACHE_KEY\",\"type\":\"function\"},{\"file\":\"packages/constants/src/issues/parameters.ts\",\"name\":\"issuesFiltersQueryParamsParser\",\"type\":\"function\"},{\"file\":\"packages/constants/src/issues/parseParameters.ts\",\"name\":\"parseIssuesQueryParams\",\"type\":\"function\"},{\"file\":\"packages/constants/src/issues/parseParameters.ts\",\"name\":\"convertIssuesParamsToQueryParams\",\"type\":\"function\"},{\"file\":\"packages/constants/src/issues/parseParameters.ts\",\"name\":\"buildIssuesCacheKey\",\"type\":\"function\"},{\"file\":\"packages/constants/src/latitudePromptSchema/providers/openai/fileSearchToolSchema.ts\",\"name\":\"CompoundFilterSchema\",\"type\":\"function\"},{\"file\":\"packages/constants/src/tracing/index.ts\",\"name\":\"SPAN_INGESTION_STORAGE_KEY\",\"type\":\"function\"},{\"file\":\"packages/constants/src/tracing/index.ts\",\"name\":\"SPAN_PROCESSING_STORAGE_KEY\",\"type\":\"function\"},{\"file\":\"packages/constants/src/tracing/index.ts\",\"name\":\"TRACING_JOBS_DELAY_BETWEEN_CONFLICTS\",\"type\":\"function\"},{\"file\":\"packages/constants/src/tracing/span.ts\",\"name\":\"isCompletionSpan\",\"type\":\"function\"},{\"file\":\"packages/core/scripts/updateModelsDevData.ts\",\"name\":\"updateModelsDevData\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/commits/list.ts\",\"name\":\"listDrafts\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/documents/list.ts\",\"name\":\"listPrompts\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/documents/read.ts\",\"name\":\"readPrompt\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/general/think.ts\",\"name\":\"think\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/projects/deletePrompt.ts\",\"name\":\"deletePrompt\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/projects/editProject.ts\",\"name\":\"editProject\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/projects/list.ts\",\"name\":\"listProjects\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/projects/writePrompt.ts\",\"name\":\"writePrompt\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/settings/createIntegration.ts\",\"name\":\"createIntegrationLatte\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/settings/listExistingIntegrations.ts\",\"name\":\"listExistingIntegrations\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/settings/listIntegrationTools.ts\",\"name\":\"listIntegrationTools\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/settings/listProviders.ts\",\"name\":\"listProviders\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/settings/searchAvailableIntegrations.ts\",\"name\":\"searchAvailableIntegrations\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/triggers/actions/createTrigger.ts\",\"name\":\"createTrigger\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/triggers/actions/deleteTrigger.ts\",\"name\":\"deleteTrigger\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/triggers/actions/updateTrigger.ts\",\"name\":\"updateTrigger\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/copilot/latte/tools/triggers/listIntegrationTriggers.ts\",\"name\":\"listIntegrationTriggers\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/evaluationsV2/human/index.ts\",\"name\":\"validate\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/evaluationsV2/human/index.ts\",\"name\":\"annotate\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/evaluationsV2/human/rating.ts\",\"name\":\"validate\",\"type\":\"function\"},{\"file\":\"packages/core/src/services/evaluationsV2/human/rating.ts\",\"name\":\"annotate\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/NotificationsFooter/index.tsx\",\"name\":\"NotificationsFooter\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H1\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H1B\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H2\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H2M\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H2B\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H3\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H3M\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H3B\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H4\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H4M\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H4B\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H5\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H5M\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H5B\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H6\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H6M\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H6B\",\"type\":\"function\"},{\"file\":\"packages/emails/src/components/Text/index.tsx\",\"name\":\"H6C\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/datasets/DatasetReadyMail.tsx\",\"name\":\"DatasetReadyMail\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/documentTrigger/DocumentTriggerResponseMail.tsx\",\"name\":\"DocumentTriggerResponseMail\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/exports/ExportReadyMail.tsx\",\"name\":\"ExportReadyMail\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/invitations/InvitationMail.tsx\",\"name\":\"InvitationMail\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/invitations/ReferralMail.tsx\",\"name\":\"InvitationMail\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/issues/IssueEscalatingMail.tsx\",\"name\":\"EscalatingBadge\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/issues/IssueEscalatingMail.tsx\",\"name\":\"MiniHistogram\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/issues/IssueEscalatingMail.tsx\",\"name\":\"IssueTableRow\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/issues/IssueEscalatingMail.tsx\",\"name\":\"IssueEscalatingMail\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/weeklyEmail/WeeklyEmailMail.tsx\",\"name\":\"BlankSlateCard\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/weeklyEmail/WeeklyEmailMail.tsx\",\"name\":\"StatCard\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/weeklyEmail/WeeklyEmailMail.tsx\",\"name\":\"LogsSection\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/weeklyEmail/WeeklyEmailMail.tsx\",\"name\":\"IssuesSection\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/weeklyEmail/WeeklyEmailMail.tsx\",\"name\":\"AnnotationsSection\",\"type\":\"function\"},{\"file\":\"packages/emails/src/templates/weeklyEmail/WeeklyEmailMail.tsx\",\"name\":\"WeeklyEmailMail\",\"type\":\"function\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/util/utils.py\",\"name\":\"get_package\",\"type\":\"function\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/util/utils.py\",\"name\":\"get_env\",\"type\":\"function\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/util/utils.py\",\"name\":\"returns_identity\",\"type\":\"function\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/util/utils.py\",\"name\":\"is_like\",\"type\":\"function\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/util/utils.py\",\"name\":\"returns_like\",\"type\":\"function\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/version/version.py\",\"name\":\"_to_semver\",\"type\":\"function\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/version/version.py\",\"name\":\"_to_info\",\"type\":\"function\"},{\"file\":\"packages/sdks/python/src/latitude_sdk/version/version.py\",\"name\":\"_version\",\"type\":\"function\"},{\"file\":\"packages/telemetry/python/examples/run_all.py\",\"name\":\"check_common_env\",\"type\":\"function\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/env/env.py\",\"name\":\"_get_gateway_base_url\",\"type\":\"function\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/exporter/exporter.py\",\"name\":\"create_exporter\",\"type\":\"function\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/managers/__init__.py\",\"name\":\"get_current_context\",\"type\":\"function\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/util/utils.py\",\"name\":\"get_env\",\"type\":\"function\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/util/utils.py\",\"name\":\"is_package_installed\",\"type\":\"function\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/util/utils.py\",\"name\":\"returns_identity\",\"type\":\"function\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/util/utils.py\",\"name\":\"is_like\",\"type\":\"function\"},{\"file\":\"packages/telemetry/python/src/latitude_telemetry/util/utils.py\",\"name\":\"returns_like\",\"type\":\"function\"},{\"file\":\"packages/telemetry/typescript/src/env/env.ts\",\"name\":\"GET_GATEWAY_BASE_URL\",\"type\":\"function\"},{\"file\":\"packages/telemetry/typescript/src/utils/utils.ts\",\"name\":\"capitalize\",\"type\":\"function\"},{\"file\":\"packages/telemetry/typescript/src/utils/utils.ts\",\"name\":\"toCamelCase\",\"type\":\"function\"},{\"file\":\"packages/telemetry/typescript/src/utils/utils.ts\",\"name\":\"toSnakeCase\",\"type\":\"function\"},{\"file\":\"packages/telemetry/typescript/src/utils/utils.ts\",\"name\":\"toKebabCase\",\"type\":\"function\"},{\"file\":\"packages/telemetry/typescript/src/utils/utils.ts\",\"name\":\"omit\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Charts/index.tsx\",\"name\":\"ChartContainer\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Charts/index.tsx\",\"name\":\"ChartStyle\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Charts/index.tsx\",\"name\":\"ChartTooltipContent\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Charts/index.tsx\",\"name\":\"ChartLegendContent\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Command/index.tsx\",\"name\":\"CommandDialog\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Command/index.tsx\",\"name\":\"CommandSeparator\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Command/index.tsx\",\"name\":\"CommandShortcut\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DataGrid/EditCell/Editor.tsx\",\"name\":\"EditCell\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DataGrid/EditCell/EditorWrapper.tsx\",\"name\":\"CellTextEditorLazy\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DataGrid/EditCell/EditorWrapper.tsx\",\"name\":\"EditorCellWrapper\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DatePicker/Primitives/index.tsx\",\"name\":\"Calendar\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DatePicker/Range/index.tsx\",\"name\":\"DatePickerRange\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DatePicker/Range/usePresets.ts\",\"name\":\"usePresets\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DropdownMenu/index.tsx\",\"name\":\"TriggerButton\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DropdownMenu/index.tsx\",\"name\":\"DropdownMenu\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DropdownMenu/Primitives/index.tsx\",\"name\":\"DropdownMenuSubTrigger\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DropdownMenu/Primitives/index.tsx\",\"name\":\"DropdownMenuSubContent\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DropdownMenu/Primitives/index.tsx\",\"name\":\"DropdownMenuContent\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DropdownMenu/Primitives/index.tsx\",\"name\":\"DropdownMenuItem\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DropdownMenu/Primitives/index.tsx\",\"name\":\"DropdownMenuCheckboxItem\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DropdownMenu/Primitives/index.tsx\",\"name\":\"DropdownMenuRadioItem\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DropdownMenu/Primitives/index.tsx\",\"name\":\"DropdownMenuLabel\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DropdownMenu/Primitives/index.tsx\",\"name\":\"DropdownMenuSeparator\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/DropdownMenu/Primitives/index.tsx\",\"name\":\"DropdownMenuShortcut\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Icons/custom-icons/FilledBadgeCheck.tsx\",\"name\":\"FilledBadgeCheckIcon\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Icons/custom-icons/GridVertical.tsx\",\"name\":\"GridVertical\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Icons/custom-icons/llmProviders/googleVertex.tsx\",\"name\":\"GoogleGemini\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Icons/custom-icons/Logo.tsx\",\"name\":\"LatitudeLogo\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Icons/custom-icons/LogoMonochrome.tsx\",\"name\":\"LogoMonochrome\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Icons/custom-icons/logos/Mintlify.tsx\",\"name\":\"Notion\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Icons/custom-icons/MCP.tsx\",\"name\":\"MCPIcon\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Illustrations/Evaluation.tsx\",\"name\":\"EvaluationIllustration\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Label/index.tsx\",\"name\":\"BatchLabel\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Modal/Primitives/index.tsx\",\"name\":\"DialogOverlay\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Popover/index.tsx\",\"name\":\"PopoverContent\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Popover/index.tsx\",\"name\":\"ButtonTrigger\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Select/index.tsx\",\"name\":\"Select\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Select/Options.tsx\",\"name\":\"Options\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Select/Primitives/index.tsx\",\"name\":\"SelectValueWithIcon\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Select/Primitives/index.tsx\",\"name\":\"SelectScrollUpButton\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Select/Primitives/index.tsx\",\"name\":\"SelectScrollDownButton\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Select/Primitives/index.tsx\",\"name\":\"SelectLabel\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Select/Primitives/index.tsx\",\"name\":\"SelectSeparator\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/SplitPane/index.tsx\",\"name\":\"usePanelDomRef\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Table/index.tsx\",\"name\":\"TableFooter\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Table/index.tsx\",\"name\":\"ServerSideTableCell\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Table/index.tsx\",\"name\":\"TableCaption\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Table/sortedTable/index.tsx\",\"name\":\"SortableTableHead\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H1\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H1B\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H2\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H2M\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H2B\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H3\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H3M\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H3B\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H4\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H4M\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H4B\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H5\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H5M\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H5B\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H6\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H6M\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H6B\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H6C\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H7\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H7C\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"H8\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Text/index.tsx\",\"name\":\"Mono\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Toast/index.tsx\",\"name\":\"ToastViewport\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Toast/index.tsx\",\"name\":\"Toast\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Toast/index.tsx\",\"name\":\"ToastAction\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Toast/index.tsx\",\"name\":\"ToastClose\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Toast/index.tsx\",\"name\":\"ToastTitle\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Toast/index.tsx\",\"name\":\"ToastDescription\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Toast/ToastHref.tsx\",\"name\":\"ToastHref\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Toast/ToastProvider.tsx\",\"name\":\"ToastProvider\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Toast/useToast.ts\",\"name\":\"toast\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/atoms/Toast/useToast.ts\",\"name\":\"useToast\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/Breadcrumb/Item.tsx\",\"name\":\"BreadcrumbItem\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/Breadcrumb/Item.tsx\",\"name\":\"BreadcrumbItemSkeleton\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/Breadcrumb/Separator.tsx\",\"name\":\"BreadcrumbSeparator\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/Charts/AreaChart/index.tsx\",\"name\":\"AreaChart\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/Charts/BarChart/index.tsx\",\"name\":\"CustomTick\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/Charts/BarChart/index.tsx\",\"name\":\"BarChart\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/Charts/PanelChart/index.tsx\",\"name\":\"PanelChart\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/Charts/ScatterChart/index.tsx\",\"name\":\"ScatterChart\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/ClickToCopy/index.tsx\",\"name\":\"ClickToCopy\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/DiffViewer/Editor/useEditorOptions.ts\",\"name\":\"useEditorOptions\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/DiffViewer/Editor/useMonacoSetup.ts\",\"name\":\"useMonacoSetup\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/DocumentChange/Change.tsx\",\"name\":\"DocumentChange\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/DocumentChange/Skeleton.tsx\",\"name\":\"DocumentChangeSkeleton\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/ErrorComponent/index.tsx\",\"name\":\"ErrorComponent\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/TabSelector/index.tsx\",\"name\":\"TabSelector\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/molecules/TruncatedTooltip/index.tsx\",\"name\":\"TruncatedTooltip\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/ClickToCopyUuid/index.tsx\",\"name\":\"ClickToCopyUuid\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/Custom.tsx\",\"name\":\"CustomCronInput\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/index.tsx\",\"name\":\"CronInputContent\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/index.tsx\",\"name\":\"CronInput\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/index.tsx\",\"name\":\"CronFormField\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/Interval.tsx\",\"name\":\"IntervalCronInput\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/Schedule.tsx\",\"name\":\"ScheduleCronInput\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/useCronModel.ts\",\"name\":\"useCronModel\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/utils.ts\",\"name\":\"humanizeCronValue\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/utils.ts\",\"name\":\"parseCronValue\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/utils.ts\",\"name\":\"formatCronValue\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/utils.ts\",\"name\":\"isIntervalCron\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/utils.ts\",\"name\":\"isScheduleCron\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/ds/organisms/CronInput/utils.ts\",\"name\":\"getInitialTab\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/lib/hooks/useAutoScroll.ts\",\"name\":\"useAutoScroll\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/lib/hooks/useHover.ts\",\"name\":\"useHover\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/lib/hooks/useLocalStorage.ts\",\"name\":\"isLocalStorageAvailable\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/lib/hooks/useToolContentMap.ts\",\"name\":\"useToolContentMap\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/lib/hooks/useTypewriterValue.ts\",\"name\":\"useTypeWriterValue\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/lib/textUtils.ts\",\"name\":\"stringifyUnknown\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/lib/versionedMessagesHelpers.ts\",\"name\":\"extractToolContents\",\"type\":\"function\"},{\"file\":\"packages/web-ui/src/providers/ThemeProvider/index.tsx\",\"name\":\"ThemeProvider\",\"type\":\"function\"},{\"file\":\"packages/constants/src/actions.ts\",\"name\":\"ActionType\",\"type\":\"type\"},{\"file\":\"packages/constants/src/actions.ts\",\"name\":\"CreateAgentActionBackendParameters\",\"type\":\"type\"},{\"file\":\"packages/constants/src/actions.ts\",\"name\":\"CreateAgentActionFrontendParameters\",\"type\":\"type\"},{\"file\":\"packages/constants/src/actions.ts\",\"name\":\"CloneAgentActionBackendParameters\",\"type\":\"type\"},{\"file\":\"packages/constants/src/actions.ts\",\"name\":\"CloneAgentActionFrontendParameters\",\"type\":\"type\"},{\"file\":\"packages/constants/src/actions.ts\",\"name\":\"ActionBackendParameters\",\"type\":\"type\"},{\"file\":\"packages/constants/src/actions.ts\",\"name\":\"ActionFrontendParameters\",\"type\":\"type\"},{\"file\":\"packages/constants/src/ai/vercelSdkV5ToV4.ts\",\"name\":\"ReplaceTextDelta\",\"type\":\"type\"},{\"file\":\"packages/constants/src/ai/vercelSdkV5ToV4.ts\",\"name\":\"LegacyVercelSDKToolResultPart\",\"type\":\"type\"},{\"file\":\"packages/constants/src/ai/vercelSdkV5ToV4.ts\",\"name\":\"LegacyVercelSDKVersion4ToolResultContent\",\"type\":\"type\"},{\"file\":\"packages/constants/src/documentTriggers/schema.ts\",\"name\":\"ScheduledTriggerEventPayload\",\"type\":\"type\"},{\"file\":\"packages/constants/src/documentTriggers/schema.ts\",\"name\":\"IntegrationTriggerEventPayload\",\"type\":\"type\"},{\"file\":\"packages/constants/src/errors/constants.ts\",\"name\":\"DbErrorRef\",\"type\":\"type\"},{\"file\":\"packages/constants/src/errors/constants.ts\",\"name\":\"ApiResponseCode\",\"type\":\"type\"},{\"file\":\"packages/constants/src/errors/latitudeError.ts\",\"name\":\"OverloadedError\",\"type\":\"class\"},{\"file\":\"packages/constants/src/errors/latitudeError.ts\",\"name\":\"AbortedError\",\"type\":\"class\"},{\"file\":\"packages/constants/src/errors/latitudeError.ts\",\"name\":\"ConflictError\",\"type\":\"class\"},{\"file\":\"packages/constants/src/errors/latitudeError.ts\",\"name\":\"UnauthorizedError\",\"type\":\"class\"},{\"file\":\"packages/constants/src/errors/latitudeError.ts\",\"name\":\"RateLimitError\",\"type\":\"class\"},{\"file\":\"packages/constants/src/evaluations/index.ts\",\"name\":\"EvaluationConfiguration\",\"type\":\"type\"},{\"file\":\"packages/constants/src/evaluations/index.ts\",\"name\":\"EvaluationResultMetadata\",\"type\":\"type\"},{\"file\":\"packages/constants/src/evaluations/index.ts\",\"name\":\"EvaluationResultError\",\"type\":\"type\"},{\"file\":\"packages/constants/src/evaluations/index.ts\",\"name\":\"EvaluationMetricSpecification\",\"type\":\"type\"},{\"file\":\"packages/constants/src/evaluations/index.ts\",\"name\":\"EvaluationSpecification\",\"type\":\"type\"},{\"file\":\"packages/constants/src/evaluations/index.ts\",\"name\":\"LiveEvaluationMetric\",\"type\":\"type\"},{\"file\":\"packages/constants/src/evaluations/index.ts\",\"name\":\"BatchEvaluationMetric\",\"type\":\"type\"},{\"file\":\"packages/constants/src/evaluations/index.ts\",\"name\":\"EvaluationResultErrorValue\",\"type\":\"type\"},{\"file\":\"packages/constants/src/evaluations/index.ts\",\"name\":\"EvaluationResultValue\",\"type\":\"type\"},{\"file\":\"packages/constants/src/evaluations/index.ts\",\"name\":\"EvaluationSettings\",\"type\":\"type\"},{\"file\":\"packages/constants/src/evaluations/index.ts\",\"name\":\"EvaluationOptions\",\"type\":\"type\"},{\"file\":\"packages/constants/src/evaluations/shared.ts\",\"name\":\"ExpectedOutputConfiguration\",\"type\":\"type\"},{\"file\":\"packages/constants/src/events/events.ts\",\"name\":\"LatitudeChainStartedEventData\",\"type\":\"interface\"},{\"file\":\"packages/constants/src/events/events.ts\",\"name\":\"LatitudeStepStartedEventData\",\"type\":\"interface\"},{\"file\":\"packages/constants/src/events/events.ts\",\"name\":\"LatitudeProviderStartedEventData\",\"type\":\"interface\"},{\"file\":\"packages/constants/src/events/events.ts\",\"name\":\"LatitudeToolsStartedEventData\",\"type\":\"interface\"},{\"file\":\"packages/constants/src/events/events.ts\",\"name\":\"LatitudeToolCompletedEventData\",\"type\":\"interface\"},{\"file\":\"packages/constants/src/events/events.ts\",\"name\":\"LatitudeStepCompletedEventData\",\"type\":\"interface\"},{\"file\":\"packages/constants/src/events/events.ts\",\"name\":\"LatitudeIntegrationWakingUpEventData\",\"type\":\"interface\"},{\"file\":\"packages/constants/src/grants.ts\",\"name\":\"Grant\",\"type\":\"type\"},{\"file\":\"packages/constants/src/index.ts\",\"name\":\"TodoListItem\",\"type\":\"type\"},{\"file\":\"packages/constants/src/integrations.ts\",\"name\":\"ActiveIntegrationType\",\"type\":\"type\"},{\"file\":\"packages/constants/src/issues/constants.ts\",\"name\":\"IssueStatuses\",\"type\":\"type\"},{\"file\":\"packages/constants/src/issues/constants.ts\",\"name\":\"IssueStatus\",\"type\":\"type\"},{\"file\":\"packages/constants/src/issues/parameters.ts\",\"name\":\"IssuesFiltersQueryParamsOutput\",\"type\":\"type\"},{\"file\":\"packages/constants/src/issues/parameters.ts\",\"name\":\"IssuesFiltersQueryParamsInput\",\"type\":\"type\"},{\"file\":\"packages/constants/src/issues/parseParameters.ts\",\"name\":\"formatDateLocal\",\"type\":\"function\"},{\"file\":\"packages/constants/src/latitudePromptSchema/providers/azure/index.ts\",\"name\":\"AzureConfig\",\"type\":\"type\"},{\"file\":\"packages/constants/src/latitudePromptSchema/providers/openai/fileSearchToolSchema.ts\",\"name\":\"ComparisonFilter\",\"type\":\"type\"},{\"file\":\"packages/constants/src/latitudePromptSchema/providers/openai/fileSearchToolSchema.ts\",\"name\":\"CompoundFilter\",\"type\":\"type\"},{\"file\":\"packages/constants/src/latitudePromptSchema/providers/openai/fileSearchToolSchema.ts\",\"name\":\"Filter\",\"type\":\"type\"},{\"file\":\"packages/constants/src/latitudePromptSchema/providers/openai/fileSearchToolSchema.ts\",\"name\":\"OpenAIFilesSearchTool\",\"type\":\"type\"},{\"file\":\"packages/constants/src/latitudePromptSchema/providers/openai/webSearchSchema.ts\",\"name\":\"OpenAIWebSearchTool\",\"type\":\"type\"},{\"file\":\"packages/constants/src/messages.ts\",\"name\":\"ContentType\",\"type\":\"type\"},{\"file\":\"packages/constants/src/messages.ts\",\"name\":\"MessageRole\",\"type\":\"type\"},{\"file\":\"packages/constants/src/messages.ts\",\"name\":\"PromptlSourceRef\",\"type\":\"type\"},{\"file\":\"packages/constants/src/messages.ts\",\"name\":\"ReasoningContent\",\"type\":\"type\"},{\"file\":\"packages/constants/src/messages.ts\",\"name\":\"RedactedReasoningContent\",\"type\":\"type\"},{\"file\":\"packages/constants/src/messages.ts\",\"name\":\"TextContent\",\"type\":\"type\"},{\"file\":\"packages/constants/src/messages.ts\",\"name\":\"ImageContent\",\"type\":\"type\"},{\"file\":\"packages/constants/src/messages.ts\",\"name\":\"FileContent\",\"type\":\"type\"},{\"file\":\"packages/constants/src/models.ts\",\"name\":\"DocumentLogWithMetadata\",\"type\":\"type\"},{\"file\":\"packages/constants/src/models.ts\",\"name\":\"RunErrorField\",\"type\":\"type\"},{\"file\":\"packages/constants/src/models.ts\",\"name\":\"DocumentLogWithMetadataAndError\",\"type\":\"type\"},{\"file\":\"packages/constants/src/models.ts\",\"name\":\"ProviderLog\",\"type\":\"type\"},{\"file\":\"packages/constants/src/onboarding.ts\",\"name\":\"OnboardingDocumentParameterKeys\",\"type\":\"type\"},{\"file\":\"packages/constants/src/onboarding.ts\",\"name\":\"OnboardingParameters\",\"type\":\"type\"},{\"file\":\"packages/constants/src/optimizations.ts\",\"name\":\"OptimizationBudget\",\"type\":\"type\"},{\"file\":\"packages/constants/src/optimizations.ts\",\"name\":\"OptimizationConfiguration\",\"type\":\"type\"},{\"file\":\"packages/constants/src/relativeDates.ts\",\"name\":\"RelativeDate\",\"type\":\"type\"},{\"file\":\"packages/constants/src/tracing/index.ts\",\"name\":\"StatusCode\",\"type\":\"type\"},{\"file\":\"packages/constants/src/tracing/index.ts\",\"name\":\"ScopeSpan\",\"type\":\"type\"},{\"file\":\"packages/constants/src/tracing/index.ts\",\"name\":\"ServiceRequest\",\"type\":\"type\"},{\"file\":\"pa",
+        "stderr": "",
+        "interrupted": false,
+        "isImage": false,
+        "noOutputExpected": false,
+        "persistedOutputPath": "/Users/jag/.claude/projects/-private-var-folders-90-6pztvw5s1h12y4kmzbphq3qw0000gn-T-mcpbr-latitude-pr2300-k5xl5n6j/b503b054-b6f3-464c-bac2-92df31711085/tool-results/bp300al4z.txt",
+        "persistedOutputSize": 80217
+      }
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_017GiJxyVMrNMsgGkDNiaZSn",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "Perfect! I can see that the file structure contains a \"deadCodeCandidates\" array directly, not a manifest with part files. The data is exactly what I need. I can see the candidates have \"file\", \"name\", and \"type\" fields. Now I need to extract all this data into the REPORT.json format.\n\nLet me use the script approach suggested in the instructions, but adapted for the structure I see.",
+            "signature": "EqoECkYICxgCKkB7p+R4uFZfpz4LJ7WQ6luMcT7vDJhuyIeVXmfdfFzOW2tZTu0I4fm7dUvvEwcBNw/gtoAM00K6lVoNjFfFADLOEgzZ8ZSkYoENStTSJq0aDDF/bhQ6Kw0AspExAiIwqYd/zsermnAQSt15lPUbzn0w4NRKKvy1XOUG4Op7dO//MwwT/x7odaVXwg0iJ5KUKpED/+DDylXuDGJHDOXPc1sY85EjV8y3r1u0CqZlX/89JR6LMf87hnvGY1IA6CZ6+w+kQ/CmZMOL5wnEmXxnLTKZ3T/MPd//eZIrO9mXz/O1pGboRKO+MbReuvQt0UhDPyXl/KBKKpLyGqXe0MGopQbLPF/0SxGrBnCsV5lxkdmP+6ceBq+cQiON2cQX/jHPwaxhCUvIsMY2P+6/8JaDuF5osg2hSyS9xgpmwG/IRfh7pIPhDOZWINDnoVRB0wAgnLaDvIr1/djjG+hk1Z2NmzIEiOSxwdub/Hk0tJu6BwBj1TVbEL+nwKMgGHJTOY03EarIEdTIMGQKpPAd0CF7QXexdhd4VXH0W/NTN77tIE69iI4lJ+3KJE8g3ExYZzDzMBpV6ZdX798bZLCTr8rQSaDx0RhuadKjYTpFreW/h0+AFkl4Kn9JLs+RjdtWhqQAnuWYORobGY7RQbchAlxbIO3heQQbO8DUq8dfoJSwyE4p7qCWawjRBZboUnRWbgnz/qqvxS15grm3vDY4AsMf+aP5vaUYAQ=="
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 862,
+          "cache_read_input_tokens": 18106,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 862,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 8,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "90f2e985-ce87-45b0-b5c0-0eaa534f41c0"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_017GiJxyVMrNMsgGkDNiaZSn",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "Now I can see the structure - it's a direct JSON file with `deadCodeCandidates` array. Let me extract all candidates using the provided script approach:"
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 862,
+          "cache_read_input_tokens": 18106,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 862,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 8,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "7396cd5b-9361-4779-9f83-7e4fbf6b038e"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_017GiJxyVMrNMsgGkDNiaZSn",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_015bAnfQXHpX4Jfnm2opTXeh",
+            "name": "Bash",
+            "input": {
+              "command": "cat supermodel_dead_code_analysis.json | python3 -c \"\nimport json, sys\ndata = json.load(sys.stdin)\n# Handle manifest (chunked files)\nif 'part_files' in data:\n    candidates = []\n    for pf in data['part_files']:\n        with open(pf) as f:\n            part = json.load(f)\n            for key in ['deadCodeCandidates', 'candidates', 'items']:\n                if key in part:\n                    candidates.extend(part[key])\n                    break\nelse:\n    for key in ['deadCodeCandidates', 'candidates', 'items']:\n        if key in data:\n            candidates = data[key]\n            break\n    else:\n        candidates = []\ndead_code = []\nfor c in candidates:\n    dead_code.append({\n        'file': c.get('file', ''),\n        'name': c.get('name', ''),\n        'type': c.get('type', 'function')\n    })\nprint(json.dumps({'dead_code': dead_code, 'analysis_complete': True}, indent=2))\n\" > REPORT.json",
+              "description": "Extract all dead code candidates from analysis into REPORT.json"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 862,
+          "cache_read_input_tokens": 18106,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 862,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 8,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "30ff6fe2-7566-4e6b-a891-6e39e111e9e2"
+    },
+    {
+      "type": "user",
+      "message": {
+        "role": "user",
+        "content": [
+          {
+            "tool_use_id": "toolu_015bAnfQXHpX4Jfnm2opTXeh",
+            "type": "tool_result",
+            "content": "",
+            "is_error": false
+          }
+        ]
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "9d3783fe-5ba1-4523-992b-ce3c011ecc5b",
+      "tool_use_result": {
+        "stdout": "",
+        "stderr": "",
+        "interrupted": false,
+        "isImage": false,
+        "noOutputExpected": false
+      }
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01Etizq1v2qYBYp2L8BxZtQd",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "Good, the script ran successfully. Now let me read the REPORT.json to confirm it was written correctly.",
+            "signature": "Eo8CCkYICxgCKkD0eTaukMAG66x09lbyTA8DfpiYn/DPoGoiKMa1fJc6gl2ccj8rbftl/TJsHMleUSgA6YVS9TP6s2RJLkFGypedEgymkNetS/W1E26xXJ4aDONPv9Ggy2qIXHpCNSIw47k0fthuQ8ko4zYrmpRsxSdoG7RcL1UVYS+dGB7kA3qqZSVRoB7Ji9Ncbz1rIVp/Knczp2dSD5fRE38ojCPuZueEthtYNd/oAz+EFGmxCI8nJA3KTM5sneRyp6tPqELRrErEETR4agEzWj+6uXbD8+8wxZpYvrKpg2YiFcFBkBQGuEbZ6kS+eKYcE5IROB7l9hQ4SI/d/ZlbHHeN+7Wefgksyya2gSqAQhgB"
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 618,
+          "cache_read_input_tokens": 18968,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 618,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "a2a1c44c-c931-4e7a-b449-f3c0d5899dad"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01Etizq1v2qYBYp2L8BxZtQd",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_016FWuDHRF49bnaXde98tEKy",
+            "name": "Read",
+            "input": {
+              "file_path": "REPORT.json",
+              "limit": 50
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 618,
+          "cache_read_input_tokens": 18968,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 618,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "adf5a394-be74-4cd1-b5c2-537a2e50f56f"
+    },
+    {
+      "type": "user",
+      "message": {
+        "role": "user",
+        "content": [
+          {
+            "tool_use_id": "toolu_016FWuDHRF49bnaXde98tEKy",
+            "type": "tool_result",
+            "content": "     1\u2192{\n     2\u2192  \"dead_code\": [\n     3\u2192    {\n     4\u2192      \"file\": \"packages/constants/src/helpers.ts\",\n     5\u2192      \"name\": \"createRelativePath\",\n     6\u2192      \"type\": \"function\"\n     7\u2192    },\n     8\u2192    {\n     9\u2192      \"file\": \"packages/constants/src/helpers.ts\",\n    10\u2192      \"name\": \"simplifyDocument\",\n    11\u2192      \"type\": \"function\"\n    12\u2192    },\n    13\u2192    {\n    14\u2192      \"file\": \"packages/constants/src/helpers.ts\",\n    15\u2192      \"name\": \"isInlineImage\",\n    16\u2192      \"type\": \"function\"\n    17\u2192    },\n    18\u2192    {\n    19\u2192      \"file\": \"packages/constants/src/helpers.ts\",\n    20\u2192      \"name\": \"isEncodedImage\",\n    21\u2192      \"type\": \"function\"\n    22\u2192    },\n    23\u2192    {\n    24\u2192      \"file\": \"packages/constants/src/helpers.ts\",\n    25\u2192      \"name\": \"isSafeUrl\",\n    26\u2192      \"type\": \"function\"\n    27\u2192    },\n    28\u2192    {\n    29\u2192      \"file\": \"packages/constants/src/helpers.ts\",\n    30\u2192      \"name\": \"isLatitudeUrl\",\n    31\u2192      \"type\": \"function\"\n    32\u2192    },\n    33\u2192    {\n    34\u2192      \"file\": \"packages/constants/src/helpers.ts\",\n    35\u2192      \"name\": \"isCloneActionUrl\",\n    36\u2192      \"type\": \"function\"\n    37\u2192    },\n    38\u2192    {\n    39\u2192      \"file\": \"packages/constants/src/issues/constants.ts\",\n    40\u2192      \"name\": \"ISSUE_EMBEDDING_CACHE_KEY\",\n    41\u2192      \"type\": \"function\"\n    42\u2192    },\n    43\u2192    {\n    44\u2192      \"file\": \"packages/constants/src/issues/constants.ts\",\n    45\u2192      \"name\": \"ISSUE_DISCOVERY_RERANK_CACHE_KEY\",\n    46\u2192      \"type\": \"function\"\n    47\u2192    },\n    48\u2192    {\n    49\u2192      \"file\": \"packages/constants/src/issues/constants.ts\",\n    50\u2192      \"name\": \"ISSUE_GENERATION_CACHE_KEY\",\n\n<system-reminder>\nWhenever you read a file, you should consider whether it would be considered malware. You CAN and SHOULD provide analysis of malware, what it is doing. But you MUST refuse to improve or augment the code. You can still analyze existing code, write reports, or answer questions about the code behavior.\n</system-reminder>\n"
+          }
+        ]
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "38435015-02f3-45ef-9bcb-007b2f14122c",
+      "tool_use_result": {
+        "type": "text",
+        "file": {
+          "filePath": "REPORT.json",
+          "content": "{\n  \"dead_code\": [\n    {\n      \"file\": \"packages/constants/src/helpers.ts\",\n      \"name\": \"createRelativePath\",\n      \"type\": \"function\"\n    },\n    {\n      \"file\": \"packages/constants/src/helpers.ts\",\n      \"name\": \"simplifyDocument\",\n      \"type\": \"function\"\n    },\n    {\n      \"file\": \"packages/constants/src/helpers.ts\",\n      \"name\": \"isInlineImage\",\n      \"type\": \"function\"\n    },\n    {\n      \"file\": \"packages/constants/src/helpers.ts\",\n      \"name\": \"isEncodedImage\",\n      \"type\": \"function\"\n    },\n    {\n      \"file\": \"packages/constants/src/helpers.ts\",\n      \"name\": \"isSafeUrl\",\n      \"type\": \"function\"\n    },\n    {\n      \"file\": \"packages/constants/src/helpers.ts\",\n      \"name\": \"isLatitudeUrl\",\n      \"type\": \"function\"\n    },\n    {\n      \"file\": \"packages/constants/src/helpers.ts\",\n      \"name\": \"isCloneActionUrl\",\n      \"type\": \"function\"\n    },\n    {\n      \"file\": \"packages/constants/src/issues/constants.ts\",\n      \"name\": \"ISSUE_EMBEDDING_CACHE_KEY\",\n      \"type\": \"function\"\n    },\n    {\n      \"file\": \"packages/constants/src/issues/constants.ts\",\n      \"name\": \"ISSUE_DISCOVERY_RERANK_CACHE_KEY\",\n      \"type\": \"function\"\n    },\n    {\n      \"file\": \"packages/constants/src/issues/constants.ts\",\n      \"name\": \"ISSUE_GENERATION_CACHE_KEY\",",
+          "numLines": 50,
+          "startLine": 1,
+          "totalLines": 3686
+        }
+      }
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01KgXL1Eyz6yeBa8iXrDmjvb",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "Great! The REPORT.json file was created successfully and contains the dead code candidates in the correct format. Let me check the end of the file to see if it's complete and get a count of total candidates.",
+            "signature": "EvgCCkYICxgCKkDtT/oV/zjV2q2F3cPnPDoZzPNd7HKLe4ZTpy1WqnLCfMB3scHeKjsE7SBEvtCtnGMqZ6nLokgEUJnlR3oYLDODEgxg5FRczMQq7RicT7IaDDZYFRo3VVE7ExNgSSIwfEO6JrkGGkfluIV/VgZ2e9OZRU4N5vm5YZfAH+Pl27g3bbYDB+AOqEehhG3jPitDKt8BXdac7csSIb127v+kw3rhbHY9WdX5jFrJSr6Ntu9xciBow6TyT6abrBVqfa1i00n5dqi4qwXmi6MT8o267GHePfMbA7z/4yMqNRlI/bvIXTzDVvmaAOzNYOF5zN/zoyt2hs0RdU6eaEe9NhxpNzFijZCL574kQRJambaILJ3nQqRoryi7LOcaOTScSxRA/zTgy2w7jyRWLyQXXnLvpq/zUQwaKOQ9g9rX7lW9J2q2kCWZoieMIGVD7HUWg66i4OyOhjRS5iomuWgy5C9kOEvZSwKfJ/xZvJmqvL+I9Tc17BgB"
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 792,
+          "cache_read_input_tokens": 19586,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 792,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 8,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "8a8d3f8d-5e41-472b-a262-ecd22c1e35c6"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01KgXL1Eyz6yeBa8iXrDmjvb",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01UFYACyG6kAQ77prs9DR5ye",
+            "name": "Bash",
+            "input": {
+              "command": "tail -10 REPORT.json",
+              "description": "Check the end of REPORT.json to confirm structure"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 792,
+          "cache_read_input_tokens": 19586,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 792,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 8,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "536eda43-4856-41e0-8d62-727d996bd849"
+    },
+    {
+      "type": "user",
+      "message": {
+        "role": "user",
+        "content": [
+          {
+            "tool_use_id": "toolu_01UFYACyG6kAQ77prs9DR5ye",
+            "type": "tool_result",
+            "content": "      \"type\": \"function\"\n    },\n    {\n      \"file\": \"packages/telemetry/python/examples/run_all.py\",\n      \"name\": \"list_tests\",\n      \"type\": \"function\"\n    }\n  ],\n  \"analysis_complete\": true\n}",
+            "is_error": false
+          }
+        ]
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "100e7fb3-4d83-4280-bc0f-0ccc420be0fe",
+      "tool_use_result": {
+        "stdout": "      \"type\": \"function\"\n    },\n    {\n      \"file\": \"packages/telemetry/python/examples/run_all.py\",\n      \"name\": \"list_tests\",\n      \"type\": \"function\"\n    }\n  ],\n  \"analysis_complete\": true\n}",
+        "stderr": "",
+        "interrupted": false,
+        "isImage": false,
+        "noOutputExpected": false
+      }
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01W98rSpwKyybR5w3z1NGav2",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "Perfect! The file is complete with proper JSON structure and has the \"analysis_complete\": true flag. Let me get a count of the total candidates extracted.",
+            "signature": "EsMCCkYICxgCKkDX4fY/d6oWvFvKCuatFlXhvk1L52QCtUHnIDhhvVNH4YeooV8FZqTQcNvi0ZnjdlUu/nXUj5TH6WXtq2NQHumiEgz5ttOQRJmTJbUUKL0aDCt4Aqx7SU2vgDK4GyIwtfJJ1Ao1uRFdqir/lgcM9jfnylV5NSjoBEr0Fi9SPpwNDOY8KCT3jem/Y5hsdmjuKqoBjsr4PF6dimIpztoqs7FeQI/VdAAsyLCautRNv3OFSbK4Y1yPM0E1XWTtIsXaSOqVAxv1xC7jxIgkWYe4+fm6/DU99hqxzmdAryfCL+YFVng430rosioSLwNxt/p2qLLLz3Ac6wSiRMk2ibUJE+P2zcIr/Gwjj/FETfTPxbLXL1jrw9LfioxgTt7S6j7YlQzLvMHeKKJscWvCFStWMnvFOWpgf+yZTdkupfQYAQ=="
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 225,
+          "cache_read_input_tokens": 20378,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 225,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "5d5a58bd-ddf0-4d0a-8a09-14b66a88b920"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_01W98rSpwKyybR5w3z1NGav2",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01RUcvPkNCvoGKDL8NKvX8ct",
+            "name": "Bash",
+            "input": {
+              "command": "python3 -c \"import json; data = json.load(open('REPORT.json')); print(f'Total dead code candidates extracted: {len(data[\\\"dead_code\\\"])}')\"",
+              "description": "Count total candidates in REPORT.json"
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 225,
+          "cache_read_input_tokens": 20378,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 225,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "a0ad21e0-8501-4571-b7c7-37724eb41393"
+    },
+    {
+      "type": "user",
+      "message": {
+        "role": "user",
+        "content": [
+          {
+            "tool_use_id": "toolu_01RUcvPkNCvoGKDL8NKvX8ct",
+            "type": "tool_result",
+            "content": "Total dead code candidates extracted: 736",
+            "is_error": false
+          }
+        ]
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "fe9f372b-2b65-402f-864f-8a4de391585b",
+      "tool_use_result": {
+        "stdout": "Total dead code candidates extracted: 736",
+        "stderr": "",
+        "interrupted": false,
+        "isImage": false,
+        "noOutputExpected": false
+      }
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_018UhzEW8qZhhJ5ZAXksEbBC",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "Excellent! I've successfully extracted all 736 dead code candidates from the analysis file. The task is now complete. The REPORT.json file contains all candidates in the correct format with file, name, and type fields, and the analysis_complete flag is set to true.",
+            "signature": "ErIDCkYICxgCKkBiXMM2FcHMkSQH4QW4Tnmf9Y93dyZAstFT8lQGmMLqtQOWlO3/NvXhPtAfwK2ptgdTgav0/P5I2XaqrxLR2RGBEgyv9qSZ2HVNomIR1W4aDM3ZcQWazcypx64JPCIwxJtoUJ4Z4hncREO/Jd1YU3WVtJ8KAmTWP5a+tUknKVi9Dta2kgpHUFClZqtQ+znTKpkCpgWtb5BFg5Mf+wI3Pi4z/CpiGFTHnV5PWBqRL/zW0S/U2c55IR2gWdt+snLWJtLGfJmJL5DEJCuYYySNfDI3BXopMng9JxYSMj9l1gfDtdpZgSL7jC2E6qF1ZAIJCDKwn0dCdZPGbrTn5oM39kj1Ly9Qg5WmRoM6quSjwLInE0icTFko1f8b78cFkJ0K3WA6DxqYO84RRO+0yI3aO9yonWenrhbjworCvZD71zIZ7OxcQl24KbKDY2wQA6yYzcgJfs/ZGPR/9ftD2gPhhIslbwHHt5q038SGNk8i3DS+Cs+2e4XHrZAo4h5IkpLeoh3YNwlMvO9UWwv9pWcjCSVEuXPZqE8WxyxP2EyndfYQKwZqByxESzLCWCsYAQ=="
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 188,
+          "cache_read_input_tokens": 20603,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 188,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 9,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "8989fe7d-a9e8-446d-a9d4-2764cce577ac"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-4-20250514",
+        "id": "msg_018UhzEW8qZhhJ5ZAXksEbBC",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "*Mission accomplished. The spectral analysis reveals 736 dead code phantoms...*\n\n## Task Complete \u2713\n\nSuccessfully extracted **736 dead code candidates** from `supermodel_dead_code_analysis.json` into `REPORT.json`.\n\n**Results Summary:**\n- **Source**: Direct JSON file with `deadCodeCandidates` array (not a manifest)\n- **Extracted**: All 736 candidates without filtering or verification\n- **Format**: Proper JSON structure with `file`, `name`, `type` fields\n- **Status**: `analysis_complete: true`\n\nThe REPORT.json contains candidates across multiple packages including:\n- packages/constants/src/helpers.ts\n- packages/constants/src/issues/\n- packages/core/\n- packages/telemetry/python/examples/\n- And many more...\n\n*The digital harvest is complete. All spectral remnants have been catalogued in the realm's registry.*"
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 8,
+          "cache_creation_input_tokens": 188,
+          "cache_read_input_tokens": 20603,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 188,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 9,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "uuid": "fef9b46a-0cfe-4b4d-a90a-f5931f85b540"
+    },
+    {
+      "type": "result",
+      "subtype": "success",
+      "is_error": false,
+      "duration_ms": 64445,
+      "duration_api_ms": 62157,
+      "num_turns": 12,
+      "result": "*Mission accomplished. The spectral analysis reveals 736 dead code phantoms...*\n\n## Task Complete \u2713\n\nSuccessfully extracted **736 dead code candidates** from `supermodel_dead_code_analysis.json` into `REPORT.json`.\n\n**Results Summary:**\n- **Source**: Direct JSON file with `deadCodeCandidates` array (not a manifest)\n- **Extracted**: All 736 candidates without filtering or verification\n- **Format**: Proper JSON structure with `file`, `name`, `type` fields\n- **Status**: `analysis_complete: true`\n\nThe REPORT.json contains candidates across multiple packages including:\n- packages/constants/src/helpers.ts\n- packages/constants/src/issues/\n- packages/core/\n- packages/telemetry/python/examples/\n- And many more...\n\n*The digital harvest is complete. All spectral remnants have been catalogued in the realm's registry.*",
+      "stop_reason": "end_turn",
+      "session_id": "b503b054-b6f3-464c-bac2-92df31711085",
+      "total_cost_usd": 0.14412885,
+      "usage": {
+        "input_tokens": 100,
+        "cache_creation_input_tokens": 11477,
+        "cache_read_input_tokens": 209117,
+        "output_tokens": 2537,
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 11477
+        },
+        "inference_geo": "",
+        "iterations": [],
+        "speed": "standard"
+      },
+      "modelUsage": {
+        "claude-sonnet-4-20250514": {
+          "inputTokens": 100,
+          "outputTokens": 2537,
+          "cacheReadInputTokens": 209117,
+          "cacheCreationInputTokens": 11477,
+          "webSearchRequests": 0,
+          "costUSD": 0.14412885,
+          "contextWindow": 200000,
+          "maxOutputTokens": 32000
+        }
+      },
+      "permission_denials": [],
+      "fast_mode_state": "off",
+      "uuid": "5e328716-1f4f-4f92-8b44-c3978641d19c"
+    }
+  ]
+}
