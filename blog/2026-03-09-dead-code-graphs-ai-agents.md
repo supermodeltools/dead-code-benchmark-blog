@@ -200,6 +200,8 @@ The jsLPSolver result is especially meaningful: this was previously the only tas
 
 **Precision is the frontier.** Our recall is strong -- 97% average means we're finding almost all confirmed dead code. But precision numbers in the low single digits on larger codebases mean we're also reporting hundreds of false positives. However, it's worth noting that our ground truth only captures dead code that a human developer explicitly removed in a PR. In a multi-million line codebase, there is almost certainly additional dead code that the PR author didn't catch. Some of our "false positives" may be genuinely dead code that hasn't been removed yet. Our planned scream test methodology (systematically deleting candidates and running CI) will give us a clearer picture of true precision.
 
+Better precision may also be solved by better agent filtering. Our current benchmark measures the raw analysis output -- every candidate the graph produces gets reported. A smarter agent step that reads the candidates, checks for framework patterns, and applies project-specific judgment could dramatically reduce false positives without the problems we saw with naive grep verification. The graph gives you high-recall candidates; the agent gives you high-precision filtering. We haven't optimized that second step yet.
+
 Across all head-to-head matchups (16 runs with both agents):
 
 | Metric | Graph Agent | Baseline Agent |
