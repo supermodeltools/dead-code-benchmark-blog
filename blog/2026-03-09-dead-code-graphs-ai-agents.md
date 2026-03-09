@@ -9,7 +9,19 @@ tags: [supermodel, dead-code, ai-agents, static-analysis, code-graphs, benchmark
 
 # What Dead Code Taught Us About Building Tools for AI Agents
 
-*We set out to build a dead code finder. We ended up discovering something bigger: code graphs are the foundational primitive that AI-powered development tools are missing.*
+We started with the thinking that if we build good core graph tools, we could provide a platform to build static analysis and code quality tools on top of. We want to present the core graph API as foundational to other instrumentation.
+
+We had the insight that good prompting is high signal. We want to provide a high volume of high-signal context to the model and eliminate noise as much as possible. We discovered that if we gave a directory that had living code and dead code in it and told the agent to make documentation, it would document dead features as living. With vibe-coded software, especially if there are multiple refactors, it's very likely that there will be dead code left behind clogging the context. In practice, engineers have known when manually coding that it is so frustrating to edit a method and see no change, only to discover that the pattern has drifted from the spec and the method is dead.
+
+Our insight was that with a well-made call graph and a well-made dependency graph, in many cases we could discover "dead code candidates." Naively, if you were to say "anything that is not imported or not called, it is dead." However, with generated code patterns there may be things that are not called until the system is built. Additionally, framework entry points -- Express route handlers, Next.js pages, NestJS controllers -- are never "called" by your code; they're invoked at runtime. Services gated by an API may have code that appears dead but isn't, since the client could be on the other side of a network boundary: a REST handler with zero internal callers, a webhook endpoint waiting for external events, a plugin loaded by convention rather than by import.
+
+However, with these constraints in mind, it's possible to build an agent-enabled system that begins with a set of items that appear to be dead, ranked by probability. An intelligent system could self-improve with certain system knowledge -- that is, project structures that follow a generator pattern typically have common directory names like `target/`. So this gives a system that can generate probabilistically more likely dead code candidates, with the caveat that there will be false positives that need to be sorted through.
+
+Still, this greatly reduces the context load on an LLM. On smaller projects, an LLM can effectively trace the entire execution path inside of the context window. On larger projects this becomes increasingly infeasible. By using graph analysis primitives, we can eliminate a huge chunk of known noise. After that we can use agents to sort through candidates to remove false positives. Finally, over time we can learn how project structures and design patterns create false positives to make a more refined system that further reduces the false positives the agent needs to sort through.
+
+The cumulative effect of this process is that we can build CI pipelines and refactoring tools that will reduce dead code with increasing accuracy and precision. The final outcome once the dead code is removed is less wasted context, fewer agent errors, and more work done.
+
+We will share our benchmarking process, which was run using the mcpbr tool using both synthetic datasets and real pull requests. We will discuss the progress we've made and lessons learned. This is an ongoing effort of improvement. We aim to make the following case: graphs are a primitive to code factories. This dead code removal tool is an example of what can be built with our public API. If you have your own interpretation of how this problem or another can be better solved with graph primitives, we are happy to provide you with the raw materials to do so.
 
 ---
 
