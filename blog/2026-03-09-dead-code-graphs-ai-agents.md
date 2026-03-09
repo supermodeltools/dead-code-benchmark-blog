@@ -9,13 +9,13 @@ tags: [supermodel, dead-code, ai-agents, static-analysis, code-graphs, benchmark
 
 # What Dead Code Taught Us About Building Tools for AI Agents
 
-We set out to build a code visualization tool. AI can write code faster than you can review it, and we wanted to give developers a way to keep up -- interactive architecture graphs, real-time structure views, a shared picture of what's actually happening in the codebase.
+We set out to build a code visualization tool. AI can write code faster than you can review it, and we wanted to give developers a way to keep up: interactive architecture graphs, real-time structure views, a shared picture of what's actually happening in the codebase.
 
 We quickly realized that to build any type of precise visualization, documentation, or code review, you first need a good graph. The graph is the precursor. And when we looked around, we saw the same thing everywhere: every code review tool, every documentation generator, every AI coding assistant that needs to understand codebase structure ends up building its own parser, its own import resolver, its own symbol graph. It's the same foundational work rebuilt independently by dozens of teams. Nobody had put together one comprehensive set of graph primitives that's well-maintained and available for anyone to build on top of.
 
-So we decided to do that. We think code graphs are a core primitive -- especially now, as the industry moves toward software factories where agents need structural understanding of what they're working on. Our focus is on maintaining precise graphs and parsing so that everyone building on top doesn't have to duplicate that effort.
+So we decided to do that. We think code graphs are a core primitive, especially now, as the industry moves toward software factories where agents need structural understanding of what they're working on. Our focus is on maintaining precise graphs and parsing so that everyone building on top doesn't have to duplicate that effort.
 
-This post is about dead code detection -- the first tool we built on our own graph primitives, and the one we've benchmarked most extensively. But the thesis is bigger than dead code. We aim to make the following case: **graphs are a primitive to code factories.** This dead code removal tool is an example of what can be built with our public API. If you have your own interpretation of how this problem or another can be better solved with graph primitives, we are happy to provide you with the raw materials to do so.
+This post is about dead code detection, the first tool we built on our own graph primitives, and the one we've benchmarked most extensively. But the thesis is bigger than dead code. We aim to make the following case: **graphs are a primitive to code factories.** This dead code removal tool is an example of what can be built with our public API. If you have your own interpretation of how this problem or another can be better solved with graph primitives, we are happy to provide you with the raw materials to do so.
 
 ---
 
@@ -27,15 +27,15 @@ With vibe-coded software, especially if there are multiple refactors, it's very 
 
 Dead code clogs context windows, confuses agents, and wastes the most expensive resource in AI-powered development: tokens spent reasoning about code that doesn't matter.
 
-We had the insight that good prompting is high signal. We want to provide a high volume of high-signal context to the model and eliminate noise as much as possible. If we could identify and remove dead code before the agent sees it, we could dramatically improve the quality of every downstream task -- documentation, code review, refactoring, feature development.
+We had the insight that good prompting is high signal. We want to provide a high volume of high-signal context to the model and eliminate noise as much as possible. If we could identify and remove dead code before the agent sees it, we could dramatically improve the quality of every downstream task: documentation, code review, refactoring, feature development.
 
 ---
 
 ## From Graphs to Dead Code Candidates
 
-Our insight was that with a well-made call graph and a well-made dependency graph, in many cases we could discover "dead code candidates." Naively, if you were to say "anything that is not imported or not called, it is dead." However, with generated code patterns there may be things that are not called until the system is built. Additionally, framework entry points -- Express route handlers, Next.js pages, NestJS controllers -- are never "called" by your code; they're invoked at runtime. Services gated by an API may have code that appears dead but isn't, since the client could be on the other side of a network boundary: a REST handler with zero internal callers, a webhook endpoint waiting for external events, a plugin loaded by convention rather than by import.
+Our insight was that with a well-made call graph and a well-made dependency graph, in many cases we could discover "dead code candidates." Naively, if you were to say "anything that is not imported or not called, it is dead." However, with generated code patterns there may be things that are not called until the system is built. Additionally, framework entry points (Express route handlers, Next.js pages, NestJS controllers) are never "called" by your code; they're invoked at runtime. Services gated by an API may have code that appears dead but isn't, since the client could be on the other side of a network boundary: a REST handler with zero internal callers, a webhook endpoint waiting for external events, a plugin loaded by convention rather than by import.
 
-However, with these constraints in mind, it's possible to build an agent-enabled system that begins with a set of items that appear to be dead, ranked by probability. An intelligent system could self-improve with certain system knowledge -- that is, project structures that follow a generator pattern typically have common directory names like `target/`. So this gives a system that can generate probabilistically more likely dead code candidates, with the caveat that there will be false positives that need to be sorted through.
+However, with these constraints in mind, it's possible to build an agent-enabled system that begins with a set of items that appear to be dead, ranked by probability. An intelligent system could self-improve with certain system knowledge. That is, project structures that follow a generator pattern typically have common directory names like `target/`. So this gives a system that can generate probabilistically more likely dead code candidates, with the caveat that there will be false positives that need to be sorted through.
 
 Still, this greatly reduces the context load on an LLM. On smaller projects, an LLM can effectively trace the entire execution path inside of the context window. On larger projects this becomes increasingly infeasible. By using graph analysis primitives, we can eliminate a huge chunk of known noise. After that we can use agents to sort through candidates to remove false positives. Finally, over time we can learn how project structures and design patterns create false positives to make a more refined system that further reduces the false positives the agent needs to sort through.
 
@@ -47,15 +47,15 @@ The cumulative effect of this process is that we can build CI pipelines and refa
 
 Static analysis can trace imports and function calls. What it can't easily see are the boundaries of indirection that make code *appear* dead when it isn't:
 
-**Framework entry points.** A Next.js `page.tsx`, a NestJS `@Controller()`, an Express route handler -- none of these are "called" by your code. They're invoked by the framework at runtime. A naive dead code detector would flag every API endpoint as unused.
+**Framework entry points.** A Next.js `page.tsx`, a NestJS `@Controller()`, an Express route handler. None of these are "called" by your code. They're invoked by the framework at runtime. A naive dead code detector would flag every API endpoint as unused.
 
-**Event-driven and plugin architectures.** Webhook handlers, message queue consumers, dynamically loaded plugins -- all registered through patterns that static analysis struggles to trace.
+**Event-driven and plugin architectures.** Webhook handlers, message queue consumers, dynamically loaded plugins. All registered through patterns that static analysis struggles to trace.
 
 **API boundaries.** When a service exposes functions through a REST or GraphQL API, the callers live on the other side of a network boundary. The server-side handler has zero internal callers, but it's the most critical code in the system.
 
 **Generated code patterns.** Code generators (ORMs, gRPC stubs, GraphQL codegen) produce symbols that aren't called until the rest of the system is wired up. These often live in conventionally-named directories like `generated/`, `target/`, or `__generated__/`.
 
-**Re-exports and type-level usage.** A type that's re-exported through a barrel file (`index.ts`), or a constant used only in type annotations -- these are alive but invisible to call-graph-only analysis.
+**Re-exports and type-level usage.** A type that's re-exported through a barrel file (`index.ts`), or a constant used only in type annotations. These are alive but invisible to call-graph-only analysis.
 
 These aren't edge cases. In a typical production codebase, they represent 30-60% of all exported symbols. Flag them all as dead and you've built a tool nobody trusts.
 
@@ -88,13 +88,13 @@ We used [mcpbr](https://github.com/greynewell/mcpbr) (Model Context Protocol Ben
 
 ### Ground Truth: How Do You Know What's Actually Dead?
 
-This is the hardest part of benchmarking dead code detection. You need to know -- with certainty -- which symbols in a codebase are dead. We used two approaches:
+This is the hardest part of benchmarking dead code detection. You need to know, with certainty, which symbols in a codebase are dead. We used two approaches:
 
 **Synthetic codebases.** We built a 35-file TypeScript Express app and intentionally planted 102 dead code items: legacy integrations, deprecated auth methods, feature flags that were never cleaned up, replaced utility functions. We know exactly what's dead because we put it there. This is useful for development but doesn't reflect real-world complexity.
 
-**Real pull requests from open-source projects.** This is where the benchmark gets interesting. We searched GitHub for merged PRs whose commit messages and descriptions explicitly mention removing dead code, unused functions, or deprecated features. The logic: if a developer identified code as dead, removed it in a PR, the tests still pass, and the PR was approved by reviewers and merged -- that's confirmed dead code.
+**Real pull requests from open-source projects.** This is where the benchmark gets interesting. We searched GitHub for merged PRs whose commit messages and descriptions explicitly mention removing dead code, unused functions, or deprecated features. The logic: if a developer identified code as dead, removed it in a PR, the tests still pass, and the PR was approved by reviewers and merged, that's confirmed dead code.
 
-For each PR, we extracted ground truth by parsing the diff: every exported function, class, interface, constant, or type that was *deleted* (not moved or renamed) became a ground truth item. The agent's job is to identify these same items by analyzing the codebase at the commit *before* the PR -- the state where the dead code still exists.
+For each PR, we extracted ground truth by parsing the diff: every exported function, class, interface, constant, or type that was *deleted* (not moved or renamed) became a ground truth item. The agent's job is to identify these same items by analyzing the codebase at the commit *before* the PR, the state where the dead code still exists.
 
 This methodology has a key strength: it's grounded in real engineering decisions, not synthetic judgment calls. A human developer, with full context of the project, decided this code was dead. We're asking: can an AI agent reach the same conclusion?
 
@@ -128,17 +128,17 @@ Our strongest result came from [antiwork/Helper](https://github.com/antiwork/hel
 | Metric | With Graph | Baseline (grep) | Improvement |
 |--------|-----------|-----------------|-------------|
 | **Recall** | **91.7%** (11/12) | 16.7% (2/12) | **5.5x** |
-| **Precision** | **100%** | 100% | -- |
+| **Precision** | **100%** | 100% | same |
 | **F1** | **95.7%** | 28.6% | **3.3x** |
 | **Tool Calls** | 6 | 184 | **30x fewer** |
 | **Runtime** | 33-42s | 343-792s | **8-24x faster** |
 | **Cost** | $0.10-0.11 | $2.64-8.61 | **24-86x cheaper** |
 
-The graph-enhanced agent found 11 of 12 confirmed dead code items with zero false positives. The baseline found 2. Both runs reproduced identically on recall and precision. **This task was "resolved"** -- both precision and recall above our 80% bar -- making it the only real-world task where any agent cleared that threshold.
+The graph-enhanced agent found 11 of 12 confirmed dead code items with zero false positives. The baseline found 2. Both runs reproduced identically on recall and precision. **This task was "resolved"** (both precision and recall above our 80% bar), making it the only real-world task where any agent cleared that threshold.
 
 What happened? The baseline agent spent 184 tool calls grepping through 576 files trying to build a mental model of the call graph at runtime. The graph-enhanced agent read one JSON file, wrote a small Python script to extract the candidates, and was done in 6 tool calls. **The graph pre-computes the expensive work, so the agent doesn't have to.**
 
-The single missed item (`SUBSCRIPTION_FREE_TRIAL_USAGE_LIMIT`) was a constant used only in template literals -- a known gap in the parser, not a limitation of the approach.
+The single missed item (`SUBSCRIPTION_FREE_TRIAL_USAGE_LIMIT`) was a constant used only in template literals. A known gap in the parser, not a limitation of the approach.
 
 ### Synthetic Codebases: Near-Perfect
 
@@ -151,7 +151,7 @@ On a synthetic 35-file TypeScript Express app with 102 planted dead code items:
 | **F1** | **95%** | 56% |
 | **Tool Calls** | 4 | 68 |
 
-The baseline achieves perfect precision by being conservative -- it only reports what it's absolutely sure about, and misses 61% of dead code. The graph-enhanced agent finds nearly everything.
+The baseline achieves perfect precision by being conservative. It only reports what it's absolutely sure about, and misses 61% of dead code. The graph-enhanced agent finds nearly everything.
 
 ### Scaling to Larger Repositories: High Recall, Precision Work Ahead
 
@@ -172,7 +172,7 @@ In our most controlled comparison (Feb 20 run, 10 real-world tasks, identical co
 | Gemini CLI | 33.3% (2/6) | 0.1% | 0.1% | 0% |
 | Logto | 0% (0/8) | 0% | 0% | 0% |
 
-**The baseline scored 0% recall, 0% precision, and 0% F1 on every single task.** The grep-based approach -- even with 30 iterations and unlimited tool calls -- couldn't find any confirmed dead code across these codebases. The graph agent, by contrast, achieved 75%+ recall on 6 of 10 tasks.
+**The baseline scored 0% recall, 0% precision, and 0% F1 on every single task.** The grep-based approach, even with 30 iterations and unlimited tool calls, couldn't find any confirmed dead code across these codebases. The graph agent, by contrast, achieved 75%+ recall on 6 of 10 tasks.
 
 After parser improvements in March 2026, these numbers improved further. On the five tasks we re-benchmarked with the improved parser:
 
@@ -188,11 +188,11 @@ After parser improvements in March 2026, these numbers improved further. On the 
 
 Average recall rose from 85% to 97%. Average precision improved from 3.4% to 5.9%. Average F1 nearly doubled from 5.9% to 10.1%. Total false positives dropped 47%. Every single task improved on precision and F1.
 
-The jsLPSolver result is especially meaningful: this was previously the only task where the baseline agent outperformed the graph agent. After the parser improvements, the graph agent finds all 6 ground truth items with 22% precision -- our best on any real-world task.
+The jsLPSolver result is especially meaningful: this was previously the only task where the baseline agent outperformed the graph agent. After the parser improvements, the graph agent finds all 6 ground truth items with 22% precision, our best on any real-world task.
 
-**Precision is the frontier.** Our recall is strong -- 97% average means we're finding almost all confirmed dead code. But precision numbers in the low single digits on larger codebases mean we're also reporting hundreds of false positives. However, it's worth noting that our ground truth only captures dead code that a human developer explicitly removed in a PR. In a multi-million line codebase, there is almost certainly additional dead code that the PR author didn't catch. Some of our "false positives" may be genuinely dead code that hasn't been removed yet. Our planned scream test methodology (systematically deleting candidates and running CI) will give us a clearer picture of true precision.
+**Precision is the frontier.** Our recall is strong. 97% average means we're finding almost all confirmed dead code. But precision numbers in the low single digits on larger codebases mean we're also reporting hundreds of false positives. However, it's worth noting that our ground truth only captures dead code that a human developer explicitly removed in a PR. In a multi-million line codebase, there is almost certainly additional dead code that the PR author didn't catch. Some of our "false positives" may be genuinely dead code that hasn't been removed yet. Our planned scream test methodology (systematically deleting candidates and running CI) will give us a clearer picture of true precision.
 
-Better precision may also be solved by better agent filtering. Our current benchmark measures the raw analysis output -- every candidate the graph produces gets reported. A smarter agent step that reads the candidates, checks for framework patterns, and applies project-specific judgment could dramatically reduce false positives without the problems we saw with naive grep verification. The graph gives you high-recall candidates; the agent gives you high-precision filtering. We haven't optimized that second step yet.
+Better precision may also be solved by better agent filtering. Our current benchmark measures the raw analysis output. Every candidate the graph produces gets reported. A smarter agent step that reads the candidates, checks for framework patterns, and applies project-specific judgment could dramatically reduce false positives without the problems we saw with naive grep verification. The graph gives you high-recall candidates; the agent gives you high-precision filtering. We haven't optimized that second step yet.
 
 Across all head-to-head matchups (16 runs with both agents):
 
@@ -214,7 +214,7 @@ Large analysis files exceed tool output limits. A 6,000-candidate analysis excee
 
 ### 2. API Recall Gaps (Fixable at the Parser Level)
 
-Sometimes the Supermodel parser misses ground truth items entirely. The Logto benchmark found 0 of 8 ground truth items in the analysis -- no amount of agent intelligence can find what the analysis doesn't contain.
+Sometimes the Supermodel parser misses ground truth items entirely. The Logto benchmark found 0 of 8 ground truth items in the analysis. No amount of agent intelligence can find what the analysis doesn't contain.
 
 Root causes we've identified: `export default` not tracked, type re-exports (`export type { X } from`) missed, test file imports not scanned. These are being fixed systematically.
 
@@ -224,7 +224,7 @@ This one surprised us. In our March 2026 benchmark run, we instructed the agent 
 
 The result: **recall dropped from 95.5% to 40%** on our best-performing task (tyr_pr258). The agent's grep verification was killing real dead code.
 
-Why? The grep used word-boundary matching (`grep -w`). A function named `hasRole` would match the word `hasRole` appearing in a comment, a string literal, or a completely unrelated variable name in another file. The agent would see the match and mark the function as "alive" -- a false negative introduced by the verification step.
+Why? The grep used word-boundary matching (`grep -w`). A function named `hasRole` would match the word `hasRole` appearing in a comment, a string literal, or a completely unrelated variable name in another file. The agent would see the match and mark the function as "alive." A false negative introduced by the verification step.
 
 The irony: the static analyzer had already performed proper call graph and dependency analysis to identify these candidates. The agent's grep check was a *less accurate* version of what the analyzer already did. By asking the agent to verify the analysis, we made it worse.
 
@@ -252,10 +252,10 @@ This is the finding we keep coming back to. The table below shows our latest res
 | Latitude LLM | ~1,400 | 0% | **100%** | $0.70 | $0.22 |
 
 As codebases grow:
-- **Baseline recall collapses to zero** -- the search space overwhelms the agent completely
-- **Baseline cost increases** -- more files means more tool calls spent finding nothing
-- **Graph recall stays high** -- pre-computed relationships don't scale with file count
-- **Graph cost stays flat** -- the agent reads one analysis file regardless of codebase size
+- **Baseline recall collapses to zero.** The search space overwhelms the agent completely.
+- **Baseline cost increases.** More files means more tool calls spent finding nothing.
+- **Graph recall stays high.** Pre-computed relationships don't scale with file count.
+- **Graph cost stays flat.** The agent reads one analysis file regardless of codebase size.
 
 The graph absorbs the complexity that would otherwise land on the agent. This is the fundamental value proposition, and it applies to any tool built on graph primitives, not just dead code detection.
 
@@ -265,9 +265,9 @@ The graph absorbs the complexity that would otherwise land on the agent. This is
 
 ### 1. Context engineering matters more than model capability
 
-Same model, same tools, different input structure: 5.5x better recall. The model wasn't the bottleneck -- the signal-to-noise ratio of its input was.
+Same model, same tools, different input structure: 5.5x better recall. The model wasn't the bottleneck. The signal-to-noise ratio of its input was.
 
-This is the core lesson. **Good prompting is high-signal prompting.** The best thing you can do for an AI agent isn't give it a smarter model -- it's give it pre-computed, structured, relevant context and eliminate the noise.
+This is the core lesson. **Good prompting is high-signal prompting.** The best thing you can do for an AI agent isn't give it a smarter model. It's give it pre-computed, structured, relevant context and eliminate the noise.
 
 ### 2. Pre-compute what you can, delegate judgment to the agent
 
@@ -277,13 +277,13 @@ The best outcome is a pipeline: graphs enumerate candidates, agents verify them.
 
 ### 3. Precision is harder than recall (and matters more for trust)
 
-Our graph agent consistently achieved high recall on real codebases -- it found the dead code. But it also reported thousands of false positives. A tool that says "here are 3,000 things that might be dead" isn't useful. A tool that says "here are 15 things that are dead, and here's why" is.
+Our graph agent consistently achieved high recall on real codebases. It found the dead code. But it also reported thousands of false positives. A tool that says "here are 3,000 things that might be dead" isn't useful. A tool that says "here are 15 things that are dead, and here's why" is.
 
 The precision problem is solvable through better ranking, better framework-aware filtering, and learning from false positive patterns. This is active work.
 
 ### 4. Real-world codebases are dramatically harder than synthetic ones
 
-On our synthetic benchmark, we hit 95% F1. On a well-structured 576-file production app, we resolved the task with 95.7% F1. But on large monorepos (80MB+), recall stays high while precision collapses -- the agent finds the dead code but can't filter the false positives yet. Synthetic benchmarks are necessary for development but insufficient for evaluation. You need both.
+On our synthetic benchmark, we hit 95% F1. On a well-structured 576-file production app, we resolved the task with 95.7% F1. But on large monorepos (80MB+), recall stays high while precision collapses. The agent finds the dead code but can't filter the false positives yet. Synthetic benchmarks are necessary for development but insufficient for evaluation. You need both.
 
 ### 5. The system improves iteratively
 
@@ -293,15 +293,15 @@ Every benchmark run teaches us something:
 - Logto taught us about parser gaps in `export default`
 - Directus taught us about the analysis-dump failure mode
 
-Each lesson feeds back into the parser, the ranking model, and the agent prompt. The system gets better with each iteration -- not through model improvements, but through better context engineering.
+Each lesson feeds back into the parser, the ranking model, and the agent prompt. The system gets better with each iteration. Not through model improvements, but through better context engineering.
 
 ---
 
 ## The Bigger Picture: Graphs as Factory Primitives
 
-The industry is moving toward software factories -- automated pipelines where agents write, review, test, and deploy code with increasing autonomy. These factories need infrastructure primitives. The LLM is becoming commodity. What's not commodity is the structural understanding of what agents are working on.
+The industry is moving toward software factories. Automated pipelines where agents write, review, test, and deploy code with increasing autonomy. These factories need infrastructure primitives. The LLM is becoming commodity. What's not commodity is the structural understanding of what agents are working on.
 
-Dead code detection is one application. But the underlying primitive -- a structured graph of code relationships -- enables an entire category of tools:
+Dead code detection is one application. But the underlying primitive, a structured graph of code relationships, enables an entire category of tools:
 
 - **Impact analysis**: "If I change this function, what breaks?" (call graph)
 - **Architecture documentation**: "What are the domains and boundaries in this system?" (domain graph)
@@ -311,7 +311,7 @@ Dead code detection is one application. But the underlying primitive -- a struct
 
 Each of these has the same structure: pre-compute the graph, rank candidates, let agents handle judgment. The graph is the primitive. The applications are built on top.
 
-Every team building agent-powered workflows -- whether it's code review, documentation generation, CI pipelines, or full factory orchestration -- needs this structural awareness. Right now, most of them are building it from scratch. We think there should be one well-maintained set of graph primitives that everyone can build on, rather than dozens of teams independently duplicating the same foundational work.
+Every team building agent-powered workflows, whether it's code review, documentation generation, CI pipelines, or full factory orchestration, needs this structural awareness. Right now, most of them are building it from scratch. We think there should be one well-maintained set of graph primitives that everyone can build on, rather than dozens of teams independently duplicating the same foundational work.
 
 ---
 
@@ -321,9 +321,9 @@ Building the dead code tool was one thing. Benchmarking it honestly was harder. 
 
 ### Measuring the wrong thing
 
-Our initial benchmark prompt told the agent to read the analysis file, then "verify" each candidate by grepping the codebase to see if the symbol appeared in other files. This seemed rigorous -- the agent would filter false positives before reporting.
+Our initial benchmark prompt told the agent to read the analysis file, then "verify" each candidate by grepping the codebase to see if the symbol appeared in other files. This seemed rigorous. The agent would filter false positives before reporting.
 
-It backfired. On our best-performing task (tyr_pr258), recall dropped from 95.5% to 40%. The agent's grep verification was *less accurate* than the graph analysis it was checking. A function named `hasRole` would match the word "hasRole" in a comment, a string literal, or an unrelated variable -- and the agent would incorrectly mark it as alive.
+It backfired. On our best-performing task (tyr_pr258), recall dropped from 95.5% to 40%. The agent's grep verification was *less accurate* than the graph analysis it was checking. A function named `hasRole` would match the word "hasRole" in a comment, a string literal, or an unrelated variable. The agent would incorrectly mark it as alive.
 
 The lesson: **don't verify a precise tool with a less precise tool.** Graph-based reachability is strictly more accurate than text search for determining if code is reachable. Once we removed the grep verification and told the agent to trust the analysis, recall returned to expected levels.
 
@@ -348,9 +348,9 @@ All of our benchmark data, including the runs where we got it wrong, is availabl
 
 ### Future methodology: scream tests
 
-One thing to note about our current benchmarks: it is not enough to compare false positives or precision on their own, because our ground truth only includes a subset of all possible dead code in the repo. In a multi-million line project there could be lots of dead code that a targeted PR could miss. Our precision numbers look low -- hundreds or thousands of "false positives" -- but some of those may actually be dead code that the human developer didn't catch.
+One thing to note about our current benchmarks: it is not enough to compare false positives or precision on their own, because our ground truth only includes a subset of all possible dead code in the repo. In a multi-million line project there could be lots of dead code that a targeted PR could miss. Our precision numbers look low (hundreds or thousands of "false positives") but some of those may actually be dead code that the human developer didn't catch.
 
-In future benchmarks, we will perform "scream test verification": systematically delete all of the reported dead code candidates, then run the project build and CI suite to manually confirm that things are truly dead. If the tests still pass after deletion, the candidate was genuinely dead -- regardless of whether a human had flagged it. This will give us a much more accurate picture of real precision and will likely reveal that our tools are finding dead code that humans missed.
+In future benchmarks, we will perform "scream test verification": systematically delete all of the reported dead code candidates, then run the project build and CI suite to manually confirm that things are truly dead. If the tests still pass after deletion, the candidate was genuinely dead, regardless of whether a human had flagged it. This will give us a much more accurate picture of real precision and will likely reveal that our tools are finding dead code that humans missed.
 
 ### The payoff: parser improvements, measured correctly
 
@@ -364,7 +364,7 @@ Once we fixed the caching and prompt issues, we could finally measure the effect
 | Directus | 100% recall, 2,450 FP | 93% recall, 885 FP | Slight recall dip, **FPs down 64%** |
 | tyr | 96% recall, 537 FP | **90% recall**, 403 FP | Slight recall dip, **FPs down 25%** |
 
-Average recall went from 85% to **97%**. Total false positives across all five tasks dropped from 5,648 to 2,994 -- a **47% reduction**. The jsLPSolver result is especially notable: this was previously the only real-world task where the baseline (grep-only) agent outperformed the graph agent. After the parser improvements, the graph agent now finds all 6 ground truth items with only 21 false positives -- a 22% precision rate, our best on any real-world task.
+Average recall went from 85% to **97%**. Total false positives across all five tasks dropped from 5,648 to 2,994, a **47% reduction**. The jsLPSolver result is especially notable: this was previously the only real-world task where the baseline (grep-only) agent outperformed the graph agent. After the parser improvements, the graph agent now finds all 6 ground truth items with only 21 false positives (22% precision rate, our best on any real-world task).
 
 ---
 
@@ -386,9 +386,11 @@ curl -X POST "https://api.supermodeltools.com/v1/analysis/dead-code" \
 
 Or use the [Supermodel MCP server](https://github.com/supermodeltools/mcp) to give your AI agent direct access to graph analysis in real time.
 
-The graph endpoints -- call graph, dependency graph, domain graph, parse graph -- are all available through the same API. Our focus is on maintaining precise graphs and parsing so that you don't have to. If you're building agent workflows, code review tools, documentation generators, CI pipelines, or factory orchestration -- anything that needs structural understanding of a codebase -- we want to be the graph layer you build on top of.
+The graph endpoints (call graph, dependency graph, domain graph, parse graph) are all available through the same API. Our focus is on maintaining precise graphs and parsing so that you don't have to. If you're building agent workflows, code review tools, documentation generators, CI pipelines, or factory orchestration, anything that needs structural understanding of a codebase, we want to be the graph layer you build on top of.
 
-If you have your own interpretation of how this problem or another can be better solved with graph primitives, we are happy to provide you with the raw materials to do so. We maintain the graphs. You build the tools.
+If you have your own interpretation of how this problem or another can be better solved with graph primitives, we are happy to provide you with the raw materials to do so.
+
+We maintain the graphs. You build the tools.
 
 ---
 
