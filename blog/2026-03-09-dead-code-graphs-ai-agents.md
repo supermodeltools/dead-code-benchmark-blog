@@ -9,9 +9,29 @@ tags: [supermodel, dead-code, ai-agents, static-analysis, code-graphs, benchmark
 
 # What Dead Code Taught Us About Building Tools for AI Agents
 
-We started with the thinking that if we build good core graph tools, we could provide a platform to build static analysis and code quality tools on top of. We want to present the core graph API as foundational to other instrumentation.
+We set out to build a code visualization tool. AI can write code faster than you can review it, and we wanted to give developers a way to keep up -- interactive architecture graphs, real-time structure views, a shared picture of what's actually happening in the codebase.
 
-We had the insight that good prompting is high signal. We want to provide a high volume of high-signal context to the model and eliminate noise as much as possible. We discovered that if we gave a directory that had living code and dead code in it and told the agent to make documentation, it would document dead features as living. With vibe-coded software, especially if there are multiple refactors, it's very likely that there will be dead code left behind clogging the context. In practice, engineers have known when manually coding that it is so frustrating to edit a method and see no change, only to discover that the pattern has drifted from the spec and the method is dead.
+We quickly realized that to build any type of precise visualization, documentation, or code review, you first need a good graph. The graph is the precursor. And when we looked around, we saw the same thing everywhere: every code review tool, every documentation generator, every AI coding assistant that needs to understand codebase structure ends up building its own parser, its own import resolver, its own symbol graph. It's the same foundational work rebuilt independently by dozens of teams. Nobody had put together one comprehensive set of graph primitives that's well-maintained and available for anyone to build on top of.
+
+So we decided to do that. We think code graphs are a core primitive -- especially now, as the industry moves toward software factories where agents need structural understanding of what they're working on. Our focus is on maintaining precise graphs and parsing so that everyone building on top doesn't have to duplicate that effort.
+
+This post is about dead code detection -- the first tool we built on our own graph primitives, and the one we've benchmarked most extensively. But the thesis is bigger than dead code. We aim to make the following case: **graphs are a primitive to code factories.** This dead code removal tool is an example of what can be built with our public API. If you have your own interpretation of how this problem or another can be better solved with graph primitives, we are happy to provide you with the raw materials to do so.
+
+---
+
+## The Dead Code Problem
+
+We discovered the dead code problem by accident. We gave an agent a directory that had living code and dead code in it and told it to make documentation. It documented dead features as living.
+
+With vibe-coded software, especially if there are multiple refactors, it's very likely that there will be dead code left behind clogging the context. In practice, engineers have known when manually coding that it is so frustrating to edit a method and see no change, only to discover that the pattern has drifted from the spec and the method is dead. AI agents don't have that intuition. They see every function as equally real.
+
+Dead code clogs context windows, confuses agents, and wastes the most expensive resource in AI-powered development: tokens spent reasoning about code that doesn't matter.
+
+We had the insight that good prompting is high signal. We want to provide a high volume of high-signal context to the model and eliminate noise as much as possible. If we could identify and remove dead code before the agent sees it, we could dramatically improve the quality of every downstream task -- documentation, code review, refactoring, feature development.
+
+---
+
+## From Graphs to Dead Code Candidates
 
 Our insight was that with a well-made call graph and a well-made dependency graph, in many cases we could discover "dead code candidates." Naively, if you were to say "anything that is not imported or not called, it is dead." However, with generated code patterns there may be things that are not called until the system is built. Additionally, framework entry points -- Express route handlers, Next.js pages, NestJS controllers -- are never "called" by your code; they're invoked at runtime. Services gated by an API may have code that appears dead but isn't, since the client could be on the other side of a network boundary: a REST handler with zero internal callers, a webhook endpoint waiting for external events, a plugin loaded by convention rather than by import.
 
@@ -20,34 +40,6 @@ However, with these constraints in mind, it's possible to build an agent-enabled
 Still, this greatly reduces the context load on an LLM. On smaller projects, an LLM can effectively trace the entire execution path inside of the context window. On larger projects this becomes increasingly infeasible. By using graph analysis primitives, we can eliminate a huge chunk of known noise. After that we can use agents to sort through candidates to remove false positives. Finally, over time we can learn how project structures and design patterns create false positives to make a more refined system that further reduces the false positives the agent needs to sort through.
 
 The cumulative effect of this process is that we can build CI pipelines and refactoring tools that will reduce dead code with increasing accuracy and precision. The final outcome once the dead code is removed is less wasted context, fewer agent errors, and more work done.
-
-We will share our benchmarking process, which was run using the mcpbr tool using both synthetic datasets and real pull requests. We will discuss the progress we've made and lessons learned. This is an ongoing effort of improvement. We aim to make the following case: graphs are a primitive to code factories. This dead code removal tool is an example of what can be built with our public API. If you have your own interpretation of how this problem or another can be better solved with graph primitives, we are happy to provide you with the raw materials to do so.
-
----
-
-## The Moment That Changed Our Thinking
-
-We asked an AI agent to document a codebase. It did a thorough job -- read the source files, traced the patterns, and produced clean architectural docs. There was just one problem: a third of the features it documented didn't exist anymore.
-
-The functions were still in the code. They had clear names, proper signatures, even JSDoc comments. But they hadn't been called in months. They were remnants of past refactors, stranded by pattern drift, invisible to the agent because nothing in the source files said "ignore me, I'm dead."
-
-This is the dead code problem, and it gets worse with AI-generated code. When engineers write code by hand, they develop intuition for what's alive. They remember the refactor that replaced the old auth flow. They notice when editing a method produces no visible change -- that sinking feeling of realizing the method was dead all along. But AI agents have no such memory. They see every function as equally real.
-
-In vibe-coded software -- especially after multiple refactors -- dead code accumulates fast. It clogs context windows, confuses agents, and wastes the most expensive resource in AI-powered development: tokens spent reasoning about code that doesn't matter.
-
-We decided to do something about it.
-
----
-
-## The Thesis: Graphs Are Primitives
-
-When we started building Supermodel, we had a hypothesis: **if we build good core graph tools -- call graphs, dependency graphs, domain models -- we could provide a platform for building an entire category of static analysis and code quality tools on top.**
-
-Dead code detection was our first test case. Not because it's the hardest problem, but because it sits at the intersection of everything we care about: it requires understanding relationships between symbols, it directly impacts AI agent effectiveness, and it has a clear ground truth (either something is called or it isn't).
-
-The technical insight was straightforward. With a well-constructed call graph and dependency graph, you can identify *dead code candidates* -- symbols that have no inbound references. Naively, that means: "anything that is not imported or not called is probably dead."
-
-But "probably" is doing a lot of work in that sentence.
 
 ---
 
@@ -307,6 +299,8 @@ Each lesson feeds back into the parser, the ranking model, and the agent prompt.
 
 ## The Bigger Picture: Graphs as Factory Primitives
 
+The industry is moving toward software factories -- automated pipelines where agents write, review, test, and deploy code with increasing autonomy. These factories need infrastructure primitives. The LLM is becoming commodity. What's not commodity is the structural understanding of what agents are working on.
+
 Dead code detection is one application. But the underlying primitive -- a structured graph of code relationships -- enables an entire category of tools:
 
 - **Impact analysis**: "If I change this function, what breaks?" (call graph)
@@ -316,6 +310,8 @@ Dead code detection is one application. But the underlying primitive -- a struct
 - **Security surface mapping**: "What code paths lead from user input to database queries?" (call graph + data flow)
 
 Each of these has the same structure: pre-compute the graph, rank candidates, let agents handle judgment. The graph is the primitive. The applications are built on top.
+
+Every team building agent-powered workflows -- whether it's code review, documentation generation, CI pipelines, or full factory orchestration -- needs this structural awareness. Right now, most of them are building it from scratch. We think there should be one well-maintained set of graph primitives that everyone can build on, rather than dozens of teams independently duplicating the same foundational work.
 
 ---
 
@@ -390,7 +386,9 @@ curl -X POST "https://api.supermodeltools.com/v1/analysis/dead-code" \
 
 Or use the [Supermodel MCP server](https://github.com/supermodeltools/mcp) to give your AI agent direct access to graph analysis in real time.
 
-The graph endpoints (call graph, dependency graph, domain graph, parse graph) are all available through the same API. If you see a different application for graph primitives -- impact analysis, architecture visualization, security auditing, or something we haven't thought of -- we'd love to hear about it. We're building the raw materials. What you build with them is up to you.
+The graph endpoints -- call graph, dependency graph, domain graph, parse graph -- are all available through the same API. Our focus is on maintaining precise graphs and parsing so that you don't have to. If you're building agent workflows, code review tools, documentation generators, CI pipelines, or factory orchestration -- anything that needs structural understanding of a codebase -- we want to be the graph layer you build on top of.
+
+If you have your own interpretation of how this problem or another can be better solved with graph primitives, we are happy to provide you with the raw materials to do so. We maintain the graphs. You build the tools.
 
 ---
 
@@ -408,4 +406,4 @@ The graph endpoints (call graph, dependency graph, domain graph, parse graph) ar
 
 ---
 
-*Supermodel provides code graph APIs for AI-powered development tools. [Get started with the API](https://docs.supermodeltools.com) or [try the MCP server](https://github.com/supermodeltools/mcp).*
+*Supermodel maintains precise code graph primitives so you don't have to. [Get started with the API](https://docs.supermodeltools.com) or [try the MCP server](https://github.com/supermodeltools/mcp).*
